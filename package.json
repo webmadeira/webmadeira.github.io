@@ -1,0 +1,19 @@
+{
+  "name": "webmadeira",
+  "version": "1.0.0",
+  "description": "Is a not-for-profit conference about web development by-the-community for-the-community.   The [first edition](http://webmadeira.herokuapp.com/) was back in 2016 and it is back this year at **December 29**!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webmadeira/webmadeira.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webmadeira/webmadeira.github.io/issues"
+  },
+  "homepage": "https://github.com/webmadeira/webmadeira.github.io#readme"
+}
