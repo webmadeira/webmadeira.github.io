@@ -4,7 +4,8 @@
   "description": "Is a not-for-profit conference about web development by-the-community for-the-community.   The [first edition](http://webmadeira.herokuapp.com/) was back in 2016 and it is back this year at **December 29**!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/webmadeira/webmadeira.github.io/issues"
   },
-  "homepage": "https://github.com/webmadeira/webmadeira.github.io#readme"
+  "homepage": "https://github.com/webmadeira/webmadeira.github.io#readme",
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.1",
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
