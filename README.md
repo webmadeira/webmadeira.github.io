@@ -19,9 +19,10 @@ What kind of "web" conf would be this without its own webpage? We need the follo
 * 1 to 2 designers
 * 2 to 4 developers (front/back/full-stack)
 
-[Requirements]() (WIP)
+You can find the page requirements [here](/docs/Requirements.md).
 
 **Volunteers**
+* Alice Costa (designer)
 * [Cristian Gonçalves] (back end)
 * [Diogo Cardoso] (front end)
 * [Rodolfo Gonçalves] (front end/full-stack)
@@ -50,6 +51,10 @@ Up to 8 talks with 20 minutes each. The talk can have any format, live coding, s
 
 ## Sponsorship
 
+**In discussion with...**  
+* [Exictos] - offers to be the main sponsor covering all the expenses but only if the event is public
+* [ACIN iCloud Solutions] - offers the space and covers merchandising expenses
+
 [André Gonçalves]: https://github.com/andregoncalves
 [Aurélio Pita]: https://github.com/jaapaurelio
 [Cristian Gonçalves]: https://github.com/crisgoncalves
@@ -59,3 +64,5 @@ Up to 8 talks with 20 minutes each. The talk can have any format, live coding, s
 [Pedro Teixeira]: https://github.com/pgte
 [Rodolfo Gonçalves]: https://github.com/OrencioRodolfo
 [Miguel Ribeiro]: https://github.com/Comum
+[Exictos]: https://www.exictos.com/
+[ACIN iCloud Solutions]: https://www.acin.pt/
