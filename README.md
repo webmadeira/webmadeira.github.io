@@ -4,6 +4,48 @@ The [first edition](http://webmadeira.herokuapp.com/) was back in 2016 and it is
 
 It will take 4h30 hours covering 8 talks, 20 minutes each plus 10 of discussion.
 
+
+This repo sustains the codebase for the organization's web page, holding information related to webmadeira's events.
+
+# Development guide
+
+## Get started
+
+To get started on development you'll need to:
+
+1. Clone the project
+  * `git clone https://github.com/webmadeira/webmadeira.github.io.git`
+2. Install dependencies
+  * `yarn` or `npm install`
+3. Start development server
+  * `yarn start` or `npm start` - read more about scripts in the section below
+
+
+## Scripts
+
+### `start`
+Starts `webpack-dev-server` as development server with hot reload module replacement (check `webpack.dev.js` for more detail)
+
+### `build`
+Builds the project ready for production, with the bundle minified and uglified (check `webpack.prod.js` for more detail)
+
+### `test`
+Runs all automated tests
+
+### `lint`
+Checks for linting issues at the `src` folder following *airbnb*'s rules (check `.eslintrc` for more detail)
+
+### `changelog`
+Generates a shiny new changelog based on the projects versioning history
+
+## More about tooling and tech
+
+You can check our [docs](/docs) and find more info about this [project's setup and tech stack](/docs/project-setup.md)
+
+
+-----
+
+
 # What it takes to make this happen?
 
 ## Location
@@ -19,7 +61,7 @@ What kind of "web" conf would be this without its own webpage? We need the follo
 * 1 to 2 designers
 * 2 to 4 developers (front/back/full-stack)
 
-You can find the page requirements [here](/docs/Requirements.md).
+You can find the page requirements [here](/docs/requirements.md).
 
 **Volunteers**
 * Alice Costa (designer)
