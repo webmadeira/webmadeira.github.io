@@ -8,7 +8,8 @@
     "build": "webpack --config webpack.prod.js",
     "test": "jest",
     "lint": "eslint ./src",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "commit": "npx git-cz"
   },
   "repository": {
     "type": "git",
@@ -54,6 +55,7 @@
     "webpack-merge": "^4.1.1"
   },
   "devDependencies": {
+    "commitizen": "^2.10.1",
     "conventional-changelog-cli": "^2.0.1",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.17.0",
