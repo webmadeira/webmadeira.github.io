@@ -1,4 +1,4 @@
-# WebMadeira
+# WebMadeira [![Build Status](https://travis-ci.com/webmadeira/webmadeira.github.io.svg?branch=master)](https://travis-ci.com/webmadeira/webmadeira.github.io)
 Is a not-for-profit conference about web development by-the-community for-the-community.  
 The [first edition](http://webmadeira.herokuapp.com/) was back in 2016 and it is back this year at **December 29**!  
 
