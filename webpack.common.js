@@ -29,17 +29,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/',
-          },
-        },
-      },
-      {
-        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 8192,
+            name: 'fonts/[name].[ext]',
           },
         },
       },
