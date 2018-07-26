@@ -15,7 +15,7 @@ const textSettings = {
     fontSize: '.9rem', // 18px
     lineHeight: '1rem',
   },
-  reg: { // regular
+  nr: { // normal
     fontSize: '1rem', // 20px
     lineHeight: '1.1rem',
   },
