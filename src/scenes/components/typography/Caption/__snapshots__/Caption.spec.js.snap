@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography - Caption component must render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <styled.span
+    theme={
+      Object {
+        "color": [Function],
+        "contrast": [Function],
+        "fontFamily": [Function],
+        "textSetting": [Function],
+        "weight": [Function],
+      }
+    }
+  >
+    Caption
+  </styled.span>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Caption",
+      "className": "sc-bdVaJa fcJiTh",
+    },
+    "ref": null,
+    "rendered": "Caption",
+    "type": "span",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Caption",
+        "className": "sc-bdVaJa fcJiTh",
+      },
+      "ref": null,
+      "rendered": "Caption",
+      "type": "span",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

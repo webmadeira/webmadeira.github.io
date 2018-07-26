@@ -6,34 +6,30 @@ const weights = {
   bold: 700,
 }
 
-// Text and line heights
-const baseFontSize = 1 // 20px
-const baseLineHeight = `${baseFontSize}rem`
-
 const textSettings = {
   xs: {
     fontSize: '.8rem', // 16px
-    lineHeight: baseLineHeight,
+    lineHeight: '1rem',
   },
   sm: {
     fontSize: '.9rem', // 18px
-    lineHeight: baseLineHeight,
+    lineHeight: '1rem',
   },
   reg: { // regular
     fontSize: '1rem', // 20px
-    lineHeight: `${baseFontSize}rem`,
+    lineHeight: '1.1rem',
   },
   md: {
     fontSize: '1.1rem', // 22px
-    lineHeight: `${baseFontSize * 2}`,
+    lineHeight: '1.2rem',
   },
   lg: {
     fontSize: '1.3rem', // 26px
-    lineHeight: `${baseFontSize * 2}rem`,
+    lineHeight: '1.4rem',
   },
   xl: {
     fontSize: '1.6rem', // 32px
-    lineHeight: `${baseFontSize * 2}rem`,
+    lineHeight: '1.7rem',
   },
 }
 
