@@ -17,22 +17,292 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <p>
-        Body!
-      </p>,
+      "children": Array [
+        <p>
+          <styled.h1>
+            H1
+          </styled.h1>
+        </p>,
+        <p>
+          <styled.h2>
+            H2
+          </styled.h2>
+        </p>,
+        <p>
+          <styled.h3>
+            H3
+          </styled.h3>
+        </p>,
+        <p>
+          <styled.span>
+            Subtitle 1
+          </styled.span>
+        </p>,
+        <p>
+          <styled.span>
+            Body 1
+          </styled.span>
+        </p>,
+        <p>
+          <styled.span>
+            Body 2
+          </styled.span>
+        </p>,
+        <p>
+          <styled.span>
+            Body 3
+          </styled.span>
+        </p>,
+        <p>
+          <styled.span>
+            Body 4
+          </styled.span>
+        </p>,
+        <p>
+          <styled.span>
+            Button
+          </styled.span>
+        </p>,
+        <p>
+          <styled.span>
+            Caption
+          </styled.span>
+        </p>,
+      ],
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "Body!",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.h1>
+            H1
+          </styled.h1>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "H1",
+          },
+          "ref": null,
+          "rendered": "H1",
+          "type": [Function],
+        },
+        "type": "p",
       },
-      "ref": null,
-      "rendered": "Body!",
-      "type": "p",
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.h2>
+            H2
+          </styled.h2>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "H2",
+          },
+          "ref": null,
+          "rendered": "H2",
+          "type": [Function],
+        },
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.h3>
+            H3
+          </styled.h3>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "H3",
+          },
+          "ref": null,
+          "rendered": "H3",
+          "type": [Function],
+        },
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.span>
+            Subtitle 1
+          </styled.span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Subtitle 1",
+          },
+          "ref": null,
+          "rendered": "Subtitle 1",
+          "type": [Function],
+        },
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.span>
+            Body 1
+          </styled.span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Body 1",
+          },
+          "ref": null,
+          "rendered": "Body 1",
+          "type": [Function],
+        },
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.span>
+            Body 2
+          </styled.span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Body 2",
+          },
+          "ref": null,
+          "rendered": "Body 2",
+          "type": [Function],
+        },
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.span>
+            Body 3
+          </styled.span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Body 3",
+          },
+          "ref": null,
+          "rendered": "Body 3",
+          "type": [Function],
+        },
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.span>
+            Body 4
+          </styled.span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Body 4",
+          },
+          "ref": null,
+          "rendered": "Body 4",
+          "type": [Function],
+        },
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.span>
+            Button
+          </styled.span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Button",
+          },
+          "ref": null,
+          "rendered": "Button",
+          "type": [Function],
+        },
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.span>
+            Caption
+          </styled.span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Caption",
+          },
+          "ref": null,
+          "rendered": "Caption",
+          "type": [Function],
+        },
+        "type": "p",
+      },
+    ],
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -41,22 +311,292 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <p>
-          Body!
-        </p>,
+        "children": Array [
+          <p>
+            <styled.h1>
+              H1
+            </styled.h1>
+          </p>,
+          <p>
+            <styled.h2>
+              H2
+            </styled.h2>
+          </p>,
+          <p>
+            <styled.h3>
+              H3
+            </styled.h3>
+          </p>,
+          <p>
+            <styled.span>
+              Subtitle 1
+            </styled.span>
+          </p>,
+          <p>
+            <styled.span>
+              Body 1
+            </styled.span>
+          </p>,
+          <p>
+            <styled.span>
+              Body 2
+            </styled.span>
+          </p>,
+          <p>
+            <styled.span>
+              Body 3
+            </styled.span>
+          </p>,
+          <p>
+            <styled.span>
+              Body 4
+            </styled.span>
+          </p>,
+          <p>
+            <styled.span>
+              Button
+            </styled.span>
+          </p>,
+          <p>
+            <styled.span>
+              Caption
+            </styled.span>
+          </p>,
+        ],
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Body!",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.h1>
+              H1
+            </styled.h1>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "H1",
+            },
+            "ref": null,
+            "rendered": "H1",
+            "type": [Function],
+          },
+          "type": "p",
         },
-        "ref": null,
-        "rendered": "Body!",
-        "type": "p",
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.h2>
+              H2
+            </styled.h2>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "H2",
+            },
+            "ref": null,
+            "rendered": "H2",
+            "type": [Function],
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.h3>
+              H3
+            </styled.h3>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "H3",
+            },
+            "ref": null,
+            "rendered": "H3",
+            "type": [Function],
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.span>
+              Subtitle 1
+            </styled.span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Subtitle 1",
+            },
+            "ref": null,
+            "rendered": "Subtitle 1",
+            "type": [Function],
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.span>
+              Body 1
+            </styled.span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Body 1",
+            },
+            "ref": null,
+            "rendered": "Body 1",
+            "type": [Function],
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.span>
+              Body 2
+            </styled.span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Body 2",
+            },
+            "ref": null,
+            "rendered": "Body 2",
+            "type": [Function],
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.span>
+              Body 3
+            </styled.span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Body 3",
+            },
+            "ref": null,
+            "rendered": "Body 3",
+            "type": [Function],
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.span>
+              Body 4
+            </styled.span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Body 4",
+            },
+            "ref": null,
+            "rendered": "Body 4",
+            "type": [Function],
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.span>
+              Button
+            </styled.span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Button",
+            },
+            "ref": null,
+            "rendered": "Button",
+            "type": [Function],
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.span>
+              Caption
+            </styled.span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Caption",
+            },
+            "ref": null,
+            "rendered": "Caption",
+            "type": [Function],
+          },
+          "type": "p",
+        },
+      ],
       "type": [Function],
     },
   ],
