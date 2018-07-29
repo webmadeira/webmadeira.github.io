@@ -12,7 +12,7 @@ import {
   Body4,
   BUTTON,
   Caption,
-} from '../typography'
+} from '../../../components/typography'
 
 const Container = styled.section`
   border: 1px solid blue;
