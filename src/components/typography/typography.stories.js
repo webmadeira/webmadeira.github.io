@@ -2,8 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import withReadme from 'storybook-readme/with-readme'
 import Readme from './Readme.md'
-
-import '../../../App/global-styles'
+import '../../App/global-styles'
 import {
   H1,
   H2,

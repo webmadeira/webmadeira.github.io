@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import H2 from './H2'
-import theme from '../../../../__mocks__/theme'
+import theme from '../../../__mocks__/theme'
 
 describe('Typography - H2 component', () => {
   it('must render properly', () => {
