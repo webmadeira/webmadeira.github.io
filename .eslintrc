@@ -19,6 +19,7 @@
       "devDependencies": true,
       "optionalDependencies": false,
       "peerDependencies": true
-    }]
+    }],
+    "function-paren-newline": [0, "always"]
   }
 }

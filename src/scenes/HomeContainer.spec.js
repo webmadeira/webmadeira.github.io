@@ -1,15 +1,15 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import configureStore from 'redux-mock-store'
-import App from './Home'
+import HomeContainer from './HomeContainer'
 
 const middlewares = []
 const mockStore = configureStore(middlewares)
 
-describe('App component', () => {
+describe('HomeContainer component', () => {
   it('must render properly', () => {
     const store = mockStore({})
-    const component = shallow(<App store={store} />)
+    const component = shallow(<HomeContainer store={store} />)
 
     expect(component).toMatchSnapshot()
   })

@@ -5,12 +5,12 @@ import PropTypes from 'prop-types'
 
 import './global-styles'
 import * as theme from '../theme'
-import Home from '../scenes/Home'
+import HomeContainer from '../scenes/HomeContainer'
 
 const App = props => (
   <Provider store={props.store}>
     <ThemeProvider theme={theme}>
-      <Home />
+      <HomeContainer />
     </ThemeProvider>
   </Provider>
 )
