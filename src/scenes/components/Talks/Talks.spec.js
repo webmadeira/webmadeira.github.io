@@ -1,10 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Body from './Body'
+import Talks from './Talks'
 
-describe('Body component', () => {
+describe('Talks component', () => {
   it('must render properly', () => {
-    const component = shallow(<Body>Content sample</Body>)
+    const component = shallow(<Talks numTalks={5} />)
 
     expect(component).toMatchSnapshot()
   })

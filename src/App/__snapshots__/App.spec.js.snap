@@ -34,12 +34,22 @@ ShallowWrapper {
             "color": [Function],
             "contrast": [Function],
             "fontFamily": [Function],
+            "mixins": Object {
+              "center": [Function],
+              "mediaQuery": Object {
+                "desktop": [Function],
+                "giant": [Function],
+                "iphone": [Function],
+                "phone": [Function],
+                "tablet": [Function],
+              },
+            },
             "textSetting": [Function],
             "weight": [Function],
           }
         }
       >
-        <Home />
+        <Connect(HomeContainer) />
       </ThemeProvider>,
       "store": Object {
         "clearActions": [Function],
@@ -56,11 +66,21 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Home />,
+        "children": <Connect(HomeContainer) />,
         "theme": Object {
           "color": [Function],
           "contrast": [Function],
           "fontFamily": [Function],
+          "mixins": Object {
+            "center": [Function],
+            "mediaQuery": Object {
+              "desktop": [Function],
+              "giant": [Function],
+              "iphone": [Function],
+              "phone": [Function],
+              "tablet": [Function],
+            },
+          },
           "textSetting": [Function],
           "weight": [Function],
         },
@@ -69,7 +89,7 @@ ShallowWrapper {
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {},
         "ref": null,
         "rendered": null,
@@ -91,12 +111,22 @@ ShallowWrapper {
               "color": [Function],
               "contrast": [Function],
               "fontFamily": [Function],
+              "mixins": Object {
+                "center": [Function],
+                "mediaQuery": Object {
+                  "desktop": [Function],
+                  "giant": [Function],
+                  "iphone": [Function],
+                  "phone": [Function],
+                  "tablet": [Function],
+                },
+              },
               "textSetting": [Function],
               "weight": [Function],
             }
           }
         >
-          <Home />
+          <Connect(HomeContainer) />
         </ThemeProvider>,
         "store": Object {
           "clearActions": [Function],
@@ -113,11 +143,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Home />,
+          "children": <Connect(HomeContainer) />,
           "theme": Object {
             "color": [Function],
             "contrast": [Function],
             "fontFamily": [Function],
+            "mixins": Object {
+              "center": [Function],
+              "mediaQuery": Object {
+                "desktop": [Function],
+                "giant": [Function],
+                "iphone": [Function],
+                "phone": [Function],
+                "tablet": [Function],
+              },
+            },
             "textSetting": [Function],
             "weight": [Function],
           },
@@ -126,7 +166,7 @@ ShallowWrapper {
         "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {},
           "ref": null,
           "rendered": null,
