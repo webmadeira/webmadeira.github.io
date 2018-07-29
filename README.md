@@ -38,6 +38,9 @@ Checks for linting issues at the `src` folder following *airbnb*'s rules (check 
 ### `changelog`
 Generates a shiny new changelog based on the projects versioning history
 
+### `storybook`
+Generates a styleguide for all of our most reused components (like typography) using [Storybook](https://github.com/storybooks/storybook)
+
 ## More about tooling and tech
 
 You can check our [docs](/docs) and find more info about this [project's setup and tech stack](/docs/project-setup.md)
