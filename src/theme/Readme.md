@@ -77,7 +77,11 @@ And as result you the fontface to apply on your *font-family* CSS rule.
 
 ## Mixins
 
-Mixins in this context are JS functions that return CSS that might be used along with other styles. Check `theme/mixins` to see all the existing mixins.
+Mixins in this context are JS functions that return CSS that might be used along with other styles.
+
+### `center()`
+
+Used for centering elements both vertically and horizontally.
 
 ### Usage
 
@@ -96,3 +100,35 @@ const MyComponent = () => (
 
 export default MyComponent
 ~~~
+
+### `mediaQuery()`
+
+Used for media queries covering the following viewport sizes:
+* giant (`1170em`)
+* desktop (`992em`)
+* tablet (`768em`)
+* phone (`480em`)
+* iphone (`376em`)
+
+### Usage
+
+~~~js
+import styled from 'styled-components'
+
+const StyledComponent = styled.div`
+  padding: 10px;
+  font-size: ${props => props.theme.textSetting('nr').fontSize};
+  
+  ${({ theme }) => theme.mixins.mediaQuery.phone`
+    font-size: ${theme.textSetting('xs').fontSize}
+  `};
+`
+
+const MyComponent = () => (
+  <StyledComponent />
+)
+
+export default MyComponent
+~~~
+
+In this example we're setting the `font-size` to be `xs` on a **phone screen size**.

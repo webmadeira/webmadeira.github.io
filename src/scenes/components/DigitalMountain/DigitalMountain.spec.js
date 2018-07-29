@@ -1,10 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Body from './Body'
+import DigitalMountain from './DigitalMountain'
 
-describe('Body component', () => {
+describe('DigitalMountain component', () => {
   it('must render properly', () => {
-    const component = shallow(<Body>Content sample</Body>)
+    const component = shallow(<DigitalMountain />)
 
     expect(component).toMatchSnapshot()
   })

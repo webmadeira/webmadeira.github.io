@@ -1,22 +1,10 @@
 import { injectGlobal } from 'styled-components'
-
+import { fontFamily } from '../theme'
 import RobotoMono from '../theme/fonts/roboto-mono'
 import ACRASTD from '../theme/fonts/ocr-a-std'
 
 /* eslint-disable no-unused-expressions */
 injectGlobal`
-  html,
-  body {
-    margin: 0;
-    font-size: 20px;
-  }
-  html,
-  body,
-  #root {
-    width: 100%;
-    height: 100%;
-  }
-
   /* roboto-mono-light */
   @font-face {
     font-family: 'Roboto Mono';
@@ -51,5 +39,24 @@ injectGlobal`
     font-family: 'OCR A Std';
     font-weight: 400;
     src: url('./${ACRASTD.Regular}');
-  }  
+  }
+
+  html,
+  body {
+    margin: 0;
+    font-size: 16px;
+  }
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+  }
+
+  * {
+    font-family: ${fontFamily('primary')};
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 `

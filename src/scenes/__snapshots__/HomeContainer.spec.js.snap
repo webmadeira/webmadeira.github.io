@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeContainer component must render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Connect(HomeContainer)
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper aliquam massa vel aliquam. Duis eleifend fermentum tortor eu pulvinar. Duis maximus mauris nec metus blandit aliquet. Nulla consequat massa a vehicula rutrum. Maecenas et eleifend purus. Aenean maximus ac sem sed mollis. Donec varius lobortis risus, eget bibendum dui vestibulum vel. Ut ullamcorper faucibus porttitor. Curabitur id imperdiet dolor. Proin finibus euismod neque vel dapibus. Maecenas congue urna non dictum gravida. Nam ultrices vestibulum urna, quis aliquam nisl iaculis nec. Pellentesque rutrum, erat vel malesuada facilisis, erat velit semper nisi, ac porttitor enim dolor at diam. Duis non erat ac turpis vehicula euismod. Sed dignissim eros ut est vestibulum iaculis.",
+      "dispatch": [Function],
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "storeSubscription": Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      },
+      "talks": Array [
+        Object {
+          "description": "",
+          "id": 0,
+        },
+        Object {
+          "description": "",
+          "id": 1,
+        },
+        Object {
+          "description": "",
+          "id": 2,
+        },
+        Object {
+          "description": "",
+          "id": 3,
+        },
+        Object {
+          "description": "",
+          "id": 4,
+        },
+        Object {
+          "description": "",
+          "id": 5,
+        },
+        Object {
+          "description": "",
+          "id": 6,
+        },
+        Object {
+          "description": "",
+          "id": 7,
+        },
+        Object {
+          "description": "",
+          "id": 8,
+        },
+        Object {
+          "description": "",
+          "id": 9,
+        },
+      ],
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper aliquam massa vel aliquam. Duis eleifend fermentum tortor eu pulvinar. Duis maximus mauris nec metus blandit aliquet. Nulla consequat massa a vehicula rutrum. Maecenas et eleifend purus. Aenean maximus ac sem sed mollis. Donec varius lobortis risus, eget bibendum dui vestibulum vel. Ut ullamcorper faucibus porttitor. Curabitur id imperdiet dolor. Proin finibus euismod neque vel dapibus. Maecenas congue urna non dictum gravida. Nam ultrices vestibulum urna, quis aliquam nisl iaculis nec. Pellentesque rutrum, erat vel malesuada facilisis, erat velit semper nisi, ac porttitor enim dolor at diam. Duis non erat ac turpis vehicula euismod. Sed dignissim eros ut est vestibulum iaculis.",
+        "dispatch": [Function],
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "storeSubscription": Subscription {
+          "listeners": Object {
+            "clear": [Function],
+            "get": [Function],
+            "notify": [Function],
+            "subscribe": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          },
+          "unsubscribe": [Function],
+        },
+        "talks": Array [
+          Object {
+            "description": "",
+            "id": 0,
+          },
+          Object {
+            "description": "",
+            "id": 1,
+          },
+          Object {
+            "description": "",
+            "id": 2,
+          },
+          Object {
+            "description": "",
+            "id": 3,
+          },
+          Object {
+            "description": "",
+            "id": 4,
+          },
+          Object {
+            "description": "",
+            "id": 5,
+          },
+          Object {
+            "description": "",
+            "id": 6,
+          },
+          Object {
+            "description": "",
+            "id": 7,
+          },
+          Object {
+            "description": "",
+            "id": 8,
+          },
+          Object {
+            "description": "",
+            "id": 9,
+          },
+        ],
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

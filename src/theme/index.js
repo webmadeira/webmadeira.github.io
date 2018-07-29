@@ -1,5 +1,6 @@
 import { palettes, transparencies } from './color-palettes'
 import { weights, textSettings, fontFamilies } from './typography'
+import * as mixins from './mixins'
 
 function color(level = 'primary', variant = 'base') {
   return palettes[level][variant]
@@ -27,4 +28,5 @@ export {
   textSetting,
   weight,
   fontFamily,
+  mixins,
 }
