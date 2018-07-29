@@ -17,6 +17,7 @@ const style = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+  overflow: 'auto',
 }
 
 const ThemeDecorator = (storyFn) => (
