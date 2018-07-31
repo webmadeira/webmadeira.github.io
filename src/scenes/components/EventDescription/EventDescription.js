@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import AppContainer from '../../../components/AppContainer/AppContainer'
 
 const Container = styled.div`
-  padding: 30% 10px 5% 10px;
+  padding: 20% 10px 5% 10px;
 `
 
 const Description = styled.p`
