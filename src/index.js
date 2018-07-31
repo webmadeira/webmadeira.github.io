@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
-import { createStore } from 'redux'
-import App from './App/App'
-import reducers from './reducers'
+import { createStore, applyMiddleware } from 'redux'
+import promiseMiddleware from 'redux-promise-middleware'
 
-const store = createStore(reducers)
+import reducers from './store/reducers'
+import App from './App/App'
+
+const createStoreWithMiddleware = applyMiddleware(promiseMiddleware())(createStore)
+const store = createStoreWithMiddleware(reducers)
 
 const render = (Component) => {
   ReactDOM.render(
