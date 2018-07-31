@@ -8,41 +8,82 @@ import Footer from './components/Footer/Footer'
 import EventDescription from './components/EventDescription/EventDescription'
 import Talks from './components/Talks/Talks'
 import DigitalMountain from './components/DigitalMountain/DigitalMountain'
+import { getOrganizationDetails } from '../store/actions/organization'
+import { getEventDetails } from '../store/actions/event'
 
-const HomeContainer = ({ description, talks }) => (
-  <Root>
-    <Header />
-    <Body>
-      <DigitalMountain />
-      <EventDescription
-        description={description}
-      >
-        <Talks numTalks={talks.length} />
-      </EventDescription>
-    </Body>
-    <Footer />
-  </Root>
-)
+class HomeContainer extends React.Component {
+  static propTypes = {
+    getOrganizationDetails: PropTypes.func.isRequired,
+    getEventDetails: PropTypes.func.isRequired,
+    event: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      date: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.instanceOf(Date),
+      ]),
+      description: PropTypes.string.isRequired,
+      talks: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+    }).isRequired,
+    organization: PropTypes.shape({
+      logo: PropTypes.string.isRequired,
+    }).isRequired,
+  }
 
-HomeContainer.propTypes = {
-  description: PropTypes.string.isRequired,
-  talks: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  componentDidMount() {
+    this.props.getOrganizationDetails()
+    this.props.getEventDetails(0)
+  }
+
+  render() {
+    const {
+      title,
+      date,
+      description,
+      talks,
+    } = this.props.event
+    const { logo } = this.props.organization
+
+    return (
+      <Root>
+        <Header title={title} date={date} logo={logo} />
+        <Body>
+          <DigitalMountain />
+          <EventDescription
+            description={description}
+          >
+            <Talks numTalks={talks.length} />
+          </EventDescription>
+        </Body>
+        <Footer />
+      </Root>
+    )
+  }
 }
 
-const mapStateToProps = () => ({
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper aliquam massa vel aliquam. Duis eleifend fermentum tortor eu pulvinar. Duis maximus mauris nec metus blandit aliquet. Nulla consequat massa a vehicula rutrum. Maecenas et eleifend purus. Aenean maximus ac sem sed mollis. Donec varius lobortis risus, eget bibendum dui vestibulum vel. Ut ullamcorper faucibus porttitor. Curabitur id imperdiet dolor. Proin finibus euismod neque vel dapibus. Maecenas congue urna non dictum gravida. Nam ultrices vestibulum urna, quis aliquam nisl iaculis nec. Pellentesque rutrum, erat vel malesuada facilisis, erat velit semper nisi, ac porttitor enim dolor at diam. Duis non erat ac turpis vehicula euismod. Sed dignissim eros ut est vestibulum iaculis.',
-  talks: [
-    { id: 0, description: '' },
-    { id: 1, description: '' },
-    { id: 2, description: '' },
-    { id: 3, description: '' },
-    { id: 4, description: '' },
-    { id: 5, description: '' },
-    { id: 6, description: '' },
-    { id: 7, description: '' },
-    { id: 8, description: '' },
-    { id: 9, description: '' },
-  ],
-})
+function mapStateToProps(state) {
+  let newDate = state.event.date
+  let modifinedEvent = state.event
 
-export default connect(mapStateToProps)(HomeContainer)
+  if ((state.event.date) && (typeof state.event.date === 'object')) {
+    const month = newDate.toLocaleString('en-us', { month: 'short' })
+    const day = state.event.date.getDate()
+
+    newDate = `<${month}.${day} />`
+    modifinedEvent = {
+      ...state.event,
+      date: newDate,
+    }
+  }
+
+  return {
+    ...state,
+    event: modifinedEvent,
+  }
+}
+
+const mapDispatchToProps = {
+  getOrganizationDetails,
+  getEventDetails,
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer)
