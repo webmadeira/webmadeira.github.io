@@ -25,7 +25,16 @@ module.exports = {
         },
       },
       {
-        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        test: /.(png|jpg|jp(e)?g|svg)(\?[a-z0-9]+)?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'images/[name].[ext]',
+          },
+        },
+      },
+      {
+        test: /.(ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
         use: {
           loader: 'file-loader',
           options: {
