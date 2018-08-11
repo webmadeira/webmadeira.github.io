@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import AppContainer from '../../../components/AppContainer/AppContainer'
 import DigitalMountain from './components/DigitalMountain/DigitalMountain'
+import CtaButtons from '../CtaButtons/CtaButtons'
 
 const Root = styled.div`
   position: relative;
@@ -23,6 +24,7 @@ const Description = styled.p`
 const EventDescription = ({ description, children }) => (
   <Root>
     <DigitalMountain />
+    <CtaButtons />
     <AppContainer type="primary">
       <Container>
         <Description>{description}</Description>
