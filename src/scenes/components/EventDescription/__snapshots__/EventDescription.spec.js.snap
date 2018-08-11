@@ -25,6 +25,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <WMLogo />,
+        <CtaButtons />,
         <styled.section
           type="primary"
         >
@@ -41,6 +42,15 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -120,6 +130,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <WMLogo />,
+          <CtaButtons />,
           <styled.section
             type="primary"
           >
@@ -136,6 +147,15 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
