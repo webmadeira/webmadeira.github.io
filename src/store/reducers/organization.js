@@ -2,6 +2,7 @@ import { FETCH_ORGANIZATION_FULFILLED } from '../actions/types'
 
 const INITIAL_STATE = {
   logo: '',
+  social: [],
 }
 
 export default (state = INITIAL_STATE, action) => {

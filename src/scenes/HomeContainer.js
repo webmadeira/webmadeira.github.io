@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer'
 import EventDescription from './components/EventDescription/EventDescription'
 import Talks from './components/Talks/Talks'
 import { getOrganizationDetails } from '../store/actions/organization'
-import { getEventDetails } from '../store/actions/event'
+import { getEventDetails, getPastEvents } from '../store/actions/event'
 import { getSpeakers } from '../store/actions/speaker'
 import Speakers from './components/Speakers/Speakers'
 
@@ -17,6 +17,7 @@ class HomeContainer extends React.Component {
     getOrganizationDetails: PropTypes.func.isRequired,
     getEventDetails: PropTypes.func.isRequired,
     getSpeakers: PropTypes.func.isRequired,
+    getPastEvents: PropTypes.func.isRequired,
     event: PropTypes.shape({
       title: PropTypes.string.isRequired,
       date: PropTypes.oneOfType([
@@ -25,10 +26,22 @@ class HomeContainer extends React.Component {
       ]),
       description: PropTypes.string.isRequired,
       talks: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+      pastEvents: PropTypes.PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number,
+          link: PropTypes.string,
+          name: PropTypes.string,
+        })).isRequired,
     }).isRequired,
     speakers: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
     organization: PropTypes.shape({
       logo: PropTypes.string.isRequired,
+      social: PropTypes.PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number,
+          name: PropTypes.string,
+          path: PropTypes.string,
+        })).isRequired,
     }).isRequired,
   }
 
@@ -36,16 +49,18 @@ class HomeContainer extends React.Component {
     this.props.getOrganizationDetails()
     this.props.getEventDetails(0)
     this.props.getSpeakers(2018)
+    this.props.getPastEvents()
   }
 
   render() {
     const { speakers } = this.props
-    const { logo } = this.props.organization
+    const { logo, social } = this.props.organization
     const {
       title,
       date,
       description,
       talks,
+      pastEvents,
     } = this.props.event
 
     return (
@@ -59,7 +74,7 @@ class HomeContainer extends React.Component {
           </EventDescription>
           <Speakers speakers={speakers} />
         </Body>
-        <Footer />
+        <Footer pastEvents={pastEvents} social={social} />
       </Root>
     )
   }
@@ -91,6 +106,7 @@ const mapDispatchToProps = {
   getOrganizationDetails,
   getEventDetails,
   getSpeakers,
+  getPastEvents,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer)

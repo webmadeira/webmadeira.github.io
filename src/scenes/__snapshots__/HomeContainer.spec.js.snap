@@ -31,6 +31,13 @@ ShallowWrapper {
       "event": Object {
         "date": "Test date",
         "description": "Test description",
+        "pastEvents": Array [
+          Object {
+            "id": 0,
+            "name": "Test event",
+            "path": "http://test.url.com/",
+          },
+        ],
         "talks": Array [
           Object {
             "description": "Test talk 1",
@@ -45,9 +52,17 @@ ShallowWrapper {
       },
       "getEventDetails": [Function],
       "getOrganizationDetails": [Function],
+      "getPastEvents": [Function],
       "getSpeakers": [Function],
       "organization": Object {
         "logo": "logo path",
+        "social": Array [
+          Object {
+            "id": 1,
+            "name": "test social",
+            "path": "/testSocial",
+          },
+        ],
       },
       "speakers": Array [
         Object {
@@ -111,6 +126,13 @@ ShallowWrapper {
         "event": Object {
           "date": "Test date",
           "description": "Test description",
+          "pastEvents": Array [
+            Object {
+              "id": 0,
+              "name": "Test event",
+              "path": "http://test.url.com/",
+            },
+          ],
           "talks": Array [
             Object {
               "description": "Test talk 1",
@@ -125,9 +147,17 @@ ShallowWrapper {
         },
         "getEventDetails": [Function],
         "getOrganizationDetails": [Function],
+        "getPastEvents": [Function],
         "getSpeakers": [Function],
         "organization": Object {
           "logo": "logo path",
+          "social": Array [
+            Object {
+              "id": 1,
+              "name": "test social",
+              "path": "/testSocial",
+            },
+          ],
         },
         "speakers": Array [
           Object {
@@ -224,6 +254,13 @@ ShallowWrapper {
       "event": Object {
         "date": "<Aug.10 />",
         "description": "Test description",
+        "pastEvents": Array [
+          Object {
+            "id": 0,
+            "name": "Test event",
+            "path": "http://test.url.com/",
+          },
+        ],
         "talks": Array [
           Object {
             "description": "Test talk 1",
@@ -238,9 +275,17 @@ ShallowWrapper {
       },
       "getEventDetails": [Function],
       "getOrganizationDetails": [Function],
+      "getPastEvents": [Function],
       "getSpeakers": [Function],
       "organization": Object {
         "logo": "logo path",
+        "social": Array [
+          Object {
+            "id": 1,
+            "name": "test social",
+            "path": "/testSocial",
+          },
+        ],
       },
       "speakers": Array [
         Object {
@@ -304,6 +349,13 @@ ShallowWrapper {
         "event": Object {
           "date": "<Aug.10 />",
           "description": "Test description",
+          "pastEvents": Array [
+            Object {
+              "id": 0,
+              "name": "Test event",
+              "path": "http://test.url.com/",
+            },
+          ],
           "talks": Array [
             Object {
               "description": "Test talk 1",
@@ -318,9 +370,17 @@ ShallowWrapper {
         },
         "getEventDetails": [Function],
         "getOrganizationDetails": [Function],
+        "getPastEvents": [Function],
         "getSpeakers": [Function],
         "organization": Object {
           "logo": "logo path",
+          "social": Array [
+            Object {
+              "id": 1,
+              "name": "test social",
+              "path": "/testSocial",
+            },
+          ],
         },
         "speakers": Array [
           Object {

@@ -1,6 +1,7 @@
 import {
   FETCH_EVENTS_FULFILLED,
   FETCH_EVENT_DETAILS_FULFILLED,
+  FETCH_PAST_EVENTS_FULFILLED,
 } from '../actions/types'
 
 const INITIAL_STATE = {
@@ -11,6 +12,7 @@ const INITIAL_STATE = {
   title: '',
   description: '',
   talks: [],
+  pastEvents: [],
 }
 
 export default (state = INITIAL_STATE, action) => {
@@ -25,6 +27,12 @@ export default (state = INITIAL_STATE, action) => {
       }
 
     case FETCH_EVENT_DETAILS_FULFILLED:
+      return {
+        ...state,
+        ...action.payload,
+      }
+
+    case FETCH_PAST_EVENTS_FULFILLED:
       return {
         ...state,
         ...action.payload,
