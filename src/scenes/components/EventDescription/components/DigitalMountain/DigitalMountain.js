@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../../../assets/img/digital-mountain.svg'
+import logo from '../../../../../assets/img/digital-mountain.svg'
 
 const Img = styled.img`
   position: absolute;
-  top: -100px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;

@@ -1,0 +1,80 @@
+import { FETCH_SPEAKERS } from './types'
+
+const getSpeakers = year => ({ // eslint-disable-line
+  type: FETCH_SPEAKERS,
+  payload: Promise.resolve({
+    speakers: [
+      {
+        id: 0,
+        name: 'André Gonçalves',
+        company: 'Freelancer',
+        jobTitle: 'Web Dev Consultant',
+        personalWebsite: 'https://github.com/andregoncalves',
+        bwPhoto: 'https://i.imgur.com/sA9HCw0.jpg',
+        photo: 'https://i.imgur.com/HE7bKMs.jpg',
+      },
+      {
+        id: 1,
+        name: 'Aurélio Pita',
+        company: 'Blip',
+        jobTitle: 'Front End Developer',
+        jobWebsite: 'https://blip.pt/',
+        personalWebsite: 'https://github.com/jaapaurelio',
+        bwPhoto: 'https://i.imgur.com/dXgPBZO.jpg',
+        photo: 'https://i.imgur.com/xaiwnx6.jpg',
+      },
+      {
+        id: 2,
+        name: 'Cristian Gonçalves',
+        company: 'Exictos',
+        jobTitle: 'DevOps',
+        jobWebsite: 'https://www.exictos.com/',
+        personalWebsite: '',
+        bwPhoto: 'https://i.imgur.com/sXovdNK.jpg',
+        photo: 'https://i.imgur.com/sXovdNK.jpg',
+      },
+      {
+        id: 3,
+        name: 'Diogo Santos',
+        company: 'Nearsoft Solutions',
+        jobTitle: 'FullStack Developer',
+        jobWebsite: 'https://nearsoftsolutions.com/',
+        personalWebsite: 'https://github.com/daspinola',
+        bwPhoto: 'https://i.imgur.com/X5pTBos.jpg',
+        photo: 'https://i.imgur.com/FWlHvpL.jpg',
+      },
+      {
+        id: 4,
+        name: 'Paulo Caldeira',
+        company: 'Curve Ltd',
+        jobTitle: 'FullStack Developer',
+        jobWebsite: 'https://www.imaginecurve.com/',
+        personalWebsite: 'https://github.com/paulocaldeira17',
+        bwPhoto: 'https://i.imgur.com/vQRO8ii.jpg',
+        photo: 'https://i.imgur.com/fAbvGYl.jpg',
+      },
+      {
+        id: 5,
+        name: 'Pedro Teixeira',
+        company: 'Protocol Labs',
+        jobTitle: 'Software Engineer',
+        jobWebsite: 'https://protocol.ai/',
+        personalWebsite: 'https://github.com/pgte',
+        bwPhoto: 'https://i.imgur.com/G5ZVUX2.jpg',
+        photo: 'https://i.imgur.com/Uii1DWH.jpg',
+      },
+      {
+        id: 6,
+        name: 'Rodolfo Gonçalves',
+        company: 'Blip',
+        jobTitle: 'Front End Developer',
+        jobWebsite: 'https://blip.pt/',
+        personalWebsite: 'http://www.orodolfo.com/',
+        bwPhoto: 'https://i.imgur.com/uPGUVyQ.jpg',
+        photo: 'https://i.imgur.com/zaUJunJ.jpg',
+      },
+    ],
+  }),
+})
+
+export { getSpeakers } // eslint-disable-line import/prefer-default-export
