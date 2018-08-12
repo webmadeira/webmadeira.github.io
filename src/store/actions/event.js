@@ -1,6 +1,7 @@
 import {
   FETCH_EVENTS,
   FETCH_EVENT_DETAILS,
+  FETCH_PAST_EVENTS,
 } from './types'
 
 const getEvents = () => ({
@@ -51,7 +52,21 @@ const getEventDetails = id => ({
   }),
 })
 
+const getPastEvents = () => ({
+  type: FETCH_PAST_EVENTS,
+  payload: Promise.resolve({
+    pastEvents: [
+      {
+        id: 0,
+        name: 'WebMadeira 2016',
+        path: 'http://webmadeira.herokuapp.com/',
+      },
+    ],
+  }),
+})
+
 export {
   getEvents,
   getEventDetails,
+  getPastEvents,
 }

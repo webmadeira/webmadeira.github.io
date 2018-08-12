@@ -20,9 +20,19 @@ describe('HomeContainer component', () => {
             { id: 0, description: 'Test talk 1' },
             { id: 1, description: 'Test talk 2' },
           ],
+          pastEvents: [
+            {
+              id: 0,
+              name: 'Test event',
+              path: 'http://test.url.com/',
+            },
+          ],
         },
         organization: {
           logo: 'logo path',
+          social: [
+            { id: 1, name: 'test social', path: '/testSocial' },
+          ],
         },
         speaker: {
           speakers: [
