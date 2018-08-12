@@ -7,14 +7,16 @@ import Body from './components/Body/Body'
 import Footer from './components/Footer/Footer'
 import EventDescription from './components/EventDescription/EventDescription'
 import Talks from './components/Talks/Talks'
-import DigitalMountain from './components/DigitalMountain/DigitalMountain'
 import { getOrganizationDetails } from '../store/actions/organization'
 import { getEventDetails } from '../store/actions/event'
+import { getSpeakers } from '../store/actions/speaker'
+import Speakers from './components/Speakers/Speakers'
 
 class HomeContainer extends React.Component {
   static propTypes = {
     getOrganizationDetails: PropTypes.func.isRequired,
     getEventDetails: PropTypes.func.isRequired,
+    getSpeakers: PropTypes.func.isRequired,
     event: PropTypes.shape({
       title: PropTypes.string.isRequired,
       date: PropTypes.oneOfType([
@@ -24,6 +26,7 @@ class HomeContainer extends React.Component {
       description: PropTypes.string.isRequired,
       talks: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
     }).isRequired,
+    speakers: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
     organization: PropTypes.shape({
       logo: PropTypes.string.isRequired,
     }).isRequired,
@@ -32,27 +35,29 @@ class HomeContainer extends React.Component {
   componentDidMount() {
     this.props.getOrganizationDetails()
     this.props.getEventDetails(0)
+    this.props.getSpeakers(2018)
   }
 
   render() {
+    const { speakers } = this.props
+    const { logo } = this.props.organization
     const {
       title,
       date,
       description,
       talks,
     } = this.props.event
-    const { logo } = this.props.organization
 
     return (
       <Root>
         <Header title={title} date={date} logo={logo} />
         <Body>
-          <DigitalMountain />
           <EventDescription
             description={description}
           >
             <Talks numTalks={talks.length} />
           </EventDescription>
+          <Speakers speakers={speakers} />
         </Body>
         <Footer />
       </Root>
@@ -60,23 +65,24 @@ class HomeContainer extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
-  let newDate = state.event.date
-  let modifinedEvent = state.event
+function mapStateToProps({ event, organization, speaker: { speakers } }) {
+  let newDate = event.date
+  let modifinedEvent = event
 
-  if ((state.event.date) && (typeof state.event.date === 'object')) {
+  if ((event.date) && (typeof event.date === 'object')) {
     const month = newDate.toLocaleString('en-us', { month: 'short' })
-    const day = state.event.date.getDate()
+    const day = event.date.getDate()
 
     newDate = `<${month}.${day} />`
     modifinedEvent = {
-      ...state.event,
+      ...event,
       date: newDate,
     }
   }
 
   return {
-    ...state,
+    speakers,
+    organization,
     event: modifinedEvent,
   }
 }
@@ -84,6 +90,7 @@ function mapStateToProps(state) {
 const mapDispatchToProps = {
   getOrganizationDetails,
   getEventDetails,
+  getSpeakers,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer)

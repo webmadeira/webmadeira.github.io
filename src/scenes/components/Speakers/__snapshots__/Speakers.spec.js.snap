@@ -1,0 +1,551 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Speakers component must render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Speakers
+    speakers={
+      Array [
+        Object {
+          "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+          "company": "Freelancer",
+          "id": 0,
+          "jobTitle": "Web Dev Consultant",
+          "name": "André Gonçalves",
+          "personalWebsite": "https://github.com/andregoncalves",
+          "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+        },
+        Object {
+          "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+          "company": "Blip",
+          "id": 1,
+          "jobTitle": "Front End Developer",
+          "jobWebsite": "https://blip.pt/",
+          "name": "Aurélio Pita",
+          "personalWebsite": "https://github.com/jaapaurelio",
+          "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <styled.section>
+        <styled.section>
+          <styled.h2>
+            Speakers
+          </styled.h2>
+        </styled.section>
+        <styled.ul>
+          <styled.li>
+            <Speaker
+              speaker={
+                Object {
+                  "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                  "company": "Freelancer",
+                  "id": 0,
+                  "jobTitle": "Web Dev Consultant",
+                  "name": "André Gonçalves",
+                  "personalWebsite": "https://github.com/andregoncalves",
+                  "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                }
+              }
+            />
+          </styled.li>
+          <styled.li>
+            <Speaker
+              speaker={
+                Object {
+                  "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                  "company": "Blip",
+                  "id": 1,
+                  "jobTitle": "Front End Developer",
+                  "jobWebsite": "https://blip.pt/",
+                  "name": "Aurélio Pita",
+                  "personalWebsite": "https://github.com/jaapaurelio",
+                  "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                }
+              }
+            />
+          </styled.li>
+        </styled.ul>
+      </styled.section>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.section>
+            <styled.h2>
+              Speakers
+            </styled.h2>
+          </styled.section>,
+          <styled.ul>
+            <styled.li>
+              <Speaker
+                speaker={
+                  Object {
+                    "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                    "company": "Freelancer",
+                    "id": 0,
+                    "jobTitle": "Web Dev Consultant",
+                    "name": "André Gonçalves",
+                    "personalWebsite": "https://github.com/andregoncalves",
+                    "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                  }
+                }
+              />
+            </styled.li>
+            <styled.li>
+              <Speaker
+                speaker={
+                  Object {
+                    "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                    "company": "Blip",
+                    "id": 1,
+                    "jobTitle": "Front End Developer",
+                    "jobWebsite": "https://blip.pt/",
+                    "name": "Aurélio Pita",
+                    "personalWebsite": "https://github.com/jaapaurelio",
+                    "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                  }
+                }
+              />
+            </styled.li>
+          </styled.ul>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <styled.h2>
+              Speakers
+            </styled.h2>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Speakers",
+            },
+            "ref": null,
+            "rendered": "Speakers",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.li>
+                <Speaker
+                  speaker={
+                    Object {
+                      "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                      "company": "Freelancer",
+                      "id": 0,
+                      "jobTitle": "Web Dev Consultant",
+                      "name": "André Gonçalves",
+                      "personalWebsite": "https://github.com/andregoncalves",
+                      "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                    }
+                  }
+                />
+              </styled.li>,
+              <styled.li>
+                <Speaker
+                  speaker={
+                    Object {
+                      "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                      "company": "Blip",
+                      "id": 1,
+                      "jobTitle": "Front End Developer",
+                      "jobWebsite": "https://blip.pt/",
+                      "name": "Aurélio Pita",
+                      "personalWebsite": "https://github.com/jaapaurelio",
+                      "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                    }
+                  }
+                />
+              </styled.li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "children": <Speaker
+                  speaker={
+                    Object {
+                      "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                      "company": "Freelancer",
+                      "id": 0,
+                      "jobTitle": "Web Dev Consultant",
+                      "name": "André Gonçalves",
+                      "personalWebsite": "https://github.com/andregoncalves",
+                      "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                    }
+                  }
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "speaker": Object {
+                    "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                    "company": "Freelancer",
+                    "id": 0,
+                    "jobTitle": "Web Dev Consultant",
+                    "name": "André Gonçalves",
+                    "personalWebsite": "https://github.com/andregoncalves",
+                    "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "children": <Speaker
+                  speaker={
+                    Object {
+                      "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                      "company": "Blip",
+                      "id": 1,
+                      "jobTitle": "Front End Developer",
+                      "jobWebsite": "https://blip.pt/",
+                      "name": "Aurélio Pita",
+                      "personalWebsite": "https://github.com/jaapaurelio",
+                      "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                    }
+                  }
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "speaker": Object {
+                    "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                    "company": "Blip",
+                    "id": 1,
+                    "jobTitle": "Front End Developer",
+                    "jobWebsite": "https://blip.pt/",
+                    "name": "Aurélio Pita",
+                    "personalWebsite": "https://github.com/jaapaurelio",
+                    "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <styled.section>
+          <styled.section>
+            <styled.h2>
+              Speakers
+            </styled.h2>
+          </styled.section>
+          <styled.ul>
+            <styled.li>
+              <Speaker
+                speaker={
+                  Object {
+                    "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                    "company": "Freelancer",
+                    "id": 0,
+                    "jobTitle": "Web Dev Consultant",
+                    "name": "André Gonçalves",
+                    "personalWebsite": "https://github.com/andregoncalves",
+                    "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                  }
+                }
+              />
+            </styled.li>
+            <styled.li>
+              <Speaker
+                speaker={
+                  Object {
+                    "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                    "company": "Blip",
+                    "id": 1,
+                    "jobTitle": "Front End Developer",
+                    "jobWebsite": "https://blip.pt/",
+                    "name": "Aurélio Pita",
+                    "personalWebsite": "https://github.com/jaapaurelio",
+                    "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                  }
+                }
+              />
+            </styled.li>
+          </styled.ul>
+        </styled.section>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.section>
+              <styled.h2>
+                Speakers
+              </styled.h2>
+            </styled.section>,
+            <styled.ul>
+              <styled.li>
+                <Speaker
+                  speaker={
+                    Object {
+                      "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                      "company": "Freelancer",
+                      "id": 0,
+                      "jobTitle": "Web Dev Consultant",
+                      "name": "André Gonçalves",
+                      "personalWebsite": "https://github.com/andregoncalves",
+                      "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                    }
+                  }
+                />
+              </styled.li>
+              <styled.li>
+                <Speaker
+                  speaker={
+                    Object {
+                      "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                      "company": "Blip",
+                      "id": 1,
+                      "jobTitle": "Front End Developer",
+                      "jobWebsite": "https://blip.pt/",
+                      "name": "Aurélio Pita",
+                      "personalWebsite": "https://github.com/jaapaurelio",
+                      "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                    }
+                  }
+                />
+              </styled.li>
+            </styled.ul>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <styled.h2>
+                Speakers
+              </styled.h2>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Speakers",
+              },
+              "ref": null,
+              "rendered": "Speakers",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <styled.li>
+                  <Speaker
+                    speaker={
+                      Object {
+                        "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                        "company": "Freelancer",
+                        "id": 0,
+                        "jobTitle": "Web Dev Consultant",
+                        "name": "André Gonçalves",
+                        "personalWebsite": "https://github.com/andregoncalves",
+                        "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                      }
+                    }
+                  />
+                </styled.li>,
+                <styled.li>
+                  <Speaker
+                    speaker={
+                      Object {
+                        "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                        "company": "Blip",
+                        "id": 1,
+                        "jobTitle": "Front End Developer",
+                        "jobWebsite": "https://blip.pt/",
+                        "name": "Aurélio Pita",
+                        "personalWebsite": "https://github.com/jaapaurelio",
+                        "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                      }
+                    }
+                  />
+                </styled.li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Speaker
+                    speaker={
+                      Object {
+                        "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                        "company": "Freelancer",
+                        "id": 0,
+                        "jobTitle": "Web Dev Consultant",
+                        "name": "André Gonçalves",
+                        "personalWebsite": "https://github.com/andregoncalves",
+                        "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                      }
+                    }
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "speaker": Object {
+                      "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                      "company": "Freelancer",
+                      "id": 0,
+                      "jobTitle": "Web Dev Consultant",
+                      "name": "André Gonçalves",
+                      "personalWebsite": "https://github.com/andregoncalves",
+                      "photo": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Speaker
+                    speaker={
+                      Object {
+                        "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                        "company": "Blip",
+                        "id": 1,
+                        "jobTitle": "Front End Developer",
+                        "jobWebsite": "https://blip.pt/",
+                        "name": "Aurélio Pita",
+                        "personalWebsite": "https://github.com/jaapaurelio",
+                        "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                      }
+                    }
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "speaker": Object {
+                      "bwPhoto": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                      "company": "Blip",
+                      "id": 1,
+                      "jobTitle": "Front End Developer",
+                      "jobWebsite": "https://blip.pt/",
+                      "name": "Aurélio Pita",
+                      "personalWebsite": "https://github.com/jaapaurelio",
+                      "photo": "https://avatars3.githubusercontent.com/u/2837728?s=460&v=4",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 const Container = styled.section`
   flex-grow: 1;
   text-align: center;
-  position: relative;
 `
 
 const Body = ({ children }) => (

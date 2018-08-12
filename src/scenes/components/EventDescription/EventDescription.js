@@ -2,9 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import AppContainer from '../../../components/AppContainer/AppContainer'
+import DigitalMountain from './components/DigitalMountain/DigitalMountain'
+
+const Root = styled.div`
+  position: relative;
+  overflow: hidden;
+`
 
 const Container = styled.div`
-  padding: 20% 10px 5% 10px;
+  padding-top: 20%;
+  padding-bottom: 5%;
 `
 
 const Description = styled.p`
@@ -14,12 +21,15 @@ const Description = styled.p`
 `
 
 const EventDescription = ({ description, children }) => (
-  <AppContainer type="primary">
-    <Container>
-      <Description>{description}</Description>
-      {children}
-    </Container>
-  </AppContainer>
+  <Root>
+    <DigitalMountain />
+    <AppContainer type="primary">
+      <Container>
+        <Description>{description}</Description>
+        {children}
+      </Container>
+    </AppContainer>
+  </Root>
 )
 
 EventDescription.propTypes = {
