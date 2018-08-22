@@ -27,10 +27,18 @@ const Container = styled.section`
   align-items: flex-start;
   background-color: ${props => props.theme.color('neutral', 'base')};
   color: ${props => props.theme.color('neutral', 'bright')};
+
+  ${({ theme }) => theme.mixins.mediaQuery.tablet`
+    justify-content: center;
+  `};
 `
 
 const WebConferencesContainer = styled.div`
   text-align: center;
+
+  ${({ theme }) => theme.mixins.mediaQuery.tablet`
+    display: none;
+  `};
 `
 
 const SocialContainer = styled.div`
@@ -64,6 +72,12 @@ const SocialListItem = styled.li`
   width: 34px;
   height: 34px;
   margin-right: 16px;
+`
+
+const ResponsiveH2 = styled(H2)`
+  ${({ theme }) => theme.mixins.mediaQuery.tablet`
+    text-align: center;
+  `};
 `
 
 const PastEventItem = props => (
@@ -117,7 +131,7 @@ const Footer = ({ pastEvents, social }) => {
         </Body2>
       </WebConferencesContainer>
       <SocialContainer>
-        <H2>SOCIAL</H2>
+        <ResponsiveH2>SOCIAL</ResponsiveH2>
         <SocialList>
           {socialList}
         </SocialList>
