@@ -52,19 +52,19 @@ ShallowWrapper {
           </styled.h3>
         </styled.div>,
         <styled.div>
-          <styled.span>
+          <styled.p>
             Web Dev Consultant
             ,
-          </styled.span>
+          </styled.p>
           <br />
-          <styled.span>
+          <styled.p>
             at 
             <styled.a
               href={undefined}
             >
               Freelancer
             </styled.a>
-          </styled.span>
+          </styled.p>
         </styled.div>,
       ],
     },
@@ -146,19 +146,19 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <styled.span>
+            <styled.p>
               Web Dev Consultant
               ,
-            </styled.span>,
+            </styled.p>,
             <br />,
-            <styled.span>
+            <styled.p>
               at 
               <styled.a
                 href={undefined}
               >
                 Freelancer
               </styled.a>
-            </styled.span>,
+            </styled.p>,
           ],
         },
         "ref": null,
@@ -256,19 +256,19 @@ ShallowWrapper {
             </styled.h3>
           </styled.div>,
           <styled.div>
-            <styled.span>
+            <styled.p>
               Web Dev Consultant
               ,
-            </styled.span>
+            </styled.p>
             <br />
-            <styled.span>
+            <styled.p>
               at 
               <styled.a
                 href={undefined}
               >
                 Freelancer
               </styled.a>
-            </styled.span>
+            </styled.p>
           </styled.div>,
         ],
       },
@@ -350,19 +350,19 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <styled.span>
+              <styled.p>
                 Web Dev Consultant
                 ,
-              </styled.span>,
+              </styled.p>,
               <br />,
-              <styled.span>
+              <styled.p>
                 at 
                 <styled.a
                   href={undefined}
                 >
                   Freelancer
                 </styled.a>
-              </styled.span>,
+              </styled.p>,
             ],
           },
           "ref": null,

@@ -41,7 +41,7 @@ ShallowWrapper {
           <styled.h2>
             WEBMADEIRA CONFERENCES
           </styled.h2>
-          <styled.span>
+          <styled.p>
             <styled.ul>
               <PastEventItem
                 name="Test event"
@@ -64,7 +64,7 @@ ShallowWrapper {
                 </styled.a>
               </styled.li>
             </styled.ul>
-          </styled.span>
+          </styled.p>
         </styled.div>,
         <styled.div>
           <Styled(styled.h2)>
@@ -90,7 +90,7 @@ ShallowWrapper {
             <styled.h2>
               WEBMADEIRA CONFERENCES
             </styled.h2>,
-            <styled.span>
+            <styled.p>
               <styled.ul>
                 <PastEventItem
                   name="Test event"
@@ -113,7 +113,7 @@ ShallowWrapper {
                   </styled.a>
                 </styled.li>
               </styled.ul>
-            </styled.span>,
+            </styled.p>,
           ],
         },
         "ref": null,
@@ -342,7 +342,7 @@ ShallowWrapper {
             <styled.h2>
               WEBMADEIRA CONFERENCES
             </styled.h2>
-            <styled.span>
+            <styled.p>
               <styled.ul>
                 <PastEventItem
                   name="Test event"
@@ -365,7 +365,7 @@ ShallowWrapper {
                   </styled.a>
                 </styled.li>
               </styled.ul>
-            </styled.span>
+            </styled.p>
           </styled.div>,
           <styled.div>
             <Styled(styled.h2)>
@@ -391,7 +391,7 @@ ShallowWrapper {
               <styled.h2>
                 WEBMADEIRA CONFERENCES
               </styled.h2>,
-              <styled.span>
+              <styled.p>
                 <styled.ul>
                   <PastEventItem
                     name="Test event"
@@ -414,7 +414,7 @@ ShallowWrapper {
                     </styled.a>
                   </styled.li>
                 </styled.ul>
-              </styled.span>,
+              </styled.p>,
             ],
           },
           "ref": null,

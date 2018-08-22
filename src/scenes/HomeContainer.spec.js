@@ -14,6 +14,7 @@ describe('HomeContainer component', () => {
       store: {
         event: {
           title: 'Test title',
+          logo: 'Test logo',
           date: 'Test date',
           description: 'Test description',
           talks: [

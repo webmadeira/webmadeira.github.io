@@ -4,7 +4,7 @@ exports[`Typography - Body1 component must render properly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <styled.span
+  Symbol(enzyme.__unrendered__): <styled.p
     theme={
       Object {
         "color": [Function],
@@ -16,7 +16,7 @@ ShallowWrapper {
     }
   >
     Body 1
-  </styled.span>,
+  </styled.p>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -34,7 +34,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": "Body 1",
-    "type": "span",
+    "type": "p",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -47,7 +47,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": "Body 1",
-      "type": "span",
+      "type": "p",
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -1,7 +1,6 @@
 import { FETCH_ORGANIZATION_FULFILLED } from '../actions/types'
 
 const INITIAL_STATE = {
-  logo: '',
   social: [],
 }
 

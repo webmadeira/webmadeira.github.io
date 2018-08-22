@@ -6,7 +6,6 @@ describe('Event action creators', () => {
 
   beforeEach(() => {
     expectedKeys = [
-      'logo',
       'social',
     ]
   })

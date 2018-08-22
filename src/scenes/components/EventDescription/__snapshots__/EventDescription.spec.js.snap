@@ -24,15 +24,12 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <WMLogo />,
         <CtaButtons />,
-        <styled.section
-          type="primary"
-        >
+        <styled.section>
           <styled.div>
-            <styled.p>
+            <Styled(styled.p)>
               Description sample
-            </styled.p>
+            </Styled(styled.p)>
             <p>
               Content
             </p>
@@ -54,26 +51,16 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "children": <styled.div>
-            <styled.p>
+            <Styled(styled.p)>
               Description sample
-            </styled.p>
+            </Styled(styled.p)>
             <p>
               Content
             </p>
           </styled.div>,
-          "type": "primary",
         },
         "ref": null,
         "rendered": Object {
@@ -82,9 +69,9 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <styled.p>
+              <Styled(styled.p)>
                 Description sample
-              </styled.p>,
+              </Styled(styled.p)>,
               <p>
                 Content
               </p>,
@@ -129,15 +116,12 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <WMLogo />,
           <CtaButtons />,
-          <styled.section
-            type="primary"
-          >
+          <styled.section>
             <styled.div>
-              <styled.p>
+              <Styled(styled.p)>
                 Description sample
-              </styled.p>
+              </Styled(styled.p)>
               <p>
                 Content
               </p>
@@ -159,26 +143,16 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "children": <styled.div>
-              <styled.p>
+              <Styled(styled.p)>
                 Description sample
-              </styled.p>
+              </Styled(styled.p)>
               <p>
                 Content
               </p>
             </styled.div>,
-            "type": "primary",
           },
           "ref": null,
           "rendered": Object {
@@ -187,9 +161,9 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                <styled.p>
+                <Styled(styled.p)>
                   Description sample
-                </styled.p>,
+                </Styled(styled.p)>,
                 <p>
                   Content
                 </p>,

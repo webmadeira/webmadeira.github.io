@@ -9,6 +9,7 @@ describe('Event action creators', () => {
     expectedKeys = [
       'id',
       'title',
+      'logo',
       'date',
       'description',
       'talks',
