@@ -20,6 +20,7 @@ class HomeContainer extends React.Component {
     getPastEvents: PropTypes.func.isRequired,
     event: PropTypes.shape({
       title: PropTypes.string.isRequired,
+      logo: PropTypes.string.isRequired,
       date: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.instanceOf(Date),
@@ -35,7 +36,6 @@ class HomeContainer extends React.Component {
     }).isRequired,
     speakers: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
     organization: PropTypes.shape({
-      logo: PropTypes.string.isRequired,
       social: PropTypes.PropTypes.arrayOf(
         PropTypes.shape({
           id: PropTypes.number,
@@ -54,12 +54,13 @@ class HomeContainer extends React.Component {
 
   render() {
     const { speakers } = this.props
-    const { logo, social } = this.props.organization
+    const { social } = this.props.organization
     const {
       title,
       date,
       description,
       talks,
+      logo,
       pastEvents,
     } = this.props.event
 

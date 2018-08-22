@@ -1,17 +1,9 @@
-// these sizes are arbitrary and you can set them to whatever you wish
 import { css } from 'styled-components'
-
-const sizes = {
-  giant: 1170,
-  desktop: 992,
-  tablet: 768,
-  phone: 480,
-  iphone: 376,
-}
+import deviceWidths from './device-widths'
 
 // iterate through the sizes and create a media template
-const mediaQuery = Object.keys(sizes).reduce((acc, label) => {
-  const emSize = sizes[label] / 16
+const mediaQuery = Object.keys(deviceWidths).reduce((acc, label) => {
+  const emSize = deviceWidths[label] / 16
   const accumulator = Object.assign(
     {},
     acc,

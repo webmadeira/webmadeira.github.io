@@ -2,30 +2,32 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import AppContainer from '../../../components/AppContainer/AppContainer'
-import DigitalMountain from './components/DigitalMountain/DigitalMountain'
+import { Body2 } from '../../../components/typography'
+import '../../../assets/img/digital-mountain.svg'
 import CtaButtons from '../CtaButtons/CtaButtons'
 
 const Root = styled.div`
-  position: relative;
-  overflow: hidden;
+  background-color: ${props => props.theme.color()}
+  background-image: url(/images/digital-mountain.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 `
 
 const Container = styled.div`
-  padding-top: 20%;
+  padding-top: 35%;
   padding-bottom: 5%;
 `
 
-const Description = styled.p`
+const Description = styled(Body2)`
   text-align: left;
-  font-size: ${props => props.theme.textSetting('nr').fontSize};
   color: ${props => props.theme.color('neutral', 'bright')};
 `
 
 const EventDescription = ({ description, children }) => (
   <Root>
-    <DigitalMountain />
     <CtaButtons />
-    <AppContainer type="primary">
+    <AppContainer>
       <Container>
         <Description>{description}</Description>
         {children}

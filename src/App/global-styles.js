@@ -1,5 +1,5 @@
 import { injectGlobal } from 'styled-components'
-import { fontFamily } from '../theme'
+import { fontFamily, mixins } from '../theme'
 import RobotoMono from '../theme/fonts/roboto-mono'
 import ACRASTD from '../theme/fonts/ocr-a-std'
 
@@ -45,6 +45,10 @@ injectGlobal`
   body {
     margin: 0;
     font-size: 16px;
+
+    ${mixins.mediaQuery.tablet`
+      font-size: 14px;
+    `};
   }
   html,
   body,

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { H3, Body2 } from '../../../../../components/typography'
+import { Subtitle1, Body2 } from '../../../../../components/typography'
 
 const Root = styled.div`
   padding: 5px;
@@ -56,15 +56,14 @@ const Speaker = ({ speaker }) => (
       onMouseOut={e => photoOnBlurCb(e, speaker)}
     />
     <Name>
-      <H3>
+      <Subtitle1>
         <Link href={speaker.personalWebsite}>{speaker.name}</Link>
-      </H3>
+      </Subtitle1>
     </Name>
     <Job>
       <Body2>
         {speaker.jobTitle},
       </Body2>
-      <br />
       <Body2>
           at <Link href={speaker.jobWebsite}>{speaker.company}</Link>
       </Body2>

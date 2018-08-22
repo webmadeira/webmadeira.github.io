@@ -8,12 +8,11 @@ import {
   H2,
   H3,
   Subtitle1,
+  Subtitle2,
   Body1,
   Body2,
-  Body3,
   BUTTON,
   Caption,
-  Body4,
 } from './'
 
 storiesOf('Typography', module)
@@ -30,20 +29,17 @@ storiesOf('Typography', module)
   .add('Subtitle1', () => (
     <Subtitle1>Subtitle1</Subtitle1>
   ))
+  .add('Subtitle2', () => (
+    <Subtitle2>Subtitle2</Subtitle2>
+  ))
   .add('Body1', () => (
     <Body1>Body1</Body1>
   ))
   .add('Body2', () => (
     <Body2>Body2</Body2>
   ))
-  .add('Body3', () => (
-    <Body3>Body3</Body3>
-  ))
   .add('BUTTON', () => (
     <BUTTON>BUTTON</BUTTON>
-  ))
-  .add('Body4', () => (
-    <Body4>Body4</Body4>
   ))
   .add('Caption', () => (
     <Caption>Caption</Caption>

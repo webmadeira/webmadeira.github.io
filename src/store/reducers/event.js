@@ -10,6 +10,7 @@ const INITIAL_STATE = {
   eventId: 0,
   date: '',
   title: '',
+  logo: '',
   description: '',
   talks: [],
   pastEvents: [],

@@ -43,28 +43,27 @@ ShallowWrapper {
           src="https://avatars3.githubusercontent.com/u/1074?s=460&v=4"
         />,
         <styled.div>
-          <styled.h3>
+          <styled.h4>
             <styled.a
               href="https://github.com/andregoncalves"
             >
               André Gonçalves
             </styled.a>
-          </styled.h3>
+          </styled.h4>
         </styled.div>,
         <styled.div>
-          <styled.span>
+          <styled.p>
             Web Dev Consultant
             ,
-          </styled.span>
-          <br />
-          <styled.span>
+          </styled.p>
+          <styled.p>
             at 
             <styled.a
               href={undefined}
             >
               Freelancer
             </styled.a>
-          </styled.span>
+          </styled.p>
         </styled.div>,
       ],
     },
@@ -103,13 +102,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <styled.h3>
+          "children": <styled.h4>
             <styled.a
               href="https://github.com/andregoncalves"
             >
               André Gonçalves
             </styled.a>
-          </styled.h3>,
+          </styled.h4>,
         },
         "ref": null,
         "rendered": Object {
@@ -146,19 +145,18 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <styled.span>
+            <styled.p>
               Web Dev Consultant
               ,
-            </styled.span>,
-            <br />,
-            <styled.span>
+            </styled.p>,
+            <styled.p>
               at 
               <styled.a
                 href={undefined}
               >
                 Freelancer
               </styled.a>
-            </styled.span>,
+            </styled.p>,
           ],
         },
         "ref": null,
@@ -179,15 +177,6 @@ ShallowWrapper {
               ",",
             ],
             "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
           },
           Object {
             "instance": null,
@@ -247,28 +236,27 @@ ShallowWrapper {
             src="https://avatars3.githubusercontent.com/u/1074?s=460&v=4"
           />,
           <styled.div>
-            <styled.h3>
+            <styled.h4>
               <styled.a
                 href="https://github.com/andregoncalves"
               >
                 André Gonçalves
               </styled.a>
-            </styled.h3>
+            </styled.h4>
           </styled.div>,
           <styled.div>
-            <styled.span>
+            <styled.p>
               Web Dev Consultant
               ,
-            </styled.span>
-            <br />
-            <styled.span>
+            </styled.p>
+            <styled.p>
               at 
               <styled.a
                 href={undefined}
               >
                 Freelancer
               </styled.a>
-            </styled.span>
+            </styled.p>
           </styled.div>,
         ],
       },
@@ -307,13 +295,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <styled.h3>
+            "children": <styled.h4>
               <styled.a
                 href="https://github.com/andregoncalves"
               >
                 André Gonçalves
               </styled.a>
-            </styled.h3>,
+            </styled.h4>,
           },
           "ref": null,
           "rendered": Object {
@@ -350,19 +338,18 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <styled.span>
+              <styled.p>
                 Web Dev Consultant
                 ,
-              </styled.span>,
-              <br />,
-              <styled.span>
+              </styled.p>,
+              <styled.p>
                 at 
                 <styled.a
                   href={undefined}
                 >
                   Freelancer
                 </styled.a>
-              </styled.span>,
+              </styled.p>,
             ],
           },
           "ref": null,
@@ -383,15 +370,6 @@ ShallowWrapper {
                 ",",
               ],
               "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
             },
             Object {
               "instance": null,

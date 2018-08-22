@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
-const H3 = styled.h3`
+const Subtitle1 = styled.h3`
   font-family: ${props => props.theme.fontFamily('primary')};
-  font-size: ${props => props.theme.textSetting('lg').fontSize};
-  line-height: ${props => props.theme.textSetting('lg').lineHeight};
+  font-size: ${props => props.theme.textSetting('xl').fontSize};
+  line-height: ${props => props.theme.textSetting('xl').lineHeight};
+  font-weight: ${props => props.theme.weight('regular')};
 `
 
 
-export default H3
+export default Subtitle1

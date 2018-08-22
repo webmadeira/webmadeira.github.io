@@ -3,16 +3,25 @@ import styled from 'styled-components'
 import Button from '../../../components/Button/Button'
 
 const ButtonsWrapper = styled.div`
-  margin-top: 6rem;
-  position: absolute;
-  width:100%;
   display: flex;
   justify-content: center;
-  background-color: transparent;
+  position: relative;
+  top: 50px;
 
-   > :first-child {
-    margin-right: 2.5rem;
+  > :first-child {
+    margin-right: 15px;
   }
+
+  ${({ theme }) => theme.mixins.mediaQuery.tablet`
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+
+    > :first-child {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  `};
 `
 
 

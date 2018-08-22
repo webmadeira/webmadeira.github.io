@@ -118,17 +118,15 @@ const Footer = ({ pastEvents, social }) => {
     <Container>
       <WebConferencesContainer>
         <H2>WEBMADEIRA CONFERENCES</H2>
-        <Body2>
-          <WebConferencesList>
-            {pastEventsList}
-            <WebConferencesListItem>
-              <WebConferenceLink href="/photos" target="_blank">Photos</WebConferenceLink>
-            </WebConferencesListItem>
-            <WebConferencesListItem>
-              <WebConferenceLink href="/videos" target="_blank">Videos</WebConferenceLink>
-            </WebConferencesListItem>
-          </WebConferencesList>
-        </Body2>
+        <WebConferencesList>
+          {pastEventsList}
+          <WebConferencesListItem>
+            <WebConferenceLink href="/photos" target="_blank"><Body2>Photos</Body2></WebConferenceLink>
+          </WebConferencesListItem>
+          <WebConferencesListItem>
+            <WebConferenceLink href="/videos" target="_blank"><Body2>Videos</Body2></WebConferenceLink>
+          </WebConferencesListItem>
+        </WebConferencesList>
       </WebConferencesContainer>
       <SocialContainer>
         <ResponsiveH2>SOCIAL</ResponsiveH2>

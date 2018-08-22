@@ -1,11 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Body4 from './Body4'
+import Subtitle2 from './Subtitle2'
 import theme from '../../../__mocks__/theme'
 
-describe('Typography - Body4 component', () => {
+describe('Typography - Subtitle2 component', () => {
   it('must render properly', () => {
-    const component = shallow(<Body4 theme={theme}>Body 4</Body4>)
+    const component = shallow(<Subtitle2 theme={theme}>Subtitle2</Subtitle2>)
 
     expect(component).toMatchSnapshot()
   })

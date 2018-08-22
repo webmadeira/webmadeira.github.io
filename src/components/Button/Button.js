@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import BUTTON from '../typography/BUTTON/BUTTON'
 
 const CustomButton = styled.button`
-  border: solid 2px ${props => props.theme.color('secondary', 'bright')};
+  border: solid 1px ${props => props.theme.color('secondary', 'bright')};
   color: ${props => props.theme.color('secondary', 'bright')};
-  border-radius: 1.3rem;
-  padding: 1rem;
+  border-radius: 15px;
+  padding: 10px;
   background-color: transparent;
 
   &:hover {

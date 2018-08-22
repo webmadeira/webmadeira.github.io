@@ -4,7 +4,7 @@ exports[`Typography - Subtitle1 component must render properly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <styled.span
+  Symbol(enzyme.__unrendered__): <styled.h4
     theme={
       Object {
         "color": [Function],
@@ -16,7 +16,7 @@ ShallowWrapper {
     }
   >
     Subtitle1
-  </styled.span>,
+  </styled.h4>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -30,11 +30,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": "Subtitle1",
-      "className": "sc-bdVaJa faVCou",
+      "className": "sc-bdVaJa fTlhNU",
     },
     "ref": null,
     "rendered": "Subtitle1",
-    "type": "span",
+    "type": "h4",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -43,11 +43,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": "Subtitle1",
-        "className": "sc-bdVaJa faVCou",
+        "className": "sc-bdVaJa fTlhNU",
       },
       "ref": null,
       "rendered": "Subtitle1",
-      "type": "span",
+      "type": "h4",
     },
   ],
   Symbol(enzyme.__options__): Object {

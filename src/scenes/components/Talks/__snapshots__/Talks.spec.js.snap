@@ -21,25 +21,41 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <ResponsiveSquare
-          minWidth="130px"
+          minWidth="80px"
           style={Object {}}
-          width="20%"
+          width="15%"
         >
           <styled.div>
-            <styled.div>
-              5
-            </styled.div>
-            <styled.h2>
-              Talks
-            </styled.h2>
+            <MediaQuery
+              minWidth={768}
+              values={Object {}}
+            >
+              <styled.h1>
+                5
+              </styled.h1>
+              <styled.h2>
+                Talks
+              </styled.h2>
+            </MediaQuery>
+            <MediaQuery
+              maxWidth={768}
+              values={Object {}}
+            >
+              <styled.h2>
+                5
+              </styled.h2>
+              <styled.span>
+                Talks
+              </styled.span>
+            </MediaQuery>
           </styled.div>
         </ResponsiveSquare>,
         <styled.div>
           <styled.div>
-            5min { "Express talks" }
+            5min {"Express talks"}
           </styled.div>
           <styled.div>
-            20min { "Standard talks" }
+            20min {"Standard talks"}
           </styled.div>
         </styled.div>,
       ],
@@ -52,16 +68,32 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": <styled.div>
-            <styled.div>
-              5
-            </styled.div>
-            <styled.h2>
-              Talks
-            </styled.h2>
+            <MediaQuery
+              minWidth={768}
+              values={Object {}}
+            >
+              <styled.h1>
+                5
+              </styled.h1>
+              <styled.h2>
+                Talks
+              </styled.h2>
+            </MediaQuery>
+            <MediaQuery
+              maxWidth={768}
+              values={Object {}}
+            >
+              <styled.h2>
+                5
+              </styled.h2>
+              <styled.span>
+                Talks
+              </styled.span>
+            </MediaQuery>
           </styled.div>,
-          "minWidth": "130px",
+          "minWidth": "80px",
           "style": Object {},
-          "width": "20%",
+          "width": "15%",
         },
         "ref": null,
         "rendered": Object {
@@ -70,12 +102,28 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <styled.div>
-                5
-              </styled.div>,
-              <styled.h2>
-                Talks
-              </styled.h2>,
+              <MediaQuery
+                minWidth={768}
+                values={Object {}}
+              >
+                <styled.h1>
+                  5
+                </styled.h1>
+                <styled.h2>
+                  Talks
+                </styled.h2>
+              </MediaQuery>,
+              <MediaQuery
+                maxWidth={768}
+                values={Object {}}
+              >
+                <styled.h2>
+                  5
+                </styled.h2>
+                <styled.span>
+                  Talks
+                </styled.span>
+              </MediaQuery>,
             ],
           },
           "ref": null,
@@ -85,10 +133,42 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": 5,
+                "children": Array [
+                  <styled.h1>
+                    5
+                  </styled.h1>,
+                  <styled.h2>
+                    Talks
+                  </styled.h2>,
+                ],
+                "minWidth": 768,
+                "values": Object {},
               },
               "ref": null,
-              "rendered": 5,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 5,
+                  },
+                  "ref": null,
+                  "rendered": 5,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Talks",
+                  },
+                  "ref": null,
+                  "rendered": "Talks",
+                  "type": [Function],
+                },
+              ],
               "type": [Function],
             },
             Object {
@@ -96,10 +176,42 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Talks",
+                "children": Array [
+                  <styled.h2>
+                    5
+                  </styled.h2>,
+                  <styled.span>
+                    Talks
+                  </styled.span>,
+                ],
+                "maxWidth": 768,
+                "values": Object {},
               },
               "ref": null,
-              "rendered": "Talks",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 5,
+                  },
+                  "ref": null,
+                  "rendered": 5,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Talks",
+                  },
+                  "ref": null,
+                  "rendered": "Talks",
+                  "type": [Function],
+                },
+              ],
               "type": [Function],
             },
           ],
@@ -114,10 +226,10 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <styled.div>
-              5min { "Express talks" }
+              5min {"Express talks"}
             </styled.div>,
             <styled.div>
-              20min { "Standard talks" }
+              20min {"Standard talks"}
             </styled.div>,
           ],
         },
@@ -128,10 +240,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "5min { \\"Express talks\\" }",
+              "children": "5min {\\"Express talks\\"}",
             },
             "ref": null,
-            "rendered": "5min { \\"Express talks\\" }",
+            "rendered": "5min {\\"Express talks\\"}",
             "type": [Function],
           },
           Object {
@@ -139,10 +251,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "20min { \\"Standard talks\\" }",
+              "children": "20min {\\"Standard talks\\"}",
             },
             "ref": null,
-            "rendered": "20min { \\"Standard talks\\" }",
+            "rendered": "20min {\\"Standard talks\\"}",
             "type": [Function],
           },
         ],
@@ -159,25 +271,41 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <ResponsiveSquare
-            minWidth="130px"
+            minWidth="80px"
             style={Object {}}
-            width="20%"
+            width="15%"
           >
             <styled.div>
-              <styled.div>
-                5
-              </styled.div>
-              <styled.h2>
-                Talks
-              </styled.h2>
+              <MediaQuery
+                minWidth={768}
+                values={Object {}}
+              >
+                <styled.h1>
+                  5
+                </styled.h1>
+                <styled.h2>
+                  Talks
+                </styled.h2>
+              </MediaQuery>
+              <MediaQuery
+                maxWidth={768}
+                values={Object {}}
+              >
+                <styled.h2>
+                  5
+                </styled.h2>
+                <styled.span>
+                  Talks
+                </styled.span>
+              </MediaQuery>
             </styled.div>
           </ResponsiveSquare>,
           <styled.div>
             <styled.div>
-              5min { "Express talks" }
+              5min {"Express talks"}
             </styled.div>
             <styled.div>
-              20min { "Standard talks" }
+              20min {"Standard talks"}
             </styled.div>
           </styled.div>,
         ],
@@ -190,16 +318,32 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": <styled.div>
-              <styled.div>
-                5
-              </styled.div>
-              <styled.h2>
-                Talks
-              </styled.h2>
+              <MediaQuery
+                minWidth={768}
+                values={Object {}}
+              >
+                <styled.h1>
+                  5
+                </styled.h1>
+                <styled.h2>
+                  Talks
+                </styled.h2>
+              </MediaQuery>
+              <MediaQuery
+                maxWidth={768}
+                values={Object {}}
+              >
+                <styled.h2>
+                  5
+                </styled.h2>
+                <styled.span>
+                  Talks
+                </styled.span>
+              </MediaQuery>
             </styled.div>,
-            "minWidth": "130px",
+            "minWidth": "80px",
             "style": Object {},
-            "width": "20%",
+            "width": "15%",
           },
           "ref": null,
           "rendered": Object {
@@ -208,12 +352,28 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                <styled.div>
-                  5
-                </styled.div>,
-                <styled.h2>
-                  Talks
-                </styled.h2>,
+                <MediaQuery
+                  minWidth={768}
+                  values={Object {}}
+                >
+                  <styled.h1>
+                    5
+                  </styled.h1>
+                  <styled.h2>
+                    Talks
+                  </styled.h2>
+                </MediaQuery>,
+                <MediaQuery
+                  maxWidth={768}
+                  values={Object {}}
+                >
+                  <styled.h2>
+                    5
+                  </styled.h2>
+                  <styled.span>
+                    Talks
+                  </styled.span>
+                </MediaQuery>,
               ],
             },
             "ref": null,
@@ -223,10 +383,42 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": 5,
+                  "children": Array [
+                    <styled.h1>
+                      5
+                    </styled.h1>,
+                    <styled.h2>
+                      Talks
+                    </styled.h2>,
+                  ],
+                  "minWidth": 768,
+                  "values": Object {},
                 },
                 "ref": null,
-                "rendered": 5,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": 5,
+                    },
+                    "ref": null,
+                    "rendered": 5,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Talks",
+                    },
+                    "ref": null,
+                    "rendered": "Talks",
+                    "type": [Function],
+                  },
+                ],
                 "type": [Function],
               },
               Object {
@@ -234,10 +426,42 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Talks",
+                  "children": Array [
+                    <styled.h2>
+                      5
+                    </styled.h2>,
+                    <styled.span>
+                      Talks
+                    </styled.span>,
+                  ],
+                  "maxWidth": 768,
+                  "values": Object {},
                 },
                 "ref": null,
-                "rendered": "Talks",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": 5,
+                    },
+                    "ref": null,
+                    "rendered": 5,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Talks",
+                    },
+                    "ref": null,
+                    "rendered": "Talks",
+                    "type": [Function],
+                  },
+                ],
                 "type": [Function],
               },
             ],
@@ -252,10 +476,10 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <styled.div>
-                5min { "Express talks" }
+                5min {"Express talks"}
               </styled.div>,
               <styled.div>
-                20min { "Standard talks" }
+                20min {"Standard talks"}
               </styled.div>,
             ],
           },
@@ -266,10 +490,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "5min { \\"Express talks\\" }",
+                "children": "5min {\\"Express talks\\"}",
               },
               "ref": null,
-              "rendered": "5min { \\"Express talks\\" }",
+              "rendered": "5min {\\"Express talks\\"}",
               "type": [Function],
             },
             Object {
@@ -277,10 +501,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "20min { \\"Standard talks\\" }",
+                "children": "20min {\\"Standard talks\\"}",
               },
               "ref": null,
-              "rendered": "20min { \\"Standard talks\\" }",
+              "rendered": "20min {\\"Standard talks\\"}",
               "type": [Function],
             },
           ],

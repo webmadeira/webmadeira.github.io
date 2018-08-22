@@ -41,30 +41,32 @@ ShallowWrapper {
           <styled.h2>
             WEBMADEIRA CONFERENCES
           </styled.h2>
-          <styled.span>
-            <styled.ul>
-              <PastEventItem
-                name="Test event"
-                path="http://test.url.com/"
-              />
-              <styled.li>
-                <styled.a
-                  href="/photos"
-                  target="_blank"
-                >
+          <styled.ul>
+            <PastEventItem
+              name="Test event"
+              path="http://test.url.com/"
+            />
+            <styled.li>
+              <styled.a
+                href="/photos"
+                target="_blank"
+              >
+                <styled.p>
                   Photos
-                </styled.a>
-              </styled.li>
-              <styled.li>
-                <styled.a
-                  href="/videos"
-                  target="_blank"
-                >
+                </styled.p>
+              </styled.a>
+            </styled.li>
+            <styled.li>
+              <styled.a
+                href="/videos"
+                target="_blank"
+              >
+                <styled.p>
                   Videos
-                </styled.a>
-              </styled.li>
-            </styled.ul>
-          </styled.span>
+                </styled.p>
+              </styled.a>
+            </styled.li>
+          </styled.ul>
         </styled.div>,
         <styled.div>
           <Styled(styled.h2)>
@@ -90,30 +92,32 @@ ShallowWrapper {
             <styled.h2>
               WEBMADEIRA CONFERENCES
             </styled.h2>,
-            <styled.span>
-              <styled.ul>
-                <PastEventItem
-                  name="Test event"
-                  path="http://test.url.com/"
-                />
-                <styled.li>
-                  <styled.a
-                    href="/photos"
-                    target="_blank"
-                  >
+            <styled.ul>
+              <PastEventItem
+                name="Test event"
+                path="http://test.url.com/"
+              />
+              <styled.li>
+                <styled.a
+                  href="/photos"
+                  target="_blank"
+                >
+                  <styled.p>
                     Photos
-                  </styled.a>
-                </styled.li>
-                <styled.li>
-                  <styled.a
-                    href="/videos"
-                    target="_blank"
-                  >
+                  </styled.p>
+                </styled.a>
+              </styled.li>
+              <styled.li>
+                <styled.a
+                  href="/videos"
+                  target="_blank"
+                >
+                  <styled.p>
                     Videos
-                  </styled.a>
-                </styled.li>
-              </styled.ul>
-            </styled.span>,
+                  </styled.p>
+                </styled.a>
+              </styled.li>
+            </styled.ul>,
           ],
         },
         "ref": null,
@@ -134,85 +138,74 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <styled.ul>
-                <PastEventItem
-                  name="Test event"
-                  path="http://test.url.com/"
-                />
+              "children": Array [
+                Array [
+                  <PastEventItem
+                    name="Test event"
+                    path="http://test.url.com/"
+                  />,
+                ],
                 <styled.li>
                   <styled.a
                     href="/photos"
                     target="_blank"
                   >
-                    Photos
+                    <styled.p>
+                      Photos
+                    </styled.p>
                   </styled.a>
-                </styled.li>
+                </styled.li>,
                 <styled.li>
                   <styled.a
                     href="/videos"
                     target="_blank"
                   >
-                    Videos
+                    <styled.p>
+                      Videos
+                    </styled.p>
                   </styled.a>
-                </styled.li>
-              </styled.ul>,
+                </styled.li>,
+              ],
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  Array [
-                    <PastEventItem
-                      name="Test event"
-                      path="http://test.url.com/"
-                    />,
-                  ],
-                  <styled.li>
-                    <styled.a
-                      href="/photos"
-                      target="_blank"
-                    >
-                      Photos
-                    </styled.a>
-                  </styled.li>,
-                  <styled.li>
-                    <styled.a
-                      href="/videos"
-                      target="_blank"
-                    >
-                      Videos
-                    </styled.a>
-                  </styled.li>,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "0",
-                  "nodeType": "function",
-                  "props": Object {
-                    "name": "Test event",
-                    "path": "http://test.url.com/",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "function",
+                "props": Object {
+                  "name": "Test event",
+                  "path": "http://test.url.com/",
                 },
-                Object {
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <styled.a
+                    href="/photos"
+                    target="_blank"
+                  >
+                    <styled.p>
+                      Photos
+                    </styled.p>
+                  </styled.a>,
+                },
+                "ref": null,
+                "rendered": Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": <styled.a
-                      href="/photos"
-                      target="_blank"
-                    >
+                    "children": <styled.p>
                       Photos
-                    </styled.a>,
+                    </styled.p>,
+                    "href": "/photos",
+                    "target": "_blank",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -221,8 +214,6 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": "Photos",
-                      "href": "/photos",
-                      "target": "_blank",
                     },
                     "ref": null,
                     "rendered": "Photos",
@@ -230,17 +221,33 @@ ShallowWrapper {
                   },
                   "type": [Function],
                 },
-                Object {
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <styled.a
+                    href="/videos"
+                    target="_blank"
+                  >
+                    <styled.p>
+                      Videos
+                    </styled.p>
+                  </styled.a>,
+                },
+                "ref": null,
+                "rendered": Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": <styled.a
-                      href="/videos"
-                      target="_blank"
-                    >
+                    "children": <styled.p>
                       Videos
-                    </styled.a>,
+                    </styled.p>,
+                    "href": "/videos",
+                    "target": "_blank",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -249,8 +256,6 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": "Videos",
-                      "href": "/videos",
-                      "target": "_blank",
                     },
                     "ref": null,
                     "rendered": "Videos",
@@ -258,9 +263,9 @@ ShallowWrapper {
                   },
                   "type": [Function],
                 },
-              ],
-              "type": [Function],
-            },
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
         ],
@@ -342,30 +347,32 @@ ShallowWrapper {
             <styled.h2>
               WEBMADEIRA CONFERENCES
             </styled.h2>
-            <styled.span>
-              <styled.ul>
-                <PastEventItem
-                  name="Test event"
-                  path="http://test.url.com/"
-                />
-                <styled.li>
-                  <styled.a
-                    href="/photos"
-                    target="_blank"
-                  >
+            <styled.ul>
+              <PastEventItem
+                name="Test event"
+                path="http://test.url.com/"
+              />
+              <styled.li>
+                <styled.a
+                  href="/photos"
+                  target="_blank"
+                >
+                  <styled.p>
                     Photos
-                  </styled.a>
-                </styled.li>
-                <styled.li>
-                  <styled.a
-                    href="/videos"
-                    target="_blank"
-                  >
+                  </styled.p>
+                </styled.a>
+              </styled.li>
+              <styled.li>
+                <styled.a
+                  href="/videos"
+                  target="_blank"
+                >
+                  <styled.p>
                     Videos
-                  </styled.a>
-                </styled.li>
-              </styled.ul>
-            </styled.span>
+                  </styled.p>
+                </styled.a>
+              </styled.li>
+            </styled.ul>
           </styled.div>,
           <styled.div>
             <Styled(styled.h2)>
@@ -391,30 +398,32 @@ ShallowWrapper {
               <styled.h2>
                 WEBMADEIRA CONFERENCES
               </styled.h2>,
-              <styled.span>
-                <styled.ul>
-                  <PastEventItem
-                    name="Test event"
-                    path="http://test.url.com/"
-                  />
-                  <styled.li>
-                    <styled.a
-                      href="/photos"
-                      target="_blank"
-                    >
+              <styled.ul>
+                <PastEventItem
+                  name="Test event"
+                  path="http://test.url.com/"
+                />
+                <styled.li>
+                  <styled.a
+                    href="/photos"
+                    target="_blank"
+                  >
+                    <styled.p>
                       Photos
-                    </styled.a>
-                  </styled.li>
-                  <styled.li>
-                    <styled.a
-                      href="/videos"
-                      target="_blank"
-                    >
+                    </styled.p>
+                  </styled.a>
+                </styled.li>
+                <styled.li>
+                  <styled.a
+                    href="/videos"
+                    target="_blank"
+                  >
+                    <styled.p>
                       Videos
-                    </styled.a>
-                  </styled.li>
-                </styled.ul>
-              </styled.span>,
+                    </styled.p>
+                  </styled.a>
+                </styled.li>
+              </styled.ul>,
             ],
           },
           "ref": null,
@@ -435,85 +444,74 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": <styled.ul>
-                  <PastEventItem
-                    name="Test event"
-                    path="http://test.url.com/"
-                  />
+                "children": Array [
+                  Array [
+                    <PastEventItem
+                      name="Test event"
+                      path="http://test.url.com/"
+                    />,
+                  ],
                   <styled.li>
                     <styled.a
                       href="/photos"
                       target="_blank"
                     >
-                      Photos
+                      <styled.p>
+                        Photos
+                      </styled.p>
                     </styled.a>
-                  </styled.li>
+                  </styled.li>,
                   <styled.li>
                     <styled.a
                       href="/videos"
                       target="_blank"
                     >
-                      Videos
+                      <styled.p>
+                        Videos
+                      </styled.p>
                     </styled.a>
-                  </styled.li>
-                </styled.ul>,
+                  </styled.li>,
+                ],
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    Array [
-                      <PastEventItem
-                        name="Test event"
-                        path="http://test.url.com/"
-                      />,
-                    ],
-                    <styled.li>
-                      <styled.a
-                        href="/photos"
-                        target="_blank"
-                      >
-                        Photos
-                      </styled.a>
-                    </styled.li>,
-                    <styled.li>
-                      <styled.a
-                        href="/videos"
-                        target="_blank"
-                      >
-                        Videos
-                      </styled.a>
-                    </styled.li>,
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": "0",
-                    "nodeType": "function",
-                    "props": Object {
-                      "name": "Test event",
-                      "path": "http://test.url.com/",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "function",
+                  "props": Object {
+                    "name": "Test event",
+                    "path": "http://test.url.com/",
                   },
-                  Object {
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <styled.a
+                      href="/photos"
+                      target="_blank"
+                    >
+                      <styled.p>
+                        Photos
+                      </styled.p>
+                    </styled.a>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": <styled.a
-                        href="/photos"
-                        target="_blank"
-                      >
+                      "children": <styled.p>
                         Photos
-                      </styled.a>,
+                      </styled.p>,
+                      "href": "/photos",
+                      "target": "_blank",
                     },
                     "ref": null,
                     "rendered": Object {
@@ -522,8 +520,6 @@ ShallowWrapper {
                       "nodeType": "class",
                       "props": Object {
                         "children": "Photos",
-                        "href": "/photos",
-                        "target": "_blank",
                       },
                       "ref": null,
                       "rendered": "Photos",
@@ -531,17 +527,33 @@ ShallowWrapper {
                     },
                     "type": [Function],
                   },
-                  Object {
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <styled.a
+                      href="/videos"
+                      target="_blank"
+                    >
+                      <styled.p>
+                        Videos
+                      </styled.p>
+                    </styled.a>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": <styled.a
-                        href="/videos"
-                        target="_blank"
-                      >
+                      "children": <styled.p>
                         Videos
-                      </styled.a>,
+                      </styled.p>,
+                      "href": "/videos",
+                      "target": "_blank",
                     },
                     "ref": null,
                     "rendered": Object {
@@ -550,8 +562,6 @@ ShallowWrapper {
                       "nodeType": "class",
                       "props": Object {
                         "children": "Videos",
-                        "href": "/videos",
-                        "target": "_blank",
                       },
                       "ref": null,
                       "rendered": "Videos",
@@ -559,9 +569,9 @@ ShallowWrapper {
                     },
                     "type": [Function],
                   },
-                ],
-                "type": [Function],
-              },
+                  "type": [Function],
+                },
+              ],
               "type": [Function],
             },
           ],

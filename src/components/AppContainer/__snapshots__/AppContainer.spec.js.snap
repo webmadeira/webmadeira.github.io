@@ -34,7 +34,7 @@ ShallowWrapper {
       "children": <p>
         Content
       </p>,
-      "className": "sc-bdVaJa hTBkDm",
+      "className": "sc-bdVaJa dVsKIV",
     },
     "ref": null,
     "rendered": Object {
@@ -59,7 +59,7 @@ ShallowWrapper {
         "children": <p>
           Content
         </p>,
-        "className": "sc-bdVaJa hTBkDm",
+        "className": "sc-bdVaJa dVsKIV",
       },
       "ref": null,
       "rendered": Object {
@@ -121,7 +121,7 @@ ShallowWrapper {
       "children": <p>
         Content
       </p>,
-      "className": "sc-bdVaJa hTBkDm",
+      "className": "sc-bdVaJa dVsKIV",
       "type": "primary",
     },
     "ref": null,
@@ -147,7 +147,7 @@ ShallowWrapper {
         "children": <p>
           Content
         </p>,
-        "className": "sc-bdVaJa hTBkDm",
+        "className": "sc-bdVaJa dVsKIV",
         "type": "primary",
       },
       "ref": null,

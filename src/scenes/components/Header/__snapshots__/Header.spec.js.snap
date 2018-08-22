@@ -29,14 +29,14 @@ ShallowWrapper {
           />
         </styled.div>,
         <styled.div>
-          <styled.h3>
+          <styled.h4>
             Web Madeira
-          </styled.h3>
+          </styled.h4>
         </styled.div>,
         <styled.div>
-          <styled.span>
+          <styled.p>
             29 Dec
-          </styled.span>
+          </styled.p>
         </styled.div>,
       ],
     },
@@ -72,9 +72,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <styled.h3>
+          "children": <styled.h4>
             Web Madeira
-          </styled.h3>,
+          </styled.h4>,
         },
         "ref": null,
         "rendered": Object {
@@ -95,9 +95,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <styled.span>
+          "children": <styled.p>
             29 Dec
-          </styled.span>,
+          </styled.p>,
         },
         "ref": null,
         "rendered": Object {
@@ -130,14 +130,14 @@ ShallowWrapper {
             />
           </styled.div>,
           <styled.div>
-            <styled.h3>
+            <styled.h4>
               Web Madeira
-            </styled.h3>
+            </styled.h4>
           </styled.div>,
           <styled.div>
-            <styled.span>
+            <styled.p>
               29 Dec
-            </styled.span>
+            </styled.p>
           </styled.div>,
         ],
       },
@@ -173,9 +173,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <styled.h3>
+            "children": <styled.h4>
               Web Madeira
-            </styled.h3>,
+            </styled.h4>,
           },
           "ref": null,
           "rendered": Object {
@@ -196,9 +196,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <styled.span>
+            "children": <styled.p>
               29 Dec
-            </styled.span>,
+            </styled.p>,
           },
           "ref": null,
           "rendered": Object {

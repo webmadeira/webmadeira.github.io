@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { H3, Body2 } from '../../../components/typography'
+import { Subtitle1, Body2 } from '../../../components/typography'
 
 const MainSection = styled.section`
   background-color: ${({ theme }) => theme.color('primary')}
@@ -34,7 +34,7 @@ const Header = ({ title, date, logo }) => (
       <img src={logo} alt="Web Madeira Logo" />
     </LogoSection>
     <Title>
-      <H3>{title}</H3>
+      <Subtitle1>{title}</Subtitle1>
     </Title>
     <DateContainer>
       <Body2>{date}</Body2>

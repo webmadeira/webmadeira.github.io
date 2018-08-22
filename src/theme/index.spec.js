@@ -41,7 +41,7 @@ describe('Theme util functions', () => {
 
   describe('textSetting function', () => {
     it('must return an object with the text size and line height properties', () => {
-      const keys = Object.keys(textSetting('xs'))
+      const keys = Object.keys(textSetting('nr'))
       expect(keys).toContain('fontSize')
       expect(keys).toContain('lineHeight')
     })

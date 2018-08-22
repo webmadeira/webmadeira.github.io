@@ -30,7 +30,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": "Caption",
-      "className": "sc-bdVaJa fcJiTh",
+      "className": "sc-bdVaJa fTlhNU",
     },
     "ref": null,
     "rendered": "Caption",
@@ -43,7 +43,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": "Caption",
-        "className": "sc-bdVaJa fcJiTh",
+        "className": "sc-bdVaJa fTlhNU",
       },
       "ref": null,
       "rendered": "Caption",
