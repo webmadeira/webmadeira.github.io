@@ -67,9 +67,9 @@ ShallowWrapper {
           </styled.span>
         </styled.div>,
         <styled.div>
-          <styled.h2>
+          <Styled(styled.h2)>
             SOCIAL
-          </styled.h2>
+          </Styled(styled.h2)>
           <styled.ul>
             <SocialItem
               name="test social"
@@ -272,9 +272,9 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <styled.h2>
+            <Styled(styled.h2)>
               SOCIAL
-            </styled.h2>,
+            </Styled(styled.h2)>,
             <styled.ul>
               <SocialItem
                 name="test social"
@@ -368,9 +368,9 @@ ShallowWrapper {
             </styled.span>
           </styled.div>,
           <styled.div>
-            <styled.h2>
+            <Styled(styled.h2)>
               SOCIAL
-            </styled.h2>
+            </Styled(styled.h2)>
             <styled.ul>
               <SocialItem
                 name="test social"
@@ -573,9 +573,9 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <styled.h2>
+              <Styled(styled.h2)>
                 SOCIAL
-              </styled.h2>,
+              </Styled(styled.h2)>,
               <styled.ul>
                 <SocialItem
                   name="test social"
