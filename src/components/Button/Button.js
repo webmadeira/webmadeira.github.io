@@ -6,17 +6,13 @@ import BUTTON from '../typography/BUTTON/BUTTON'
 const CustomButton = styled.button`
   border: solid 1px ${props => props.theme.color('secondary', 'bright')};
   color: ${props => props.theme.color('secondary', 'bright')};
-  border-radius: 15px;
+  border-radius: 16px;
   padding: 10px;
   background-color: transparent;
 
   &:hover {
     cursor: pointer;
   }
-  
-  &:focus {
-    outline: none;
-}
 `
 const Button = ({ message, callback }) => (
   <CustomButton onClick={callback}>

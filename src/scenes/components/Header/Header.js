@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Subtitle1, Body2 } from '../../../components/typography'
+import { H2, Subtitle1 } from '../../../components/typography'
 
 const MainSection = styled.section`
   background-color: ${({ theme }) => theme.color('primary')}
@@ -19,26 +19,30 @@ const LogoSection = styled.div`
   margin-bottom: 50px;
 `
 
-const Title = styled.div`
+const Logo = styled.img`
+  width: 220px;
+  
+  ${({ theme }) => theme.mixins.mediaQuery.tablet`
+    width: 200px;
+  `};
+`
+
+const Title = styled(H2)`
   text-align: center;
   margin-bottom: 30px;
 `
 
-const DateContainer = styled.div`
+const DateContainer = styled(Subtitle1)`
   text-align: center;
 `
 
 const Header = ({ title, date, logo }) => (
   <MainSection>
     <LogoSection>
-      <img src={logo} alt="Web Madeira Logo" />
+      <Logo src={logo} alt="Web Madeira Logo" />
     </LogoSection>
-    <Title>
-      <Subtitle1>{title}</Subtitle1>
-    </Title>
-    <DateContainer>
-      <Body2>{date}</Body2>
-    </DateContainer>
+    <Title>{title}</Title>
+    <DateContainer>{date}</DateContainer>
   </MainSection>
 )
 

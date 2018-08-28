@@ -8,6 +8,7 @@ injectGlobal`
   /* roboto-mono-light */
   @font-face {
     font-family: 'Roboto Mono';
+    font-display: swap;
     font-weight: 300;
     src: url('./${RobotoMono.Light}');
   }
@@ -15,6 +16,7 @@ injectGlobal`
   /* roboto-mono-regular */
   @font-face {
     font-family: 'Roboto Mono';
+    font-display: swap;
     font-weight: 400;
     src: url('./${RobotoMono.Regular}');
   }
@@ -23,6 +25,7 @@ injectGlobal`
   /* roboto-mono-medium */
   @font-face {
     font-family: 'Roboto Mono';
+    font-display: swap;
     font-weight: 500;
     src: url('./${RobotoMono.Medium}');
   }
@@ -30,6 +33,7 @@ injectGlobal`
   /* roboto-mono-bold */
   @font-face {
     font-family: 'Roboto Mono';
+    font-display: swap;
     font-weight: bold;
     src: url('./${RobotoMono.Bold}');
   }
@@ -37,6 +41,7 @@ injectGlobal`
   /* ocr-a-std */
   @font-face {
     font-family: 'OCR A Std';
+    font-display: swap;
     font-weight: 400;
     src: url('./${ACRASTD.Regular}');
   }
@@ -59,6 +64,7 @@ injectGlobal`
 
   * {
     font-family: ${fontFamily('primary')};
+    font-display: swap;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

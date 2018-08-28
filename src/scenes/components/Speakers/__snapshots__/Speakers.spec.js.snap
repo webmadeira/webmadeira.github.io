@@ -42,11 +42,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <styled.section>
-        <styled.section>
-          <styled.h2>
-            Speakers
-          </styled.h2>
-        </styled.section>
+        <Styled(styled.h2)>
+          Speakers
+        </Styled(styled.h2)>
         <styled.ul>
           <styled.li>
             <Speaker
@@ -89,11 +87,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <styled.section>
-            <styled.h2>
-              Speakers
-            </styled.h2>
-          </styled.section>,
+          <Styled(styled.h2)>
+            Speakers
+          </Styled(styled.h2)>,
           <styled.ul>
             <styled.li>
               <Speaker
@@ -136,22 +132,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <styled.h2>
-              Speakers
-            </styled.h2>,
+            "children": "Speakers",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Speakers",
-            },
-            "ref": null,
-            "rendered": "Speakers",
-            "type": [Function],
-          },
+          "rendered": "Speakers",
           "type": [Function],
         },
         Object {
@@ -294,11 +278,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <styled.section>
-          <styled.section>
-            <styled.h2>
-              Speakers
-            </styled.h2>
-          </styled.section>
+          <Styled(styled.h2)>
+            Speakers
+          </Styled(styled.h2)>
           <styled.ul>
             <styled.li>
               <Speaker
@@ -341,11 +323,9 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <styled.section>
-              <styled.h2>
-                Speakers
-              </styled.h2>
-            </styled.section>,
+            <Styled(styled.h2)>
+              Speakers
+            </Styled(styled.h2)>,
             <styled.ul>
               <styled.li>
                 <Speaker
@@ -388,22 +368,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <styled.h2>
-                Speakers
-              </styled.h2>,
+              "children": "Speakers",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Speakers",
-              },
-              "ref": null,
-              "rendered": "Speakers",
-              "type": [Function],
-            },
+            "rendered": "Speakers",
             "type": [Function],
           },
           Object {

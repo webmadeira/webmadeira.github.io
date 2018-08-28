@@ -38,9 +38,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <styled.div>
-          <styled.h2>
+          <styled.h3>
             WEBMADEIRA CONFERENCES
-          </styled.h2>
+          </styled.h3>
           <styled.ul>
             <PastEventItem
               name="Test event"
@@ -69,9 +69,9 @@ ShallowWrapper {
           </styled.ul>
         </styled.div>,
         <styled.div>
-          <Styled(styled.h2)>
+          <Styled(styled.h3)>
             SOCIAL
-          </Styled(styled.h2)>
+          </Styled(styled.h3)>
           <styled.ul>
             <SocialItem
               name="test social"
@@ -89,9 +89,9 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <styled.h2>
+            <styled.h3>
               WEBMADEIRA CONFERENCES
-            </styled.h2>,
+            </styled.h3>,
             <styled.ul>
               <PastEventItem
                 name="Test event"
@@ -277,9 +277,9 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <Styled(styled.h2)>
+            <Styled(styled.h3)>
               SOCIAL
-            </Styled(styled.h2)>,
+            </Styled(styled.h3)>,
             <styled.ul>
               <SocialItem
                 name="test social"
@@ -344,9 +344,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <styled.div>
-            <styled.h2>
+            <styled.h3>
               WEBMADEIRA CONFERENCES
-            </styled.h2>
+            </styled.h3>
             <styled.ul>
               <PastEventItem
                 name="Test event"
@@ -375,9 +375,9 @@ ShallowWrapper {
             </styled.ul>
           </styled.div>,
           <styled.div>
-            <Styled(styled.h2)>
+            <Styled(styled.h3)>
               SOCIAL
-            </Styled(styled.h2)>
+            </Styled(styled.h3)>
             <styled.ul>
               <SocialItem
                 name="test social"
@@ -395,9 +395,9 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <styled.h2>
+              <styled.h3>
                 WEBMADEIRA CONFERENCES
-              </styled.h2>,
+              </styled.h3>,
               <styled.ul>
                 <PastEventItem
                   name="Test event"
@@ -583,9 +583,9 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <Styled(styled.h2)>
+              <Styled(styled.h3)>
                 SOCIAL
-              </Styled(styled.h2)>,
+              </Styled(styled.h3)>,
               <styled.ul>
                 <SocialItem
                   name="test social"

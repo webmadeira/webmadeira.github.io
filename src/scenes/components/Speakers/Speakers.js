@@ -10,9 +10,10 @@ const Root = styled.section`
   padding-bottom: 80px;
 `
 
-const Title = styled.section`
+const Title = styled(H2)`
   text-align: left;
   color: ${props => props.theme.color('secondary', 'dark')};
+  text-transform: uppercase;
   margin-bottom: 40px;
 `
 
@@ -22,7 +23,7 @@ const List = styled.ul`
   grid-template-columns: repeat(3, auto);
   
   ${({ theme }) => theme.mixins.mediaQuery.tablet`
-    grid-gap: 10px;
+    grid-gap: 40px 10px;
   `};
 
   ${({ theme }) => theme.mixins.mediaQuery.phone`
@@ -43,9 +44,7 @@ const renderSpeakers = speakers => speakers.map(speaker => (
 const Speakers = ({ speakers }) => (
   <AppContainer>
     <Root>
-      <Title>
-        <H2>Speakers</H2>
-      </Title>
+      <Title>Speakers</Title>
       <List>
         {renderSpeakers(speakers)}
       </List>

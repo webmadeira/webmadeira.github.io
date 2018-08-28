@@ -3,13 +3,12 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 import ResponsiveSquare from '../../../components/ResponsiveSquare/ResponsiveSquare'
-import { H1, H2, Caption } from '../../../components/typography'
+import { H1, H2, H3, Body1, Caption } from '../../../components/typography'
 import deviceWidths from '../../../theme/device-widths'
 
 const TalksContainer = styled.div`
   display: flex;
   margin: 60px 0;
-
 `
 
 const NumTalks = styled.div`
@@ -30,6 +29,7 @@ const TalksFormatsContainer = styled.div`
 const TalksFormat = styled.div`
   color: ${props => props.theme.color('neutral', 'bright')};
   border: solid 1px ${props => props.theme.color('secondary', 'light')};
+  color: ${props => props.theme.color('secondary', 'light')};
   margin-bottom: 15px;
   flex-grow: 1;
   display: flex;
@@ -56,8 +56,14 @@ const Talks = ({ numTalks }) => (
       </NumTalks>
     </ResponsiveSquare>
     <TalksFormatsContainer>
-      <TalksFormat>{'5min {"Express talks"}'}</TalksFormat>
-      <TalksFormat>{'20min {"Standard talks"}'}</TalksFormat>
+      <MediaQuery minWidth={deviceWidths.tablet}>
+        <TalksFormat><H3>{'5min {"Express talks"}'}</H3></TalksFormat>
+        <TalksFormat><H3>{'20min {"Standard talks"}'}</H3></TalksFormat>
+      </MediaQuery>
+      <MediaQuery maxWidth={deviceWidths.tablet}>
+        <TalksFormat><Body1>{'5min {"Express talks"}'}</Body1></TalksFormat>
+        <TalksFormat><Body1>{'20min {"Standard talks"}'}</Body1></TalksFormat>
+      </MediaQuery>
     </TalksFormatsContainer>
   </TalksContainer>
 )

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { H2, Body2 } from '../../../components/typography'
+import { H3, Body2, Caption } from '../../../components/typography'
 import facebookIcon from '../../../assets/img/icon/facebook.svg'
 import instagramIcon from '../../../assets/img/icon/instagram.svg'
 import linkedinIcon from '../../../assets/img/icon/linkedin.svg'
@@ -56,7 +56,6 @@ const WebConferencesListItem = styled.li`
 `
 
 const WebConferenceLink = styled.a`
-  text-decoration: none;
   color: ${props => props.theme.color('neutral', 'bright')};
 `
 
@@ -74,7 +73,7 @@ const SocialListItem = styled.li`
   margin-right: 16px;
 `
 
-const ResponsiveH2 = styled(H2)`
+const ResponsiveTitle = styled(H3)`
   ${({ theme }) => theme.mixins.mediaQuery.tablet`
     text-align: center;
   `};
@@ -82,13 +81,15 @@ const ResponsiveH2 = styled(H2)`
 
 const PastEventItem = props => (
   <WebConferencesListItem>
-    <WebConferenceLink href={props.path} target="_blank">{props.name}</WebConferenceLink>
+    <WebConferenceLink href={props.path} rel="noopener" target="_blank">
+      <Caption>{props.name}</Caption>
+    </WebConferenceLink>
   </WebConferencesListItem>
 )
 
 const SocialItem = props => (
   <SocialListItem>
-    <a href={props.path}>
+    <a href={props.path} rel="noopener">
       <img src={socialIcons[props.name]} alt={props.name} />
     </a>
   </SocialListItem>
@@ -117,7 +118,7 @@ const Footer = ({ pastEvents, social }) => {
   return (
     <Container>
       <WebConferencesContainer>
-        <H2>WEBMADEIRA CONFERENCES</H2>
+        <H3>WEBMADEIRA CONFERENCES</H3>
         <WebConferencesList>
           {pastEventsList}
           <WebConferencesListItem>
@@ -129,7 +130,7 @@ const Footer = ({ pastEvents, social }) => {
         </WebConferencesList>
       </WebConferencesContainer>
       <SocialContainer>
-        <ResponsiveH2>SOCIAL</ResponsiveH2>
+        <ResponsiveTitle>SOCIAL</ResponsiveTitle>
         <SocialList>
           {socialList}
         </SocialList>

@@ -3,13 +3,9 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Subtitle1, Body2 } from '../../../../../components/typography'
 
-const Root = styled.div`
-  padding: 5px;
-`
-
 const Photo = styled.img`
   border-radius: 50%;
-  border: 2px solid ${props => props.theme.color()};
+  border: 2px solid ${props => props.theme.color('secondary', 'dark')};
   width: 150px;
   
   ${({ theme }) => theme.mixins.mediaQuery.tablet`
@@ -21,8 +17,8 @@ const Photo = styled.img`
   `};
 `
 
-const Name = styled.div`
-    padding: 10px 0;
+const Name = styled(Subtitle1)`
+  padding: 10px 0;
 `
 
 const Job = styled.div`
@@ -32,7 +28,6 @@ const Job = styled.div`
 
 const Link = styled.a`
   color: ${props => props.theme.color('neutral', 'base')};
-  text-decoration: none;
 `
 
 const photoOnFocusCb = (e, speaker) => {
@@ -44,31 +39,30 @@ const photoOnBlurCb = (e, speaker) => {
 }
 
 const Speaker = ({ speaker }) => (
-  <Root key={speaker.id}>
+  <div key={speaker.id}>
     {/* Prefetch the image to avoid downloading it only when "hover" occurs */}
     <link rel="prefetch" href={speaker.photo} />
-    <Photo
-      src={speaker.bwPhoto}
-      alt="Speaker"
-      onMouseOver={e => photoOnFocusCb(e, speaker)}
-      onFocus={e => photoOnFocusCb(e, speaker)}
-      onBlur={e => photoOnBlurCb(e, speaker)}
-      onMouseOut={e => photoOnBlurCb(e, speaker)}
-    />
-    <Name>
-      <Subtitle1>
-        <Link href={speaker.personalWebsite}>{speaker.name}</Link>
-      </Subtitle1>
-    </Name>
+
+    <a href={speaker.personalWebsite} target="_blank" rel="noopener noreferrer">
+      <Photo
+        src={speaker.bwPhoto}
+        alt="Speaker"
+        onMouseOver={e => photoOnFocusCb(e, speaker)}
+        onFocus={e => photoOnFocusCb(e, speaker)}
+        onBlur={e => photoOnBlurCb(e, speaker)}
+        onMouseOut={e => photoOnBlurCb(e, speaker)}
+      />
+    </a>
+    <Name>{speaker.name}</Name>
     <Job>
       <Body2>
         {speaker.jobTitle},
       </Body2>
       <Body2>
-          at <Link href={speaker.jobWebsite}>{speaker.company}</Link>
+          at <Link href={speaker.jobWebsite} target="_blank" rel="noopener noreferrer">{speaker.company}</Link>
       </Body2>
     </Job>
-  </Root>
+  </div>
 )
 
 Speaker.propTypes = {

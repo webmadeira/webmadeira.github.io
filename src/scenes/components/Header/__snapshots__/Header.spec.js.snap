@@ -23,21 +23,17 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <styled.div>
-          <img
+          <styled.img
             alt="Web Madeira Logo"
             src="logo path"
           />
         </styled.div>,
-        <styled.div>
-          <styled.h4>
-            Web Madeira
-          </styled.h4>
-        </styled.div>,
-        <styled.div>
-          <styled.p>
-            29 Dec
-          </styled.p>
-        </styled.div>,
+        <Styled(styled.h2)>
+          Web Madeira
+        </Styled(styled.h2)>,
+        <Styled(styled.h4)>
+          29 Dec
+        </Styled(styled.h4)>,
       ],
     },
     "ref": null,
@@ -47,7 +43,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <img
+          "children": <styled.img
             alt="Web Madeira Logo"
             src="logo path"
           />,
@@ -56,36 +52,13 @@ ShallowWrapper {
         "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "alt": "Web Madeira Logo",
             "src": "logo path",
           },
           "ref": null,
           "rendered": null,
-          "type": "img",
-        },
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <styled.h4>
-            Web Madeira
-          </styled.h4>,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "Web Madeira",
-          },
-          "ref": null,
-          "rendered": "Web Madeira",
           "type": [Function],
         },
         "type": [Function],
@@ -95,22 +68,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <styled.p>
-            29 Dec
-          </styled.p>,
+          "children": "Web Madeira",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "29 Dec",
-          },
-          "ref": null,
-          "rendered": "29 Dec",
-          "type": [Function],
+        "rendered": "Web Madeira",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "29 Dec",
         },
+        "ref": null,
+        "rendered": "29 Dec",
         "type": [Function],
       },
     ],
@@ -124,21 +96,17 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <styled.div>
-            <img
+            <styled.img
               alt="Web Madeira Logo"
               src="logo path"
             />
           </styled.div>,
-          <styled.div>
-            <styled.h4>
-              Web Madeira
-            </styled.h4>
-          </styled.div>,
-          <styled.div>
-            <styled.p>
-              29 Dec
-            </styled.p>
-          </styled.div>,
+          <Styled(styled.h2)>
+            Web Madeira
+          </Styled(styled.h2)>,
+          <Styled(styled.h4)>
+            29 Dec
+          </Styled(styled.h4)>,
         ],
       },
       "ref": null,
@@ -148,7 +116,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <img
+            "children": <styled.img
               alt="Web Madeira Logo"
               src="logo path"
             />,
@@ -157,36 +125,13 @@ ShallowWrapper {
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "alt": "Web Madeira Logo",
               "src": "logo path",
             },
             "ref": null,
             "rendered": null,
-            "type": "img",
-          },
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <styled.h4>
-              Web Madeira
-            </styled.h4>,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Web Madeira",
-            },
-            "ref": null,
-            "rendered": "Web Madeira",
             "type": [Function],
           },
           "type": [Function],
@@ -196,22 +141,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <styled.p>
-              29 Dec
-            </styled.p>,
+            "children": "Web Madeira",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "29 Dec",
-            },
-            "ref": null,
-            "rendered": "29 Dec",
-            "type": [Function],
+          "rendered": "Web Madeira",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "29 Dec",
           },
+          "ref": null,
+          "rendered": "29 Dec",
           "type": [Function],
         },
       ],
