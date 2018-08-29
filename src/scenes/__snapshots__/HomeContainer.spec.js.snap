@@ -31,6 +31,11 @@ ShallowWrapper {
       "event": Object {
         "date": "Test date",
         "description": "Test description",
+        "location": Object {
+          "address": "test address",
+          "name": "test name",
+          "postCode": "test post code",
+        },
         "logo": "Test logo",
         "pastEvents": Array [
           Object {
@@ -127,6 +132,11 @@ ShallowWrapper {
         "event": Object {
           "date": "Test date",
           "description": "Test description",
+          "location": Object {
+            "address": "test address",
+            "name": "test name",
+            "postCode": "test post code",
+          },
           "logo": "Test logo",
           "pastEvents": Array [
             Object {
@@ -256,6 +266,11 @@ ShallowWrapper {
       "event": Object {
         "date": "<Aug.10 />",
         "description": "Test description",
+        "location": Object {
+          "address": "test address",
+          "name": "test name",
+          "postCode": "test post code",
+        },
         "logo": "Test logo",
         "pastEvents": Array [
           Object {
@@ -352,6 +367,11 @@ ShallowWrapper {
         "event": Object {
           "date": "<Aug.10 />",
           "description": "Test description",
+          "location": Object {
+            "address": "test address",
+            "name": "test name",
+            "postCode": "test post code",
+          },
           "logo": "Test logo",
           "pastEvents": Array [
             Object {

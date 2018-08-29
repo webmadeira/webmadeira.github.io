@@ -19,6 +19,12 @@ const event2018 = {
     { id: 5, description: '' },
     { id: 6, description: '' },
   ],
+  location: {
+    name: 'Centro Cívico do Estreito',
+    address: 'Rua Cónego Agostinho Figueira Faria Nº 6',
+    postCode: '9325-024 Vila do Estreito de Câmara de Lobos',
+    link: 'https://goo.gl/maps/SQMz7GK8Br42',
+  },
 }
 
 const getEvents = () => ({
@@ -45,7 +51,7 @@ const getPastEvents = () => ({
       {
         id: 0,
         name: 'WebMadeira 2016',
-        path: 'http://webmadeira.herokuapp.com/',
+        url: 'http://webmadeira.herokuapp.com/',
       },
     ],
   }),

@@ -9,15 +9,21 @@ describe('Footer component', () => {
       {
         id: 0,
         name: 'Test event',
-        path: 'http://test.url.com/',
+        url: 'http://test.url.com/',
       },
     ]
     const social = [
-      { id: 1, name: 'test social', path: '/testSocial' },
+      { id: 1, name: 'test social', url: '/testSocial' },
     ]
+    const location = {
+      name: 'test name',
+      address: 'test address',
+      postCode: 'test post code',
+    }
     const component = shallow(<Footer
       pastEvents={pastEvents}
       social={social}
+      location={location}
     />)
 
     expect(component).toMatchSnapshot()

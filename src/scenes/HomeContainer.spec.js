@@ -28,6 +28,11 @@ describe('HomeContainer component', () => {
               path: 'http://test.url.com/',
             },
           ],
+          location: {
+            name: 'test name',
+            address: 'test address',
+            postCode: 'test post code',
+          },
         },
         organization: {
           logo: 'logo path',
