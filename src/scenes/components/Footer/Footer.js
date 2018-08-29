@@ -1,153 +1,57 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import AppContainer from '../../../components/AppContainer/AppContainer'
 
-import { H3, Body2, Caption } from '../../../components/typography'
-import facebookIcon from '../../../assets/img/icon/facebook.svg'
-import instagramIcon from '../../../assets/img/icon/instagram.svg'
-import linkedinIcon from '../../../assets/img/icon/linkedin.svg'
-import twitterIcon from '../../../assets/img/icon/twitter.svg'
-import youtubeIcon from '../../../assets/img/icon/youtube.svg'
+import PastEvents from './components/PastEvents/PastEvents'
+import SocialLinks from './components/SocialLinks/SocialLinks'
+import Location from './components/Location/Location'
 
-const socialIcons = {
-  facebook: facebookIcon,
-  instagram: instagramIcon,
-  linkedin: linkedinIcon,
-  twitter: twitterIcon,
-  youtube: youtubeIcon,
-}
+const Root = styled(AppContainer)`
+  background-color: ${props => props.theme.color('neutral', 'base')};
+  padding: 80px 0;
+`
 
 const Container = styled.section`
-  flex-shrink: 0;
-  width: 100%;
-  padding: 84px 0 80px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
   background-color: ${props => props.theme.color('neutral', 'base')};
   color: ${props => props.theme.color('neutral', 'bright')};
+  flex-wrap: wrap;
 
   ${({ theme }) => theme.mixins.mediaQuery.tablet`
-    justify-content: center;
+    flex-direction: column;
   `};
 `
 
-const WebConferencesContainer = styled.div`
-  text-align: center;
+const Column = styled.div`
+  flex-basis: 0;
+  flex-grow: 1;
 
   ${({ theme }) => theme.mixins.mediaQuery.tablet`
-    display: none;
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
   `};
 `
 
-const SocialContainer = styled.div`
-  text-align: left;
-`
 
-const WebConferencesList = styled.ul`
-  list-style-type: none;
-  text-align: left;
-  margin-top: 28px;
-`
-
-const WebConferencesListItem = styled.li`
-  margin-bottom: 8px;
-`
-
-const WebConferenceLink = styled.a`
-  color: ${props => props.theme.color('neutral', 'bright')};
-`
-
-const SocialList = styled.ul`
-  list-style-type: none;
-  margin-top: 28px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-`
-
-const SocialListItem = styled.li`
-  width: 34px;
-  height: 34px;
-  margin-right: 16px;
-`
-
-const ResponsiveTitle = styled(H3)`
-  ${({ theme }) => theme.mixins.mediaQuery.tablet`
-    text-align: center;
-  `};
-`
-
-const PastEventItem = props => (
-  <WebConferencesListItem>
-    <WebConferenceLink href={props.path} rel="noopener" target="_blank">
-      <Caption>{props.name}</Caption>
-    </WebConferenceLink>
-  </WebConferencesListItem>
-)
-
-const SocialItem = props => (
-  <SocialListItem>
-    <a href={props.path} rel="noopener">
-      <img src={socialIcons[props.name]} alt={props.name} />
-    </a>
-  </SocialListItem>
-)
-
-const getPastEventsItems = events => events.map(pastEvent => (
-  <PastEventItem
-    key={pastEvent.id}
-    name={pastEvent.name}
-    path={pastEvent.path}
-  />
-))
-
-const getSocialItemsm = social => social.map(socialItem => (
-  <SocialItem
-    key={socialItem.id}
-    name={socialItem.name}
-    path={socialItem.path}
-  />
-))
-
-const Footer = ({ pastEvents, social }) => {
-  const pastEventsList = getPastEventsItems(pastEvents)
-  const socialList = getSocialItemsm(social)
-
-  return (
+const Footer = ({ pastEvents, social, location }) => (
+  <Root>
     <Container>
-      <WebConferencesContainer>
-        <H3>WEBMADEIRA CONFERENCES</H3>
-        <WebConferencesList>
-          {pastEventsList}
-          <WebConferencesListItem>
-            <WebConferenceLink href="/photos" target="_blank"><Body2>Photos</Body2></WebConferenceLink>
-          </WebConferencesListItem>
-          <WebConferencesListItem>
-            <WebConferenceLink href="/videos" target="_blank"><Body2>Videos</Body2></WebConferenceLink>
-          </WebConferencesListItem>
-        </WebConferencesList>
-      </WebConferencesContainer>
-      <SocialContainer>
-        <ResponsiveTitle>SOCIAL</ResponsiveTitle>
-        <SocialList>
-          {socialList}
-        </SocialList>
-      </SocialContainer>
+      <Column>
+        <PastEvents pastEvents={pastEvents} />
+      </Column>
+      <Column>
+        <SocialLinks links={social} />
+      </Column>
+      <Column>
+        <Location location={location} />
+      </Column>
     </Container>
-  )
-}
-
-PastEventItem.propTypes = {
-  name: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired,
-}
-
-SocialItem.propTypes = {
-  name: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired,
-}
+  </Root>
+)
 
 Footer.propTypes = {
   pastEvents: PropTypes.PropTypes.arrayOf(
@@ -160,8 +64,13 @@ Footer.propTypes = {
     PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string,
-      path: PropTypes.string,
+      url: PropTypes.string,
     })).isRequired,
+  location: PropTypes.shape({
+    name: PropTypes.string,
+    address: PropTypes.string,
+    postCode: PropTypes.string,
+  }).isRequired,
 }
 
 export default Footer

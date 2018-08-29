@@ -33,6 +33,11 @@ class HomeContainer extends React.Component {
           link: PropTypes.string,
           name: PropTypes.string,
         })).isRequired,
+      location: PropTypes.shape({
+        name: PropTypes.string,
+        address: PropTypes.string,
+        postCode: PropTypes.string,
+      }).isRequired,
     }).isRequired,
     speakers: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
     organization: PropTypes.shape({
@@ -62,6 +67,7 @@ class HomeContainer extends React.Component {
       talks,
       logo,
       pastEvents,
+      location,
     } = this.props.event
 
     return (
@@ -75,7 +81,7 @@ class HomeContainer extends React.Component {
           </EventDescription>
           <Speakers speakers={speakers} />
         </Body>
-        <Footer pastEvents={pastEvents} social={social} />
+        <Footer pastEvents={pastEvents} social={social} location={location} />
       </Root>
     )
   }

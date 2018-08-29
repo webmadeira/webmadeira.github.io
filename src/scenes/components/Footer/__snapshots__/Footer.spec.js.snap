@@ -5,12 +5,19 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Footer
+    location={
+      Object {
+        "address": "test address",
+        "name": "test name",
+        "postCode": "test post code",
+      }
+    }
     pastEvents={
       Array [
         Object {
           "id": 0,
           "name": "Test event",
-          "path": "http://test.url.com/",
+          "url": "http://test.url.com/",
         },
       ]
     }
@@ -19,7 +26,7 @@ ShallowWrapper {
         Object {
           "id": 1,
           "name": "test social",
-          "path": "/testSocial",
+          "url": "/testSocial",
         },
       ]
     }
@@ -36,354 +43,89 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": Array [
+      "children": <styled.section>
         <styled.div>
-          <styled.h3>
-            WEBMADEIRA CONFERENCES
-          </styled.h3>
-          <styled.ul>
-            <PastEventItem
-              name="Test event"
-              path="http://test.url.com/"
-            />
-            <styled.li>
-              <styled.a
-                href="/photos"
-                target="_blank"
-              >
-                <styled.p>
-                  Photos
-                </styled.p>
-              </styled.a>
-            </styled.li>
-            <styled.li>
-              <styled.a
-                href="/videos"
-                target="_blank"
-              >
-                <styled.p>
-                  Videos
-                </styled.p>
-              </styled.a>
-            </styled.li>
-          </styled.ul>
-        </styled.div>,
+          <PastEvents
+            pastEvents={
+              Array [
+                Object {
+                  "id": 0,
+                  "name": "Test event",
+                  "url": "http://test.url.com/",
+                },
+              ]
+            }
+          />
+        </styled.div>
         <styled.div>
-          <Styled(styled.h3)>
-            SOCIAL
-          </Styled(styled.h3)>
-          <styled.ul>
-            <SocialItem
-              name="test social"
-              path="/testSocial"
-            />
-          </styled.ul>
-        </styled.div>,
-      ],
+          <SocialLinks
+            links={
+              Array [
+                Object {
+                  "id": 1,
+                  "name": "test social",
+                  "url": "/testSocial",
+                },
+              ]
+            }
+          />
+        </styled.div>
+        <styled.div>
+          <Location
+            location={
+              Object {
+                "address": "test address",
+                "name": "test name",
+                "postCode": "test post code",
+              }
+            }
+          />
+        </styled.div>
+      </styled.section>,
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <styled.h3>
-              WEBMADEIRA CONFERENCES
-            </styled.h3>,
-            <styled.ul>
-              <PastEventItem
-                name="Test event"
-                path="http://test.url.com/"
-              />
-              <styled.li>
-                <styled.a
-                  href="/photos"
-                  target="_blank"
-                >
-                  <styled.p>
-                    Photos
-                  </styled.p>
-                </styled.a>
-              </styled.li>
-              <styled.li>
-                <styled.a
-                  href="/videos"
-                  target="_blank"
-                >
-                  <styled.p>
-                    Videos
-                  </styled.p>
-                </styled.a>
-              </styled.li>
-            </styled.ul>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "WEBMADEIRA CONFERENCES",
-            },
-            "ref": null,
-            "rendered": "WEBMADEIRA CONFERENCES",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                Array [
-                  <PastEventItem
-                    name="Test event"
-                    path="http://test.url.com/"
-                  />,
-                ],
-                <styled.li>
-                  <styled.a
-                    href="/photos"
-                    target="_blank"
-                  >
-                    <styled.p>
-                      Photos
-                    </styled.p>
-                  </styled.a>
-                </styled.li>,
-                <styled.li>
-                  <styled.a
-                    href="/videos"
-                    target="_blank"
-                  >
-                    <styled.p>
-                      Videos
-                    </styled.p>
-                  </styled.a>
-                </styled.li>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "0",
-                "nodeType": "function",
-                "props": Object {
-                  "name": "Test event",
-                  "path": "http://test.url.com/",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <styled.a
-                    href="/photos"
-                    target="_blank"
-                  >
-                    <styled.p>
-                      Photos
-                    </styled.p>
-                  </styled.a>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.p>
-                      Photos
-                    </styled.p>,
-                    "href": "/photos",
-                    "target": "_blank",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Photos",
-                    },
-                    "ref": null,
-                    "rendered": "Photos",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <styled.a
-                    href="/videos"
-                    target="_blank"
-                  >
-                    <styled.p>
-                      Videos
-                    </styled.p>
-                  </styled.a>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.p>
-                      Videos
-                    </styled.p>,
-                    "href": "/videos",
-                    "target": "_blank",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Videos",
-                    },
-                    "ref": null,
-                    "rendered": "Videos",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(styled.h3)>
-              SOCIAL
-            </Styled(styled.h3)>,
-            <styled.ul>
-              <SocialItem
-                name="test social"
-                path="/testSocial"
-              />
-            </styled.ul>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "SOCIAL",
-            },
-            "ref": null,
-            "rendered": "SOCIAL",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <SocialItem
-                  name="test social"
-                  path="/testSocial"
-                />,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "1",
-                "nodeType": "function",
-                "props": Object {
-                  "name": "test social",
-                  "path": "/testSocial",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
       "props": Object {
         "children": Array [
           <styled.div>
-            <styled.h3>
-              WEBMADEIRA CONFERENCES
-            </styled.h3>
-            <styled.ul>
-              <PastEventItem
-                name="Test event"
-                path="http://test.url.com/"
-              />
-              <styled.li>
-                <styled.a
-                  href="/photos"
-                  target="_blank"
-                >
-                  <styled.p>
-                    Photos
-                  </styled.p>
-                </styled.a>
-              </styled.li>
-              <styled.li>
-                <styled.a
-                  href="/videos"
-                  target="_blank"
-                >
-                  <styled.p>
-                    Videos
-                  </styled.p>
-                </styled.a>
-              </styled.li>
-            </styled.ul>
+            <PastEvents
+              pastEvents={
+                Array [
+                  Object {
+                    "id": 0,
+                    "name": "Test event",
+                    "url": "http://test.url.com/",
+                  },
+                ]
+              }
+            />
           </styled.div>,
           <styled.div>
-            <Styled(styled.h3)>
-              SOCIAL
-            </Styled(styled.h3)>
-            <styled.ul>
-              <SocialItem
-                name="test social"
-                path="/testSocial"
-              />
-            </styled.ul>
+            <SocialLinks
+              links={
+                Array [
+                  Object {
+                    "id": 1,
+                    "name": "test social",
+                    "url": "/testSocial",
+                  },
+                ]
+              }
+            />
+          </styled.div>,
+          <styled.div>
+            <Location
+              location={
+                Object {
+                  "address": "test address",
+                  "name": "test name",
+                  "postCode": "test post code",
+                }
+              }
+            />
           </styled.div>,
         ],
       },
@@ -394,187 +136,36 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <styled.h3>
-                WEBMADEIRA CONFERENCES
-              </styled.h3>,
-              <styled.ul>
-                <PastEventItem
-                  name="Test event"
-                  path="http://test.url.com/"
-                />
-                <styled.li>
-                  <styled.a
-                    href="/photos"
-                    target="_blank"
-                  >
-                    <styled.p>
-                      Photos
-                    </styled.p>
-                  </styled.a>
-                </styled.li>
-                <styled.li>
-                  <styled.a
-                    href="/videos"
-                    target="_blank"
-                  >
-                    <styled.p>
-                      Videos
-                    </styled.p>
-                  </styled.a>
-                </styled.li>
-              </styled.ul>,
-            ],
+            "children": <PastEvents
+              pastEvents={
+                Array [
+                  Object {
+                    "id": 0,
+                    "name": "Test event",
+                    "url": "http://test.url.com/",
+                  },
+                ]
+              }
+            />,
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "WEBMADEIRA CONFERENCES",
-              },
-              "ref": null,
-              "rendered": "WEBMADEIRA CONFERENCES",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  Array [
-                    <PastEventItem
-                      name="Test event"
-                      path="http://test.url.com/"
-                    />,
-                  ],
-                  <styled.li>
-                    <styled.a
-                      href="/photos"
-                      target="_blank"
-                    >
-                      <styled.p>
-                        Photos
-                      </styled.p>
-                    </styled.a>
-                  </styled.li>,
-                  <styled.li>
-                    <styled.a
-                      href="/videos"
-                      target="_blank"
-                    >
-                      <styled.p>
-                        Videos
-                      </styled.p>
-                    </styled.a>
-                  </styled.li>,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "pastEvents": Array [
                 Object {
-                  "instance": null,
-                  "key": "0",
-                  "nodeType": "function",
-                  "props": Object {
-                    "name": "Test event",
-                    "path": "http://test.url.com/",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.a
-                      href="/photos"
-                      target="_blank"
-                    >
-                      <styled.p>
-                        Photos
-                      </styled.p>
-                    </styled.a>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <styled.p>
-                        Photos
-                      </styled.p>,
-                      "href": "/photos",
-                      "target": "_blank",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "Photos",
-                      },
-                      "ref": null,
-                      "rendered": "Photos",
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.a
-                      href="/videos"
-                      target="_blank"
-                    >
-                      <styled.p>
-                        Videos
-                      </styled.p>
-                    </styled.a>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": <styled.p>
-                        Videos
-                      </styled.p>,
-                      "href": "/videos",
-                      "target": "_blank",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "Videos",
-                      },
-                      "ref": null,
-                      "rendered": "Videos",
-                      "type": [Function],
-                    },
-                    "type": [Function],
-                  },
-                  "type": [Function],
+                  "id": 0,
+                  "name": "Test event",
+                  "url": "http://test.url.com/",
                 },
               ],
-              "type": [Function],
             },
-          ],
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         Object {
@@ -582,64 +173,280 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <Styled(styled.h3)>
-                SOCIAL
-              </Styled(styled.h3)>,
-              <styled.ul>
-                <SocialItem
-                  name="test social"
-                  path="/testSocial"
-                />
-              </styled.ul>,
-            ],
+            "children": <SocialLinks
+              links={
+                Array [
+                  Object {
+                    "id": 1,
+                    "name": "test social",
+                    "url": "/testSocial",
+                  },
+                ]
+              }
+            />,
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "SOCIAL",
-              },
-              "ref": null,
-              "rendered": "SOCIAL",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <SocialItem
-                    name="test social"
-                    path="/testSocial"
-                  />,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "links": Array [
                 Object {
-                  "instance": null,
-                  "key": "1",
-                  "nodeType": "function",
-                  "props": Object {
-                    "name": "test social",
-                    "path": "/testSocial",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
+                  "id": 1,
+                  "name": "test social",
+                  "url": "/testSocial",
                 },
               ],
-              "type": [Function],
             },
-          ],
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Location
+              location={
+                Object {
+                  "address": "test address",
+                  "name": "test name",
+                  "postCode": "test post code",
+                }
+              }
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "location": Object {
+                "address": "test address",
+                "name": "test name",
+                "postCode": "test post code",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
       ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <styled.section>
+          <styled.div>
+            <PastEvents
+              pastEvents={
+                Array [
+                  Object {
+                    "id": 0,
+                    "name": "Test event",
+                    "url": "http://test.url.com/",
+                  },
+                ]
+              }
+            />
+          </styled.div>
+          <styled.div>
+            <SocialLinks
+              links={
+                Array [
+                  Object {
+                    "id": 1,
+                    "name": "test social",
+                    "url": "/testSocial",
+                  },
+                ]
+              }
+            />
+          </styled.div>
+          <styled.div>
+            <Location
+              location={
+                Object {
+                  "address": "test address",
+                  "name": "test name",
+                  "postCode": "test post code",
+                }
+              }
+            />
+          </styled.div>
+        </styled.section>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.div>
+              <PastEvents
+                pastEvents={
+                  Array [
+                    Object {
+                      "id": 0,
+                      "name": "Test event",
+                      "url": "http://test.url.com/",
+                    },
+                  ]
+                }
+              />
+            </styled.div>,
+            <styled.div>
+              <SocialLinks
+                links={
+                  Array [
+                    Object {
+                      "id": 1,
+                      "name": "test social",
+                      "url": "/testSocial",
+                    },
+                  ]
+                }
+              />
+            </styled.div>,
+            <styled.div>
+              <Location
+                location={
+                  Object {
+                    "address": "test address",
+                    "name": "test name",
+                    "postCode": "test post code",
+                  }
+                }
+              />
+            </styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <PastEvents
+                pastEvents={
+                  Array [
+                    Object {
+                      "id": 0,
+                      "name": "Test event",
+                      "url": "http://test.url.com/",
+                    },
+                  ]
+                }
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "pastEvents": Array [
+                  Object {
+                    "id": 0,
+                    "name": "Test event",
+                    "url": "http://test.url.com/",
+                  },
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <SocialLinks
+                links={
+                  Array [
+                    Object {
+                      "id": 1,
+                      "name": "test social",
+                      "url": "/testSocial",
+                    },
+                  ]
+                }
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "links": Array [
+                  Object {
+                    "id": 1,
+                    "name": "test social",
+                    "url": "/testSocial",
+                  },
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Location
+                location={
+                  Object {
+                    "address": "test address",
+                    "name": "test name",
+                    "postCode": "test post code",
+                  }
+                }
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "location": Object {
+                  "address": "test address",
+                  "name": "test name",
+                  "postCode": "test post code",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
       "type": [Function],
     },
   ],

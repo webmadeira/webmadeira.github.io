@@ -14,6 +14,7 @@ const INITIAL_STATE = {
   description: '',
   talks: [],
   pastEvents: [],
+  location: {},
 }
 
 export default (state = INITIAL_STATE, action) => {
