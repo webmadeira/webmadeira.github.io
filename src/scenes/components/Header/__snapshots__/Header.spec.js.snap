@@ -31,9 +31,9 @@ ShallowWrapper {
         <Styled(styled.h2)>
           Web Madeira
         </Styled(styled.h2)>,
-        <Styled(styled.h4)>
+        <Styled(styled.h3)>
           29 Dec
-        </Styled(styled.h4)>,
+        </Styled(styled.h3)>,
       ],
     },
     "ref": null,
@@ -104,9 +104,9 @@ ShallowWrapper {
           <Styled(styled.h2)>
             Web Madeira
           </Styled(styled.h2)>,
-          <Styled(styled.h4)>
+          <Styled(styled.h3)>
             29 Dec
-          </Styled(styled.h4)>,
+          </Styled(styled.h3)>,
         ],
       },
       "ref": null,

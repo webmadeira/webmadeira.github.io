@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 import ResponsiveSquare from '../../../components/ResponsiveSquare/ResponsiveSquare'
-import { H1, H2, H3, Body1, Caption } from '../../../components/typography'
+import { H1, H2, H3, Caption } from '../../../components/typography'
 import deviceWidths from '../../../theme/device-widths'
 
 const TalksContainer = styled.div`
@@ -41,29 +41,36 @@ const TalksFormat = styled.div`
   }
 `
 
+const ResponsiveH3 = styled(H3)`
+  ${({ theme }) => theme.mixins.mediaQuery.tablet`
+    font-size: ${props => props.theme.textSetting('sm').fontSize};
+    line-height: ${props => props.theme.textSetting('sm').lineHeight};
+  `};
+`
+
+const pad = (number, width, padNumber) => {
+  const z = padNumber || '0'
+  const n = `${number}`
+  return n.length >= width ? n : new Array((width - n.length) + 1).join(z) + n
+}
+
 const Talks = ({ numTalks }) => (
   <TalksContainer>
     <ResponsiveSquare width="15%" minWidth="80px">
       <NumTalks>
         <MediaQuery minWidth={deviceWidths.tablet}>
-          <H1>{numTalks}</H1>
+          <H1>{pad(numTalks, 2, 0)}</H1>
           <H2>Talks</H2>
         </MediaQuery>
-        <MediaQuery maxWidth={deviceWidths.tablet}>
-          <H2>{numTalks}</H2>
+        <MediaQuery maxWidth={deviceWidths.tablet - 1}>
+          <H2>{pad(numTalks, 2, 0)}</H2>
           <Caption>Talks</Caption>
         </MediaQuery>
       </NumTalks>
     </ResponsiveSquare>
     <TalksFormatsContainer>
-      <MediaQuery minWidth={deviceWidths.tablet}>
-        <TalksFormat><H3>{'5min {"Express talks"}'}</H3></TalksFormat>
-        <TalksFormat><H3>{'20min {"Standard talks"}'}</H3></TalksFormat>
-      </MediaQuery>
-      <MediaQuery maxWidth={deviceWidths.tablet}>
-        <TalksFormat><Body1>{'5min {"Express talks"}'}</Body1></TalksFormat>
-        <TalksFormat><Body1>{'20min {"Standard talks"}'}</Body1></TalksFormat>
-      </MediaQuery>
+      <TalksFormat><ResponsiveH3>{'5min {"Lighting talks"}'}</ResponsiveH3></TalksFormat>
+      <TalksFormat><ResponsiveH3>{'20min {"Standard talks"}'}</ResponsiveH3></TalksFormat>
     </TalksFormatsContainer>
   </TalksContainer>
 )

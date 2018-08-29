@@ -7,8 +7,12 @@ const CustomButton = styled.button`
   border: solid 1px ${props => props.theme.color('secondary', 'bright')};
   color: ${props => props.theme.color('secondary', 'bright')};
   border-radius: 16px;
-  padding: 10px;
+  padding: 13px 10px 10px;
   background-color: transparent;
+  
+  ${({ theme }) => theme.mixins.mediaQuery.tablet`
+    padding: 10px;
+  `};
 
   &:hover {
     cursor: pointer;

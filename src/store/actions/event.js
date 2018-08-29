@@ -18,9 +18,6 @@ const event2018 = {
     { id: 4, description: '' },
     { id: 5, description: '' },
     { id: 6, description: '' },
-    { id: 7, description: '' },
-    { id: 8, description: '' },
-    { id: 9, description: '' },
   ],
 }
 

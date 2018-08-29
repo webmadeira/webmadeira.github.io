@@ -20,7 +20,7 @@ const Container = styled.div`
 `
 
 const Description = styled(Body2)`
-  text-align: left;
+  text-align: justify;
   color: ${props => props.theme.color('neutral', 'bright')};
 `
 

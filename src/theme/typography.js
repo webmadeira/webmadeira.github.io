@@ -8,31 +8,31 @@ const weights = {
 
 const textSettings = {
   sm: {
-    fontSize: '.875rem', // 14px
+    fontSize: '.875rem',
     lineHeight: '.975rem',
   },
   nr: { // normal
-    fontSize: '1rem', // 16px
-    lineHeight: '1.2rem',
+    fontSize: '1rem',
+    lineHeight: '1.25rem',
   },
   md: {
-    fontSize: '1.125rem', // 18px
+    fontSize: '1.125rem',
     lineHeight: '1.325rem',
   },
   lg: {
-    fontSize: '1.25rem', // 20px
-    lineHeight: '1.45rem',
+    fontSize: '1.2rem',
+    lineHeight: '1.4rem',
   },
   xl: {
-    fontSize: '1.375rem', // 22px
-    lineHeight: '1.575rem',
+    fontSize: '1.3rem',
+    lineHeight: '1.5rem',
   },
   xxl: {
-    fontSize: '1.625rem', // 26px
-    lineHeight: '1.825rem',
+    fontSize: '1.5rem',
+    lineHeight: '1.7rem',
   },
   xxxl: {
-    fontSize: '3.75rem', // 60px
+    fontSize: '3.75rem',
     lineHeight: '3.95rem',
   },
 }

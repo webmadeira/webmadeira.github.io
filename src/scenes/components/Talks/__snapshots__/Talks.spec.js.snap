@@ -31,18 +31,18 @@ ShallowWrapper {
               values={Object {}}
             >
               <styled.h1>
-                5
+                05
               </styled.h1>
               <styled.h2>
                 Talks
               </styled.h2>
             </MediaQuery>
             <MediaQuery
-              maxWidth={768}
+              maxWidth={767}
               values={Object {}}
             >
               <styled.h2>
-                5
+                05
               </styled.h2>
               <styled.span>
                 Talks
@@ -51,36 +51,16 @@ ShallowWrapper {
           </styled.div>
         </ResponsiveSquare>,
         <styled.div>
-          <MediaQuery
-            minWidth={768}
-            values={Object {}}
-          >
-            <styled.div>
-              <styled.h3>
-                5min {"Express talks"}
-              </styled.h3>
-            </styled.div>
-            <styled.div>
-              <styled.h3>
-                20min {"Standard talks"}
-              </styled.h3>
-            </styled.div>
-          </MediaQuery>
-          <MediaQuery
-            maxWidth={768}
-            values={Object {}}
-          >
-            <styled.div>
-              <styled.p>
-                5min {"Express talks"}
-              </styled.p>
-            </styled.div>
-            <styled.div>
-              <styled.p>
-                20min {"Standard talks"}
-              </styled.p>
-            </styled.div>
-          </MediaQuery>
+          <styled.div>
+            <Styled(styled.h3)>
+              5min {"Lighting talks"}
+            </Styled(styled.h3)>
+          </styled.div>
+          <styled.div>
+            <Styled(styled.h3)>
+              20min {"Standard talks"}
+            </Styled(styled.h3)>
+          </styled.div>
         </styled.div>,
       ],
     },
@@ -97,18 +77,18 @@ ShallowWrapper {
               values={Object {}}
             >
               <styled.h1>
-                5
+                05
               </styled.h1>
               <styled.h2>
                 Talks
               </styled.h2>
             </MediaQuery>
             <MediaQuery
-              maxWidth={768}
+              maxWidth={767}
               values={Object {}}
             >
               <styled.h2>
-                5
+                05
               </styled.h2>
               <styled.span>
                 Talks
@@ -131,18 +111,18 @@ ShallowWrapper {
                 values={Object {}}
               >
                 <styled.h1>
-                  5
+                  05
                 </styled.h1>
                 <styled.h2>
                   Talks
                 </styled.h2>
               </MediaQuery>,
               <MediaQuery
-                maxWidth={768}
+                maxWidth={767}
                 values={Object {}}
               >
                 <styled.h2>
-                  5
+                  05
                 </styled.h2>
                 <styled.span>
                   Talks
@@ -159,7 +139,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <styled.h1>
-                    5
+                    05
                   </styled.h1>,
                   <styled.h2>
                     Talks
@@ -175,10 +155,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": 5,
+                    "children": "05",
                   },
                   "ref": null,
-                  "rendered": 5,
+                  "rendered": "05",
                   "type": [Function],
                 },
                 Object {
@@ -202,13 +182,13 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <styled.h2>
-                    5
+                    05
                   </styled.h2>,
                   <styled.span>
                     Talks
                   </styled.span>,
                 ],
-                "maxWidth": 768,
+                "maxWidth": 767,
                 "values": Object {},
               },
               "ref": null,
@@ -218,10 +198,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": 5,
+                    "children": "05",
                   },
                   "ref": null,
-                  "rendered": 5,
+                  "rendered": "05",
                   "type": [Function],
                 },
                 Object {
@@ -249,36 +229,16 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <MediaQuery
-              minWidth={768}
-              values={Object {}}
-            >
-              <styled.div>
-                <styled.h3>
-                  5min {"Express talks"}
-                </styled.h3>
-              </styled.div>
-              <styled.div>
-                <styled.h3>
-                  20min {"Standard talks"}
-                </styled.h3>
-              </styled.div>
-            </MediaQuery>,
-            <MediaQuery
-              maxWidth={768}
-              values={Object {}}
-            >
-              <styled.div>
-                <styled.p>
-                  5min {"Express talks"}
-                </styled.p>
-              </styled.div>
-              <styled.div>
-                <styled.p>
-                  20min {"Standard talks"}
-                </styled.p>
-              </styled.div>
-            </MediaQuery>,
+            <styled.div>
+              <Styled(styled.h3)>
+                5min {"Lighting talks"}
+              </Styled(styled.h3)>
+            </styled.div>,
+            <styled.div>
+              <Styled(styled.h3)>
+                20min {"Standard talks"}
+              </Styled(styled.h3)>
+            </styled.div>,
           ],
         },
         "ref": null,
@@ -288,70 +248,22 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": Array [
-                <styled.div>
-                  <styled.h3>
-                    5min {"Express talks"}
-                  </styled.h3>
-                </styled.div>,
-                <styled.div>
-                  <styled.h3>
-                    20min {"Standard talks"}
-                  </styled.h3>
-                </styled.div>,
-              ],
-              "minWidth": 768,
-              "values": Object {},
+              "children": <Styled(styled.h3)>
+                5min {"Lighting talks"}
+              </Styled(styled.h3)>,
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <styled.h3>
-                    5min {"Express talks"}
-                  </styled.h3>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "5min {\\"Express talks\\"}",
-                  },
-                  "ref": null,
-                  "rendered": "5min {\\"Express talks\\"}",
-                  "type": [Function],
-                },
-                "type": [Function],
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "5min {\\"Lighting talks\\"}",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <styled.h3>
-                    20min {"Standard talks"}
-                  </styled.h3>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "20min {\\"Standard talks\\"}",
-                  },
-                  "ref": null,
-                  "rendered": "20min {\\"Standard talks\\"}",
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-            ],
+              "ref": null,
+              "rendered": "5min {\\"Lighting talks\\"}",
+              "type": [Function],
+            },
             "type": [Function],
           },
           Object {
@@ -359,70 +271,22 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": Array [
-                <styled.div>
-                  <styled.p>
-                    5min {"Express talks"}
-                  </styled.p>
-                </styled.div>,
-                <styled.div>
-                  <styled.p>
-                    20min {"Standard talks"}
-                  </styled.p>
-                </styled.div>,
-              ],
-              "maxWidth": 768,
-              "values": Object {},
+              "children": <Styled(styled.h3)>
+                20min {"Standard talks"}
+              </Styled(styled.h3)>,
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <styled.p>
-                    5min {"Express talks"}
-                  </styled.p>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "5min {\\"Express talks\\"}",
-                  },
-                  "ref": null,
-                  "rendered": "5min {\\"Express talks\\"}",
-                  "type": [Function],
-                },
-                "type": [Function],
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "20min {\\"Standard talks\\"}",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <styled.p>
-                    20min {"Standard talks"}
-                  </styled.p>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "20min {\\"Standard talks\\"}",
-                  },
-                  "ref": null,
-                  "rendered": "20min {\\"Standard talks\\"}",
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-            ],
+              "ref": null,
+              "rendered": "20min {\\"Standard talks\\"}",
+              "type": [Function],
+            },
             "type": [Function],
           },
         ],
@@ -449,18 +313,18 @@ ShallowWrapper {
                 values={Object {}}
               >
                 <styled.h1>
-                  5
+                  05
                 </styled.h1>
                 <styled.h2>
                   Talks
                 </styled.h2>
               </MediaQuery>
               <MediaQuery
-                maxWidth={768}
+                maxWidth={767}
                 values={Object {}}
               >
                 <styled.h2>
-                  5
+                  05
                 </styled.h2>
                 <styled.span>
                   Talks
@@ -469,36 +333,16 @@ ShallowWrapper {
             </styled.div>
           </ResponsiveSquare>,
           <styled.div>
-            <MediaQuery
-              minWidth={768}
-              values={Object {}}
-            >
-              <styled.div>
-                <styled.h3>
-                  5min {"Express talks"}
-                </styled.h3>
-              </styled.div>
-              <styled.div>
-                <styled.h3>
-                  20min {"Standard talks"}
-                </styled.h3>
-              </styled.div>
-            </MediaQuery>
-            <MediaQuery
-              maxWidth={768}
-              values={Object {}}
-            >
-              <styled.div>
-                <styled.p>
-                  5min {"Express talks"}
-                </styled.p>
-              </styled.div>
-              <styled.div>
-                <styled.p>
-                  20min {"Standard talks"}
-                </styled.p>
-              </styled.div>
-            </MediaQuery>
+            <styled.div>
+              <Styled(styled.h3)>
+                5min {"Lighting talks"}
+              </Styled(styled.h3)>
+            </styled.div>
+            <styled.div>
+              <Styled(styled.h3)>
+                20min {"Standard talks"}
+              </Styled(styled.h3)>
+            </styled.div>
           </styled.div>,
         ],
       },
@@ -515,18 +359,18 @@ ShallowWrapper {
                 values={Object {}}
               >
                 <styled.h1>
-                  5
+                  05
                 </styled.h1>
                 <styled.h2>
                   Talks
                 </styled.h2>
               </MediaQuery>
               <MediaQuery
-                maxWidth={768}
+                maxWidth={767}
                 values={Object {}}
               >
                 <styled.h2>
-                  5
+                  05
                 </styled.h2>
                 <styled.span>
                   Talks
@@ -549,18 +393,18 @@ ShallowWrapper {
                   values={Object {}}
                 >
                   <styled.h1>
-                    5
+                    05
                   </styled.h1>
                   <styled.h2>
                     Talks
                   </styled.h2>
                 </MediaQuery>,
                 <MediaQuery
-                  maxWidth={768}
+                  maxWidth={767}
                   values={Object {}}
                 >
                   <styled.h2>
-                    5
+                    05
                   </styled.h2>
                   <styled.span>
                     Talks
@@ -577,7 +421,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     <styled.h1>
-                      5
+                      05
                     </styled.h1>,
                     <styled.h2>
                       Talks
@@ -593,10 +437,10 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": 5,
+                      "children": "05",
                     },
                     "ref": null,
-                    "rendered": 5,
+                    "rendered": "05",
                     "type": [Function],
                   },
                   Object {
@@ -620,13 +464,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     <styled.h2>
-                      5
+                      05
                     </styled.h2>,
                     <styled.span>
                       Talks
                     </styled.span>,
                   ],
-                  "maxWidth": 768,
+                  "maxWidth": 767,
                   "values": Object {},
                 },
                 "ref": null,
@@ -636,10 +480,10 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": 5,
+                      "children": "05",
                     },
                     "ref": null,
-                    "rendered": 5,
+                    "rendered": "05",
                     "type": [Function],
                   },
                   Object {
@@ -667,36 +511,16 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <MediaQuery
-                minWidth={768}
-                values={Object {}}
-              >
-                <styled.div>
-                  <styled.h3>
-                    5min {"Express talks"}
-                  </styled.h3>
-                </styled.div>
-                <styled.div>
-                  <styled.h3>
-                    20min {"Standard talks"}
-                  </styled.h3>
-                </styled.div>
-              </MediaQuery>,
-              <MediaQuery
-                maxWidth={768}
-                values={Object {}}
-              >
-                <styled.div>
-                  <styled.p>
-                    5min {"Express talks"}
-                  </styled.p>
-                </styled.div>
-                <styled.div>
-                  <styled.p>
-                    20min {"Standard talks"}
-                  </styled.p>
-                </styled.div>
-              </MediaQuery>,
+              <styled.div>
+                <Styled(styled.h3)>
+                  5min {"Lighting talks"}
+                </Styled(styled.h3)>
+              </styled.div>,
+              <styled.div>
+                <Styled(styled.h3)>
+                  20min {"Standard talks"}
+                </Styled(styled.h3)>
+              </styled.div>,
             ],
           },
           "ref": null,
@@ -706,70 +530,22 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": Array [
-                  <styled.div>
-                    <styled.h3>
-                      5min {"Express talks"}
-                    </styled.h3>
-                  </styled.div>,
-                  <styled.div>
-                    <styled.h3>
-                      20min {"Standard talks"}
-                    </styled.h3>
-                  </styled.div>,
-                ],
-                "minWidth": 768,
-                "values": Object {},
+                "children": <Styled(styled.h3)>
+                  5min {"Lighting talks"}
+                </Styled(styled.h3)>,
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.h3>
-                      5min {"Express talks"}
-                    </styled.h3>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "5min {\\"Express talks\\"}",
-                    },
-                    "ref": null,
-                    "rendered": "5min {\\"Express talks\\"}",
-                    "type": [Function],
-                  },
-                  "type": [Function],
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "5min {\\"Lighting talks\\"}",
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.h3>
-                      20min {"Standard talks"}
-                    </styled.h3>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "20min {\\"Standard talks\\"}",
-                    },
-                    "ref": null,
-                    "rendered": "20min {\\"Standard talks\\"}",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-              ],
+                "ref": null,
+                "rendered": "5min {\\"Lighting talks\\"}",
+                "type": [Function],
+              },
               "type": [Function],
             },
             Object {
@@ -777,70 +553,22 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": Array [
-                  <styled.div>
-                    <styled.p>
-                      5min {"Express talks"}
-                    </styled.p>
-                  </styled.div>,
-                  <styled.div>
-                    <styled.p>
-                      20min {"Standard talks"}
-                    </styled.p>
-                  </styled.div>,
-                ],
-                "maxWidth": 768,
-                "values": Object {},
+                "children": <Styled(styled.h3)>
+                  20min {"Standard talks"}
+                </Styled(styled.h3)>,
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.p>
-                      5min {"Express talks"}
-                    </styled.p>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "5min {\\"Express talks\\"}",
-                    },
-                    "ref": null,
-                    "rendered": "5min {\\"Express talks\\"}",
-                    "type": [Function],
-                  },
-                  "type": [Function],
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "20min {\\"Standard talks\\"}",
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.p>
-                      20min {"Standard talks"}
-                    </styled.p>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "20min {\\"Standard talks\\"}",
-                    },
-                    "ref": null,
-                    "rendered": "20min {\\"Standard talks\\"}",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-              ],
+                "ref": null,
+                "rendered": "20min {\\"Standard talks\\"}",
+                "type": [Function],
+              },
               "type": [Function],
             },
           ],

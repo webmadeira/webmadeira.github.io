@@ -6,7 +6,7 @@ const palettes = {
     base: '#14455a',
   },
   secondary: {
-    dark: '#65abb7',
+    dark: '#56939d',
     base: '#c1e9f0',
     light: '#d9e2e3',
     bright: '#45e4ff',

@@ -9,7 +9,7 @@ const ButtonsWrapper = styled.div`
   top: 50px;
 
   > :first-child {
-    margin-right: 15px;
+    margin-right: 30px;
   }
 
   ${({ theme }) => theme.mixins.mediaQuery.tablet`

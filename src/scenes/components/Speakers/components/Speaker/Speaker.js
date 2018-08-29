@@ -19,6 +19,7 @@ const Photo = styled.img`
 
 const Name = styled(Subtitle1)`
   padding: 10px 0;
+  color: ${props => props.theme.color('neutral', 'base')};
 `
 
 const Job = styled.div`

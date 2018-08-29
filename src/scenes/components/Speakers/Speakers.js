@@ -14,19 +14,20 @@ const Title = styled(H2)`
   text-align: left;
   color: ${props => props.theme.color('secondary', 'dark')};
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+  
+  ${({ theme }) => theme.mixins.mediaQuery.phone`
+    margin-bottom: 40px;
+  `};
 `
 
 const List = styled.ul`
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 60px 10px;
   grid-template-columns: repeat(3, auto);
-  
-  ${({ theme }) => theme.mixins.mediaQuery.tablet`
-    grid-gap: 40px 10px;
-  `};
 
   ${({ theme }) => theme.mixins.mediaQuery.phone`
+    grid-gap: 40px 10px;
     grid-template-columns: repeat(2, auto);
   `};
 `

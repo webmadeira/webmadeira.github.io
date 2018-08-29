@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { H2, Subtitle1 } from '../../../components/typography'
+import { H2, H3 } from '../../../components/typography'
 
 const MainSection = styled.section`
   background-color: ${({ theme }) => theme.color('primary')}
@@ -10,7 +10,7 @@ const MainSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 10px;
+  padding: 120px 10px 50px 10px;
   flex-direction: column;
   flex-shrink: 0;
 `
@@ -32,8 +32,9 @@ const Title = styled(H2)`
   margin-bottom: 30px;
 `
 
-const DateContainer = styled(Subtitle1)`
+const DateContainer = styled(H3)`
   text-align: center;
+  color: ${({ theme }) => theme.color('secondary')}
 `
 
 const Header = ({ title, date, logo }) => (
