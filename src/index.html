@@ -18,6 +18,10 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122326669-1"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="bundle.js"></script>
     <script>
       if (window.location.hostname != 'localhost' || window.location.hostname != '0.0.0.0') {
         window.dataLayer = window.dataLayer || [];
@@ -25,11 +29,16 @@
         gtag('js', new Date());
   
         gtag('config', 'UA-122326669-1');
+
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:946837,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
       }
     </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="bundle.js"></script>
   </body>
 </html>
