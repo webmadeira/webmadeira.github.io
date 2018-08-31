@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = {
   entry: [
@@ -9,7 +10,12 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.[hash].js',
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
   },
   module: {
     rules: [
@@ -53,5 +59,18 @@ module.exports = {
       from: './src/assets/img/logo.ico',
       to: 'images/',
     }]),
+    new WebpackPwaManifest({
+      name: 'WebMadeira',
+      short_name: 'WebMadeira',
+      description: 'A non-profit event built by-the-community, for-the-community.',
+      background_color: '#ed4042',
+      crossorigin: null,
+      icons: [
+        {
+          src: path.resolve('./src/assets/img/logo.ico'),
+          sizes: [96, 128, 192, 256, 384, 512]
+        },
+      ]
+    })
   ],
 }
