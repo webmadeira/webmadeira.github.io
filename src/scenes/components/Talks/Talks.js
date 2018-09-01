@@ -69,7 +69,7 @@ const Talks = ({ numTalks }) => (
       </NumTalks>
     </ResponsiveSquare>
     <TalksFormatsContainer>
-      <TalksFormat><ResponsiveH3>{'5min {"Lighting talks"}'}</ResponsiveH3></TalksFormat>
+      <TalksFormat><ResponsiveH3>{'5min {"Lightning talks"}'}</ResponsiveH3></TalksFormat>
       <TalksFormat><ResponsiveH3>{'20min {"Standard talks"}'}</ResponsiveH3></TalksFormat>
     </TalksFormatsContainer>
   </TalksContainer>

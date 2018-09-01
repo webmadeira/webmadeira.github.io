@@ -53,7 +53,7 @@ ShallowWrapper {
         <styled.div>
           <styled.div>
             <Styled(styled.h3)>
-              5min {"Lighting talks"}
+              5min {"Lightning talks"}
             </Styled(styled.h3)>
           </styled.div>
           <styled.div>
@@ -231,7 +231,7 @@ ShallowWrapper {
           "children": Array [
             <styled.div>
               <Styled(styled.h3)>
-                5min {"Lighting talks"}
+                5min {"Lightning talks"}
               </Styled(styled.h3)>
             </styled.div>,
             <styled.div>
@@ -249,7 +249,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Styled(styled.h3)>
-                5min {"Lighting talks"}
+                5min {"Lightning talks"}
               </Styled(styled.h3)>,
             },
             "ref": null,
@@ -258,10 +258,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "5min {\\"Lighting talks\\"}",
+                "children": "5min {\\"Lightning talks\\"}",
               },
               "ref": null,
-              "rendered": "5min {\\"Lighting talks\\"}",
+              "rendered": "5min {\\"Lightning talks\\"}",
               "type": [Function],
             },
             "type": [Function],
@@ -335,7 +335,7 @@ ShallowWrapper {
           <styled.div>
             <styled.div>
               <Styled(styled.h3)>
-                5min {"Lighting talks"}
+                5min {"Lightning talks"}
               </Styled(styled.h3)>
             </styled.div>
             <styled.div>
@@ -513,7 +513,7 @@ ShallowWrapper {
             "children": Array [
               <styled.div>
                 <Styled(styled.h3)>
-                  5min {"Lighting talks"}
+                  5min {"Lightning talks"}
                 </Styled(styled.h3)>
               </styled.div>,
               <styled.div>
@@ -531,7 +531,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "children": <Styled(styled.h3)>
-                  5min {"Lighting talks"}
+                  5min {"Lightning talks"}
                 </Styled(styled.h3)>,
               },
               "ref": null,
@@ -540,10 +540,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": "5min {\\"Lighting talks\\"}",
+                  "children": "5min {\\"Lightning talks\\"}",
                 },
                 "ref": null,
-                "rendered": "5min {\\"Lighting talks\\"}",
+                "rendered": "5min {\\"Lightning talks\\"}",
                 "type": [Function],
               },
               "type": [Function],
