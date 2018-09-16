@@ -3,6 +3,12 @@
   "env": {
     "jest": true
   },
+  "globals": {
+    "window": true,
+    "location": true,
+    "self": true,
+    "fetch": true
+  },
   "parser": "babel-eslint",
   "rules": {
     "react/jsx-filename-extension": [

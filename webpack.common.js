@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const WebpackPwaManifest = require('webpack-pwa-manifest')
+const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -56,21 +57,25 @@ module.exports = {
       template: './src/index.html',
     }),
     new CopyWebpackPlugin([{
-      from: './src/assets/img/logo.ico',
+      from: './src/assets/img/logo.png',
       to: 'images/',
     }]),
     new WebpackPwaManifest({
       name: 'WebMadeira',
       short_name: 'WebMadeira',
       description: 'A non-profit event built by-the-community, for-the-community.',
-      background_color: '#ed4042',
+      theme_color: '#14455a',
+      background_color: '#14455a',
       crossorigin: null,
       icons: [
         {
-          src: path.resolve('./src/assets/img/logo.ico'),
-          sizes: [96, 128, 192, 256, 384, 512]
+          src: path.resolve('./src/assets/img/logo.png'),
+          sizes: [96, 128, 192, 256, 384, 512],
         },
-      ]
-    })
+      ],
+    }),
+    new ServiceWorkerWebpackPlugin({
+      entry: path.join(__dirname, 'src/sw.js'),
+    }),
   ],
 }

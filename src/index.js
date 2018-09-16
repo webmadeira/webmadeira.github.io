@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import { createStore, applyMiddleware } from 'redux'
 import promiseMiddleware from 'redux-promise-middleware'
+import runtime from 'serviceworker-webpack-plugin/lib/runtime'
 
 import reducers from './store/reducers'
 import App from './App/App'
@@ -26,4 +27,8 @@ if (module.hot) {
     const NextApp = require('./App/App.js').default // eslint-disable-line
     render(NextApp)
   })
+}
+
+if ('serviceWorker' in window.navigator) {
+  runtime.register()
 }
