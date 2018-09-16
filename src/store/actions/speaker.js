@@ -27,7 +27,7 @@ const getSpeakers = year => ({ // eslint-disable-line
         id: 2,
         name: 'Cristian Gonçalves',
         company: 'Exictos',
-        jobTitle: 'DevOps',
+        jobTitle: 'Software engineer',
         jobWebsite: 'https://www.exictos.com/',
         personalWebsite: '',
         bwPhoto: 'https://i.imgur.com/tPhkYAt.jpg',
