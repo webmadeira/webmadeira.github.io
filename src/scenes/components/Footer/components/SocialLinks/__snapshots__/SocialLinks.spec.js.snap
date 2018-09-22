@@ -35,7 +35,8 @@ ShallowWrapper {
           <styled.li>
             <a
               href="/testSocial"
-              rel="noopener"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <img
                 alt="test social"
@@ -68,7 +69,8 @@ ShallowWrapper {
             <styled.li>
               <a
                 href="/testSocial"
-                rel="noopener"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <img
                   alt="test social"
@@ -87,7 +89,8 @@ ShallowWrapper {
             "props": Object {
               "children": <a
                 href="/testSocial"
-                rel="noopener"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <img
                   alt="test social"
@@ -106,7 +109,8 @@ ShallowWrapper {
                   src={undefined}
                 />,
                 "href": "/testSocial",
-                "rel": "noopener",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
               },
               "ref": null,
               "rendered": Object {
@@ -145,7 +149,8 @@ ShallowWrapper {
             <styled.li>
               <a
                 href="/testSocial"
-                rel="noopener"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <img
                   alt="test social"
@@ -178,7 +183,8 @@ ShallowWrapper {
               <styled.li>
                 <a
                   href="/testSocial"
-                  rel="noopener"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <img
                     alt="test social"
@@ -197,7 +203,8 @@ ShallowWrapper {
               "props": Object {
                 "children": <a
                   href="/testSocial"
-                  rel="noopener"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <img
                     alt="test social"
@@ -216,7 +223,8 @@ ShallowWrapper {
                     src={undefined}
                   />,
                   "href": "/testSocial",
-                  "rel": "noopener",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
                 },
                 "ref": null,
                 "rendered": Object {

@@ -29,7 +29,7 @@ const SocialListItem = styled.li`
 
 const renderSocialLinks = links => links.map(link => (
   <SocialListItem key={link.id}>
-    <a href={link.url} rel="noopener">
+    <a href={link.url} rel="noopener noreferrer" target="_blank">
       <img src={socialIcons[link.name]} alt={link.name} />
     </a>
   </SocialListItem>

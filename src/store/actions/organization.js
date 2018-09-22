@@ -6,6 +6,7 @@ const getOrganizationDetails = () => ({
     social: [
       // { id: 1, name: 'github', url: 'https://github.com/webmadeira' },
       { id: 2, name: 'linkedin', url: 'https://www.linkedin.com/in/webmadeira-66484516b' },
+      { id: 3, name: 'twitter', url: 'https://twitter.com/web_madeira' },
     ],
   }),
 })
