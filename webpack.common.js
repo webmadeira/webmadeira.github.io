@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const WebpackPwaManifest = require('webpack-pwa-manifest')
 const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin')
+const FirebaseConfig = require('./firebase.config.json')
 
 module.exports = {
   entry: [
@@ -55,6 +56,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      templateParameters: {
+        FIREBASE_CONFIG: JSON.stringify(FirebaseConfig),
+      },
     }),
     new CopyWebpackPlugin([{
       from: './src/assets/img/logo.png',
