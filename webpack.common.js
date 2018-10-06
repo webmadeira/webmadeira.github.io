@@ -77,6 +77,7 @@ module.exports = {
           sizes: [96, 128, 192, 256, 384, 512],
         },
       ],
+      gcm_sender_id: FirebaseConfig.messagingSenderId,
     }),
     new ServiceWorkerWebpackPlugin({
       entry: path.join(__dirname, 'src/sw.js'),

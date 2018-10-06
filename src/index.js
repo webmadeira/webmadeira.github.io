@@ -30,5 +30,19 @@ if (module.hot) {
 }
 
 if ('serviceWorker' in window.navigator) {
-  runtime.register()
+  runtime.register().then((registration) => {
+    firebase.messaging().useServiceWorker(registration)
+  })
+}
+
+try {
+  const messaging = firebase.messaging()
+  messaging.requestPermission().then(() => {
+    messaging.getToken().then((token) => {
+      console.log('token:', token)
+      return token
+    })
+  })
+} catch (error) {
+  console.error(error)
 }
