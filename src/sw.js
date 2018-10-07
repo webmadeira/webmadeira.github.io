@@ -1,3 +1,19 @@
+importScripts('https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js')
+importScripts('https://www.gstatic.com/firebasejs/5.5.3/firebase-messaging.js')
+
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyAKUsKisxaHZPSyDmhxpzT7QuMuOyx1j5w",
+  authDomain: "webmadeira-ec09c.firebaseapp.com",
+  databaseURL: "https://webmadeira-ec09c.firebaseio.com",
+  projectId: "webmadeira-ec09c",
+  storageBucket: "webmadeira-ec09c.appspot.com",
+  messagingSenderId: "237853239803"
+};
+firebase.initializeApp(config);
+
+const messaging = firebase.messaging()
+
 // @flow weak
 /* eslint-disable no-console, no-restricted-globals */
 
