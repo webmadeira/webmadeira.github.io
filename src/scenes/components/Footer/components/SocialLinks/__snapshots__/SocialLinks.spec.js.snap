@@ -36,6 +36,7 @@ ShallowWrapper {
             <a
               href="/testSocial"
               rel="noopener"
+              title="test social"
             >
               <img
                 alt="test social"
@@ -69,6 +70,7 @@ ShallowWrapper {
               <a
                 href="/testSocial"
                 rel="noopener"
+                title="test social"
               >
                 <img
                   alt="test social"
@@ -88,6 +90,7 @@ ShallowWrapper {
               "children": <a
                 href="/testSocial"
                 rel="noopener"
+                title="test social"
               >
                 <img
                   alt="test social"
@@ -107,6 +110,7 @@ ShallowWrapper {
                 />,
                 "href": "/testSocial",
                 "rel": "noopener",
+                "title": "test social",
               },
               "ref": null,
               "rendered": Object {
@@ -146,6 +150,7 @@ ShallowWrapper {
               <a
                 href="/testSocial"
                 rel="noopener"
+                title="test social"
               >
                 <img
                   alt="test social"
@@ -179,6 +184,7 @@ ShallowWrapper {
                 <a
                   href="/testSocial"
                   rel="noopener"
+                  title="test social"
                 >
                   <img
                     alt="test social"
@@ -198,6 +204,7 @@ ShallowWrapper {
                 "children": <a
                   href="/testSocial"
                   rel="noopener"
+                  title="test social"
                 >
                   <img
                     alt="test social"
@@ -217,6 +224,7 @@ ShallowWrapper {
                   />,
                   "href": "/testSocial",
                   "rel": "noopener",
+                  "title": "test social",
                 },
                 "ref": null,
                 "rendered": Object {
