@@ -1,6 +1,7 @@
 const palettes = {
   brand: {
     base: '#ed4042',
+    light: '#e76857',
   },
   primary: {
     base: '#14455a',

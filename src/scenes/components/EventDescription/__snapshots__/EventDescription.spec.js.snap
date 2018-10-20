@@ -23,9 +23,85 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": Array [
-        <CtaButtons />,
-        <styled.section>
+      "children": <styled.section>
+        <styled.div>
+          <Styled(styled.p)>
+            Description sample
+          </Styled(styled.p)>
+          <p>
+            Content
+          </p>
+        </styled.div>
+      </styled.section>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <styled.div>
+          <Styled(styled.p)>
+            Description sample
+          </Styled(styled.p)>
+          <p>
+            Content
+          </p>
+        </styled.div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(styled.p)>
+              Description sample
+            </Styled(styled.p)>,
+            <p>
+              Content
+            </p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Description sample",
+            },
+            "ref": null,
+            "rendered": "Description sample",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Content",
+            },
+            "ref": null,
+            "rendered": "Content",
+            "type": "p",
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <styled.section>
           <styled.div>
             <Styled(styled.p)>
               Description sample
@@ -35,20 +111,9 @@ ShallowWrapper {
             </p>
           </styled.div>
         </styled.section>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
       },
-      Object {
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
@@ -106,99 +171,6 @@ ShallowWrapper {
         },
         "type": [Function],
       },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <CtaButtons />,
-          <styled.section>
-            <styled.div>
-              <Styled(styled.p)>
-                Description sample
-              </Styled(styled.p)>
-              <p>
-                Content
-              </p>
-            </styled.div>
-          </styled.section>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <styled.div>
-              <Styled(styled.p)>
-                Description sample
-              </Styled(styled.p)>
-              <p>
-                Content
-              </p>
-            </styled.div>,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Styled(styled.p)>
-                  Description sample
-                </Styled(styled.p)>,
-                <p>
-                  Content
-                </p>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Description sample",
-                },
-                "ref": null,
-                "rendered": "Description sample",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Content",
-                },
-                "ref": null,
-                "rendered": "Content",
-                "type": "p",
-              },
-            ],
-            "type": [Function],
-          },
-          "type": [Function],
-        },
-      ],
       "type": [Function],
     },
   ],

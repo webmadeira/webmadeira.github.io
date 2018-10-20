@@ -1,0 +1,497 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntryContent component with no QA must render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EntryContent
+    description="Some description"
+    length={20}
+    qaLength={undefined}
+    speaker="Speaker name"
+    speakers={undefined}
+    title="Title"
+    type={undefined}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(styled.h4)>
+          <styled.div
+            type="secondary"
+          />
+          Title
+        </Styled(styled.h4)>,
+        undefined,
+        <Styled(styled.span)>
+          20
+          min
+        </Styled(styled.span)>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.div
+              type="secondary"
+            />,
+            "Title",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "type": "secondary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "Title",
+        ],
+        "type": [Function],
+      },
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            20,
+            "min",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          20,
+          "min",
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(styled.h4)>
+            <styled.div
+              type="secondary"
+            />
+            Title
+          </Styled(styled.h4)>,
+          undefined,
+          <Styled(styled.span)>
+            20
+            min
+          </Styled(styled.span)>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.div
+                type="secondary"
+              />,
+              "Title",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "type": "secondary",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "Title",
+          ],
+          "type": [Function],
+        },
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              20,
+              "min",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            20,
+            "min",
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`EntryContent component with no time must render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EntryContent
+    description="Some description"
+    length={undefined}
+    qaLength={undefined}
+    speaker="Speaker name"
+    speakers={undefined}
+    title="Title"
+    type={undefined}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(styled.h4)>
+          <styled.div
+            type="secondary"
+          />
+          Title
+        </Styled(styled.h4)>,
+        undefined,
+        undefined,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.div
+              type="secondary"
+            />,
+            "Title",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "type": "secondary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "Title",
+        ],
+        "type": [Function],
+      },
+      undefined,
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(styled.h4)>
+            <styled.div
+              type="secondary"
+            />
+            Title
+          </Styled(styled.h4)>,
+          undefined,
+          undefined,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.div
+                type="secondary"
+              />,
+              "Title",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "type": "secondary",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "Title",
+          ],
+          "type": [Function],
+        },
+        undefined,
+        undefined,
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`EntryContent component with time and QA must render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EntryContent
+    description="Some description"
+    length={20}
+    qaLength={5}
+    speaker="Speaker name"
+    speakers={undefined}
+    title="Title"
+    type={undefined}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(styled.h4)>
+          <styled.div
+            type="secondary"
+          />
+          Title
+        </Styled(styled.h4)>,
+        undefined,
+        <Styled(styled.span)>
+          20
+          min + 
+          5
+          min
+        </Styled(styled.span)>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.div
+              type="secondary"
+            />,
+            "Title",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "type": "secondary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "Title",
+        ],
+        "type": [Function],
+      },
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            20,
+            "min + ",
+            5,
+            "min",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          20,
+          "min + ",
+          5,
+          "min",
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(styled.h4)>
+            <styled.div
+              type="secondary"
+            />
+            Title
+          </Styled(styled.h4)>,
+          undefined,
+          <Styled(styled.span)>
+            20
+            min + 
+            5
+            min
+          </Styled(styled.span)>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.div
+                type="secondary"
+              />,
+              "Title",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "type": "secondary",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "Title",
+          ],
+          "type": [Function],
+        },
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              20,
+              "min + ",
+              5,
+              "min",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            20,
+            "min + ",
+            5,
+            "min",
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

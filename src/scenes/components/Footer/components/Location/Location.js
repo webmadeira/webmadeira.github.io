@@ -10,7 +10,7 @@ const LocationContainer = styled.div`
 `
 
 const LocationName = styled.a`
-  color: ${props => props.theme.color('neutral', 'bright')}
+  color: ${props => props.theme.color('neutral', 'bright')};
   margin-top: 14px;
 `
 

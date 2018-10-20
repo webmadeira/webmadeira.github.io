@@ -1,14 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
+
+import { getOrganizationDetails } from '../store/actions/organization'
+import { getEventDetails, getPastEvents } from '../store/actions/event'
+
+import ScheduleContainer from './containers/ScheduleContainer/ScheduleContainer'
+
 import Root from './components/Root/Root'
 import Header from './components/Header/Header'
 import Body from './components/Body/Body'
 import Footer from './components/Footer/Footer'
 import EventDescription from './components/EventDescription/EventDescription'
 import Talks from './components/Talks/Talks'
-import { getOrganizationDetails } from '../store/actions/organization'
-import { getEventDetails, getPastEvents } from '../store/actions/event'
 import { getSpeakers } from '../store/actions/speaker'
 import Speakers from './components/Speakers/Speakers'
 
@@ -26,7 +30,6 @@ class HomeContainer extends React.Component {
         PropTypes.instanceOf(Date),
       ]),
       description: PropTypes.string.isRequired,
-      talks: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
       pastEvents: PropTypes.PropTypes.arrayOf(
         PropTypes.shape({
           id: PropTypes.number,
@@ -40,6 +43,7 @@ class HomeContainer extends React.Component {
       }).isRequired,
     }).isRequired,
     speakers: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+    talks: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
     organization: PropTypes.shape({
       social: PropTypes.PropTypes.arrayOf(
         PropTypes.shape({
@@ -58,13 +62,12 @@ class HomeContainer extends React.Component {
   }
 
   render() {
-    const { speakers } = this.props
+    const { speakers, talks } = this.props
     const { social } = this.props.organization
     const {
       title,
       date,
       description,
-      talks,
       logo,
       pastEvents,
       location,
@@ -80,6 +83,7 @@ class HomeContainer extends React.Component {
             <Talks numTalks={talks.length} />
           </EventDescription>
           <Speakers speakers={speakers} />
+          <ScheduleContainer />
         </Body>
         <Footer pastEvents={pastEvents} social={social} location={location} />
       </Root>
@@ -106,6 +110,7 @@ function mapStateToProps({ event, organization, speaker: { speakers } }) {
     speakers,
     organization,
     event: modifinedEvent,
+    talks: !event.schedule ? [] : event.schedule.filter(entry => entry.type === 'talk'),
   }
 }
 
