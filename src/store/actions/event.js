@@ -16,6 +16,7 @@ const event2018 = {
   logo: 'https://i.imgur.com/sDqnWmE.png',
   date: new Date('2018-12-29'),
   description: 'WebMadeira is a non-profit event built by-the-community and for-the-community and you can be part of it. It has born in 2016 and it is back this year with several talks about web development at December 29, 2018. The event should last about 5 to 6 hours holding two kind of talks: "Standard talks" with 20min+5min for Q&A and some very brief ones mentioned as "Lighting talks", taking only 5min and no Q&A. Wanna get on stage? Hit "Become a speaker" button! Wanna help us to maitain this event as non-profit? Hit the "Become a sponsor" button!',
+  thankYouText: 'This event could not happen without the support of our sponsors and volunteers. Thank you all for your amazing help organizing this year\'s event and for being part of WebMadeira’s family. <br><br>Thank you <b>Alice Costa</b> and <b>Sofia Sousa</b> for the merchandising, it looks great! <b>Alice</b> again for our website\'s design. <b>Rodolfo Gonçalves</b>, <b>Cristian Gonçalves</b>, <b>Miguel Ribeiro</b> and <b>João Chacha</b> for the development of event page. <b>All our speakers</b> for bringing awesome talks! <br>And finally, <b>C. de Lobos</b>, <b>ACIN</b> and <b>Exictos</b> for the support to make this event possible and free for everyone. <br><center>THANK YOU ALL!</center>',
   schedule: [
     {
       id: 0,
@@ -165,6 +166,14 @@ const event2018 = {
         hour: 'numeric',
         minute: 'numeric',
       }),
+    },
+  ],
+  sponsors: [
+    {
+      id: 0,
+      name: 'C. M. Câmara de Lobos',
+      logo: 'https://i.imgur.com/fgcD5fV.png',
+      link: 'http://www.cm-camaradelobos.pt',
     },
   ],
   location: {

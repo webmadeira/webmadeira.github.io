@@ -17,10 +17,9 @@ describe('HomeContainer component', () => {
           logo: 'Test logo',
           date: 'Test date',
           description: 'Test description',
-          talks: [
-            { id: 0, description: 'Test talk 1' },
-            { id: 1, description: 'Test talk 2' },
-          ],
+          thankYouText: 'thankYouText',
+          schedule: [{}, {}],
+          sponsors: [{}],
           pastEvents: [
             {
               id: 0,
