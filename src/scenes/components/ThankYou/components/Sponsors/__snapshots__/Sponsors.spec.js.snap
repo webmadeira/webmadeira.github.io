@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sponsors component must render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Sponsors
+    sponsors={
+      Array [
+        Object {
+          "id": 0,
+          "link": "",
+          "logo": "",
+          "name": "",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <styled.li>
+          <a
+            href=""
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt=""
+              src=""
+            />
+          </a>
+        </styled.li>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "class",
+        "props": Object {
+          "children": <a
+            href=""
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt=""
+              src=""
+            />
+          </a>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt=""
+              src=""
+            />,
+            "href": "",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "",
+              "src": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "a",
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.li>
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt=""
+                src=""
+              />
+            </a>
+          </styled.li>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "class",
+          "props": Object {
+            "children": <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt=""
+                src=""
+              />
+            </a>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt=""
+                src=""
+              />,
+              "href": "",
+              "rel": "noopener noreferrer",
+              "target": "_blank",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "",
+                "src": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "a",
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

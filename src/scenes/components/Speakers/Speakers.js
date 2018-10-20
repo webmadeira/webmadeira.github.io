@@ -34,6 +34,7 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   list-style: none;
+  text-align: center;
 `
 
 const renderSpeakers = speakers => speakers.map(speaker => (

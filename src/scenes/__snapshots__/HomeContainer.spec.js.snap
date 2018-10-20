@@ -44,16 +44,14 @@ ShallowWrapper {
             "path": "http://test.url.com/",
           },
         ],
-        "talks": Array [
-          Object {
-            "description": "Test talk 1",
-            "id": 0,
-          },
-          Object {
-            "description": "Test talk 2",
-            "id": 1,
-          },
+        "schedule": Array [
+          Object {},
+          Object {},
         ],
+        "sponsors": Array [
+          Object {},
+        ],
+        "thankYouText": "thankYouText",
         "title": "Test title",
       },
       "getEventDetails": [Function],
@@ -146,16 +144,14 @@ ShallowWrapper {
               "path": "http://test.url.com/",
             },
           ],
-          "talks": Array [
-            Object {
-              "description": "Test talk 1",
-              "id": 0,
-            },
-            Object {
-              "description": "Test talk 2",
-              "id": 1,
-            },
+          "schedule": Array [
+            Object {},
+            Object {},
           ],
+          "sponsors": Array [
+            Object {},
+          ],
+          "thankYouText": "thankYouText",
           "title": "Test title",
         },
         "getEventDetails": [Function],
@@ -281,16 +277,14 @@ ShallowWrapper {
             "path": "http://test.url.com/",
           },
         ],
-        "talks": Array [
-          Object {
-            "description": "Test talk 1",
-            "id": 0,
-          },
-          Object {
-            "description": "Test talk 2",
-            "id": 1,
-          },
+        "schedule": Array [
+          Object {},
+          Object {},
         ],
+        "sponsors": Array [
+          Object {},
+        ],
+        "thankYouText": "thankYouText",
         "title": "Test title",
       },
       "getEventDetails": [Function],
@@ -383,16 +377,14 @@ ShallowWrapper {
               "path": "http://test.url.com/",
             },
           ],
-          "talks": Array [
-            Object {
-              "description": "Test talk 1",
-              "id": 0,
-            },
-            Object {
-              "description": "Test talk 2",
-              "id": 1,
-            },
+          "schedule": Array [
+            Object {},
+            Object {},
           ],
+          "sponsors": Array [
+            Object {},
+          ],
+          "thankYouText": "thankYouText",
           "title": "Test title",
         },
         "getEventDetails": [Function],

@@ -13,11 +13,11 @@ const textSettings = {
   },
   nr: { // normal
     fontSize: '1rem',
-    lineHeight: '1.25rem',
+    lineHeight: '1.35rem',
   },
   md: {
     fontSize: '1.125rem',
-    lineHeight: '1.325rem',
+    lineHeight: '1.35rem',
   },
   lg: {
     fontSize: '1.2rem',

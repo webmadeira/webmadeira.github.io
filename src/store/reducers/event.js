@@ -12,7 +12,9 @@ const INITIAL_STATE = {
   title: '',
   logo: '',
   description: '',
+  thankYouText: '',
   schedule: [],
+  sponsors: [],
   pastEvents: [],
   location: {},
 }

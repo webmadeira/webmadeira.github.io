@@ -15,6 +15,7 @@ import EventDescription from './components/EventDescription/EventDescription'
 import Talks from './components/Talks/Talks'
 import { getSpeakers } from '../store/actions/speaker'
 import Speakers from './components/Speakers/Speakers'
+import ThankYou from './components/ThankYou/ThankYou'
 
 class HomeContainer extends React.Component {
   static propTypes = {
@@ -30,6 +31,9 @@ class HomeContainer extends React.Component {
         PropTypes.instanceOf(Date),
       ]),
       description: PropTypes.string.isRequired,
+      thankYouText: PropTypes.string.isRequired,
+      sponsors: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+      schedule: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
       pastEvents: PropTypes.PropTypes.arrayOf(
         PropTypes.shape({
           id: PropTypes.number,
@@ -68,9 +72,11 @@ class HomeContainer extends React.Component {
       title,
       date,
       description,
+      sponsors,
       logo,
       pastEvents,
       location,
+      thankYouText,
     } = this.props.event
 
     return (
@@ -84,6 +90,7 @@ class HomeContainer extends React.Component {
           </EventDescription>
           <Speakers speakers={speakers} />
           <ScheduleContainer />
+          <ThankYou sponsors={sponsors} thankYouText={thankYouText} />
         </Body>
         <Footer pastEvents={pastEvents} social={social} location={location} />
       </Root>

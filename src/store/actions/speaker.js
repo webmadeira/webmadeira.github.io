@@ -30,8 +30,8 @@ const getSpeakers = year => ({ // eslint-disable-line
         jobTitle: 'Software engineer',
         jobWebsite: 'https://www.exictos.com/',
         personalWebsite: '',
-        bwPhoto: 'https://i.imgur.com/tPhkYAt.jpg',
-        photo: 'https://i.imgur.com/tPhkYAt.jpg',
+        bwPhoto: 'https://i.imgur.com/IQpX7mf.png',
+        photo: 'https://i.imgur.com/ENkOe1l.png',
       },
       {
         id: 3,
