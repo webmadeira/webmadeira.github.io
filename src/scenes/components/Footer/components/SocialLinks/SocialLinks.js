@@ -6,12 +6,14 @@ import facebookIcon from '../../../../../assets/img/icon/facebook.svg'
 import instagramIcon from '../../../../../assets/img/icon/instagram.svg'
 import linkedinIcon from '../../../../../assets/img/icon/linkedin.svg'
 import twitterIcon from '../../../../../assets/img/icon/twitter.svg'
+import githubIcon from '../../../../../assets/img/icon/github.svg'
 
 const socialIcons = {
   facebook: facebookIcon,
   instagram: instagramIcon,
   linkedin: linkedinIcon,
   twitter: twitterIcon,
+  github: githubIcon,
 }
 
 const SocialList = styled.ul`
@@ -29,7 +31,7 @@ const SocialListItem = styled.li`
 
 const renderSocialLinks = links => links.map(link => (
   <SocialListItem key={link.id}>
-    <a href={link.url} rel="noopener">
+    <a href={link.url} rel="noopener" title={link.name}>
       <img src={socialIcons[link.name]} alt={link.name} />
     </a>
   </SocialListItem>
