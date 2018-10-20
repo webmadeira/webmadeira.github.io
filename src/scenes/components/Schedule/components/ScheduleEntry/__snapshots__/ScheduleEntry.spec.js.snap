@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScheduleEntry component must render properly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ScheduleEntry
+    entry={
+      Object {
+        "description": "Some description",
+        "length": 20,
+        "qaLength": 5,
+        "speaker": "Speaker name",
+        "time": "15:20",
+        "title": "Title",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <styled.div>
+          <styled.h4>
+            15:20
+          </styled.h4>
+        </styled.div>,
+        <styled.div
+          className="entry-info"
+        >
+          <EntryContent
+            description="Some description"
+            length={20}
+            qaLength={5}
+            speakers={undefined}
+            title="Title"
+            type={undefined}
+          />
+        </styled.div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <styled.h4>
+            15:20
+          </styled.h4>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "15:20",
+          },
+          "ref": null,
+          "rendered": "15:20",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <EntryContent
+            description="Some description"
+            length={20}
+            qaLength={5}
+            speakers={undefined}
+            title="Title"
+            type={undefined}
+          />,
+          "className": "entry-info",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "description": "Some description",
+            "length": 20,
+            "qaLength": 5,
+            "speakers": undefined,
+            "title": "Title",
+            "type": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.div>
+            <styled.h4>
+              15:20
+            </styled.h4>
+          </styled.div>,
+          <styled.div
+            className="entry-info"
+          >
+            <EntryContent
+              description="Some description"
+              length={20}
+              qaLength={5}
+              speakers={undefined}
+              title="Title"
+              type={undefined}
+            />
+          </styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <styled.h4>
+              15:20
+            </styled.h4>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "15:20",
+            },
+            "ref": null,
+            "rendered": "15:20",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <EntryContent
+              description="Some description"
+              length={20}
+              qaLength={5}
+              speakers={undefined}
+              title="Title"
+              type={undefined}
+            />,
+            "className": "entry-info",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "description": "Some description",
+              "length": 20,
+              "qaLength": 5,
+              "speakers": undefined,
+              "title": "Title",
+              "type": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

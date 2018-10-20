@@ -5,14 +5,18 @@ import styled from 'styled-components'
 import { H2, H3 } from '../../../components/typography'
 
 const MainSection = styled.section`
-  background-color: ${({ theme }) => theme.color('primary')}
-  color: ${({ theme }) => theme.color('neutral', 'bright')}
+  background-color: ${({ theme }) => theme.color('primary')};
+  color: ${({ theme }) => theme.color('neutral', 'bright')};
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 120px 10px 50px 10px;
   flex-direction: column;
   flex-shrink: 0;
+
+  ${({ theme }) => theme.mixins.mediaQuery.tablet`
+    padding-bottom: 0;
+  `};
 `
 
 const LogoSection = styled.div`

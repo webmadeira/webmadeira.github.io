@@ -9,6 +9,10 @@ import deviceWidths from '../../../theme/device-widths'
 const TalksContainer = styled.div`
   display: flex;
   margin: 60px 0;
+
+  ${({ theme }) => theme.mixins.mediaQuery.tablet`
+    margin: 30px 0;
+  `};
 `
 
 const NumTalks = styled.div`

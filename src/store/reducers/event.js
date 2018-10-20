@@ -12,7 +12,7 @@ const INITIAL_STATE = {
   title: '',
   logo: '',
   description: '',
-  talks: [],
+  schedule: [],
   pastEvents: [],
   location: {},
 }
