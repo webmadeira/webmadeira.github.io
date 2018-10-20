@@ -28,6 +28,7 @@ module.exports = {
           options: {
             plugins: [
               'transform-object-rest-spread',
+              'styled-components',
             ],
           },
         },
