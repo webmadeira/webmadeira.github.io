@@ -23,6 +23,10 @@ const Title = styled(H2)`
 
 const Text = styled(Body2)`
   text-align: justify;
+
+  a {
+    color: ${props => props.theme.color('neutral', 'base')};
+  }
 `
 
 const ThankYou = ({ sponsors, thankYouText }) => (

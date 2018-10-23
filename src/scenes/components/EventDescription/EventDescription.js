@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import AppContainer from '../../../components/AppContainer/AppContainer'
 import { Body2 } from '../../../components/typography'
+import '../../../assets/img/digital-mountain.svg'
 
 const Root = styled.div`
   background-color: ${props => props.theme.color()};

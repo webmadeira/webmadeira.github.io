@@ -4,25 +4,22 @@ import {
   FETCH_PAST_EVENTS,
 } from './types'
 
-const entry = {
-  id: 0,
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris dsfdsf d.',
-}
+let id = 0
 
 /* eslint-disable no-plusplus */
 const event2018 = {
-  id: 0,
+  id,
   title: '{ "web development talks in Madeira" }',
   logo: 'https://i.imgur.com/sDqnWmE.png',
   date: new Date('2018-12-29'),
-  description: 'WebMadeira is a non-profit event built by-the-community and for-the-community and you can be part of it. It has born in 2016 and it is back this year with several talks about web development at December 29, 2018. The event must last about 5 to 6 hours holding talks with 20min, +5min for Q&A. Join us!',
-  thankYouText: 'This event could not happen without the support of our sponsors and volunteers. Thank you all for your amazing help organizing this year\'s event and for being part of WebMadeira’s family. <br><br>Thank you <b>Alice Costa</b> and <b>Sofia Sousa</b> for the merchandising, it looks great! <b>Alice</b> again for our website\'s design. <b>Rodolfo Gonçalves</b>, <b>Cristian Gonçalves</b>, <b>Miguel Ribeiro</b> and <b>João Chacha</b> for the development of event page. <b>All our speakers</b> for bringing awesome talks! <br>And finally, <b>C. de Lobos</b> for the support to make this event possible and free for everyone. <br><center>THANK YOU ALL!</center>',
+  description: 'WebMadeira is a non-profit event built by-the-community and for-the-community and you can be part of it. It was born in 2016 and it is back this year with several talks about web development in December 29, 2018. The event will last about 5 to 6 hours comprised of 20min talks +5min Q&A. Join us!',
+  thankYouText: 'This event could not happen without the support of our sponsors and volunteers. Thank you all for your amazing help organizing this year\'s event and for being part of WebMadeira’s family. <br><br>Thank you <b><a href="https://www.linkedin.com/in/alice-costa-619872a5/" target="_blank" rel="noopener noreferrer">Alice Costa</a></b> and <b><a href="https://www.linkedin.com/in/sofia-sousa/" target="_blank" rel="noopener noreferrer">Sofia Sousa</a></b> for the merchandising, it looks great! <b>Alice</b> again for our website\'s design. <b><a href="https://www.linkedin.com/in/rodolfo-goncalves/" target="_blank" rel="noopener noreferrer">Rodolfo Gonçalves</a></b>, <b><a href="https://www.linkedin.com/in/crisgoncalves84/" target="_blank" rel="noopener noreferrer">Cristian Gonçalves</a></b>, <b><a href="https://www.linkedin.com/in/miguel-ribeiro-7bb32a110/" target="_blank" rel="noopener noreferrer">Miguel Ribeiro</a></b> and <b><a href="https://github.com/JoaoChacha" target="_blank" rel="noopener noreferrer">João Chacha</a></b> for the development of the event page. <br>Thank you <b><a href="https://www.linkedin.com/in/ana-sofia-nunes-05413558/" target="_blank" rel="noopener noreferrer">Sofia Nunes</a></b> for your "eagle eye" on the QA process! <b>All our speakers</b> for bringing awesome talks! <br>And finally,<b>C. de Lobos</b> for the support to make this event possible and free for everyone. <br><br><center>THANK YOU ALL!</center>',
   schedule: [
     {
       id: 0,
       title: 'Doors open',
       type: 'primary',
-      time: new Date('2018-08-10 14:00:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 14:00:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -30,9 +27,9 @@ const event2018 = {
       length: 20,
     },
     {
-      id: ++entry.id,
-      title: 'Opening sesion',
-      time: new Date('2018-08-10 14:15:00').toLocaleTimeString('us-US', {
+      id: ++id,
+      title: 'Opening session',
+      time: new Date('2018/12/29 14:15:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -40,12 +37,12 @@ const event2018 = {
       length: 15,
     },
     {
-      id: ++entry.id,
-      ...entry,
+      id: ++id,
       title: 'Service workers',
+      description: 'Offline first web applications',
       speakersIds: [0],
       type: 'talk',
-      time: new Date('2018-08-10 14:30:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 14:30:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -54,12 +51,12 @@ const event2018 = {
       qaLength: 5,
     },
     {
-      id: ++entry.id,
-      ...entry,
-      title: 'To define...',
+      id: ++id,
+      title: 'Releasing without bugs',
+      description: 'From feature definition to tests, what can we do to improve code quality and release software without bugs',
       speakersIds: [1],
       type: 'talk',
-      time: new Date('2018-08-10 15:00:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 15:00:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -68,12 +65,12 @@ const event2018 = {
       qaLength: 5,
     },
     {
-      id: ++entry.id,
-      ...entry,
-      title: 'To define... (DevOps)',
+      id: ++id,
+      title: 'Delivering Happiness',
+      description: 'Making your Team and Customers happier with Continuous Delivery automation',
       speakersIds: [2],
       type: 'talk',
-      time: new Date('2018-08-10 15:30:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 15:30:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -82,9 +79,9 @@ const event2018 = {
       qaLength: 5,
     },
     {
-      id: ++entry.id,
+      id: ++id,
       title: 'Break',
-      time: new Date('2018-08-10 16:00:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 16:00:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -92,12 +89,12 @@ const event2018 = {
       length: 30,
     },
     {
-      id: ++entry.id,
+      id: ++id,
       title: 'Unsupervised learning',
       description: 'Why learn it yourself when you can have a machine do it for you?',
       speakersIds: [3],
       type: 'talk',
-      time: new Date('2018-08-10 16:30:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 16:30:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -106,12 +103,12 @@ const event2018 = {
       qaLength: 5,
     },
     {
-      id: ++entry.id,
-      ...entry,
-      title: 'To define... (Micro services)',
+      id: ++id,
+      title: 'Pre-microservices',
+      description: 'What you should know before moving to microservices',
       speakersIds: [4],
       type: 'talk',
-      time: new Date('2018-08-10 17:00:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 17:00:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -120,12 +117,12 @@ const event2018 = {
       qaLength: 5,
     },
     {
-      id: ++entry.id,
-      ...entry,
-      title: 'To define...',
+      id: ++id,
+      title: 'Living on the edge',
+      description: 'The future of the distributed web',
       type: 'talk',
       speakersIds: [5],
-      time: new Date('2018-08-10 17:30:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 17:30:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -134,12 +131,12 @@ const event2018 = {
       qaLength: 5,
     },
     {
-      id: ++entry.id,
-      ...entry,
-      title: 'Critical Rendering Path',
+      id: ++id,
+      title: 'High performance web apps',
+      description: 'You can’t optimize what you can’t measure',
       type: 'talk',
       speakersIds: [6],
-      time: new Date('2018-08-10 18:00:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 18:00:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -148,9 +145,9 @@ const event2018 = {
       qaLength: 5,
     },
     {
-      id: ++entry.id,
-      title: 'Closing sesion',
-      time: new Date('2018-08-10 18:30:00').toLocaleTimeString('us-US', {
+      id: ++id,
+      title: 'Closing session',
+      time: new Date('2018/12/29 18:30:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
@@ -158,10 +155,10 @@ const event2018 = {
       length: 10,
     },
     {
-      id: ++entry.id,
+      id: ++id,
       title: 'Doors closed',
       type: 'primary',
-      time: new Date('2018-08-10 19:00:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 19:00:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
