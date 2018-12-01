@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import AppContainer from '../../../components/AppContainer/AppContainer'
 import { Body2 } from '../../../components/typography'
 import '../../../assets/img/digital-mountain.svg'
+import CtaButtons from '../CtaButtons/CtaButtons'
 
 const Root = styled.div`
   background-color: ${props => props.theme.color()};
@@ -27,8 +28,9 @@ const Description = styled(Body2)`
   color: ${props => props.theme.color('neutral', 'bright')};
 `
 
-const EventDescription = ({ description, children }) => (
+const EventDescription = ({ description, children, registrationLink }) => (
   <Root>
+    <CtaButtons registrationLink={registrationLink} />
     <AppContainer>
       <Container>
         <Description>{description}</Description>
@@ -40,6 +42,7 @@ const EventDescription = ({ description, children }) => (
 
 EventDescription.propTypes = {
   description: PropTypes.string.isRequired,
+  registrationLink: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 }
 

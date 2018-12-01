@@ -32,6 +32,7 @@ class HomeContainer extends React.Component {
       ]),
       description: PropTypes.string.isRequired,
       thankYouText: PropTypes.string.isRequired,
+      registrationLink: PropTypes.string.isRequired,
       sponsors: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
       schedule: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
       pastEvents: PropTypes.PropTypes.arrayOf(
@@ -77,6 +78,7 @@ class HomeContainer extends React.Component {
       pastEvents,
       location,
       thankYouText,
+      registrationLink,
     } = this.props.event
 
     return (
@@ -85,6 +87,7 @@ class HomeContainer extends React.Component {
         <Body>
           <EventDescription
             description={description}
+            registrationLink={registrationLink}
           >
             <Talks numTalks={talks.length} />
           </EventDescription>
@@ -118,6 +121,7 @@ function mapStateToProps({ event, organization, speaker: { speakers } }) {
     organization,
     event: modifinedEvent,
     talks: !event.schedule ? [] : event.schedule.filter(entry => entry.type === 'talk'),
+    registrationLink: event.registrationLink,
   }
 }
 

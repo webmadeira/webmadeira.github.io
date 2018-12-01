@@ -68,6 +68,7 @@ ShallowWrapper {
           },
         ],
       },
+      "registrationLink": undefined,
       "speakers": Array [
         Object {
           "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
@@ -168,6 +169,7 @@ ShallowWrapper {
             },
           ],
         },
+        "registrationLink": undefined,
         "speakers": Array [
           Object {
             "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
@@ -301,6 +303,7 @@ ShallowWrapper {
           },
         ],
       },
+      "registrationLink": undefined,
       "speakers": Array [
         Object {
           "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
@@ -401,6 +404,7 @@ ShallowWrapper {
             },
           ],
         },
+        "registrationLink": undefined,
         "speakers": Array [
           Object {
             "bwPhoto": "https://avatars3.githubusercontent.com/u/1074?s=460&v=4",
