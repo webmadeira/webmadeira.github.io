@@ -25,7 +25,7 @@ const event2018 = {
         hour: 'numeric',
         minute: 'numeric',
       }),
-      length: 20,
+      length: 15,
     },
     {
       id: ++id,
@@ -40,7 +40,7 @@ const event2018 = {
     {
       id: ++id,
       title: 'Service workers',
-      description: 'Offline first web applications',
+      description: 'Pushing the web forward',
       speakersIds: [0],
       type: 'talk',
       time: new Date('2018/12/29 14:30:00').toLocaleTimeString('us-US', {
