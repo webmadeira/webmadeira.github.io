@@ -1,17 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import { mixins } from '../../../../../theme'
 
 const Root = styled.ul`
   margin: 0;
+  margin-top: 50px;
   padding: 0;
   display: flex;
   justify-content: center;
+  
+  ${mixins.mediaQuery.phone`
+      flex-direction: column;
+      align-items: center;
+  `};
 `
 
 const Sponsor = styled.li`
   list-style: none;
-  padding: 0 15px;
+  padding: 0 25px;
 `
 
 const renderSponsors = sponsors => sponsors.map(sponsor => (

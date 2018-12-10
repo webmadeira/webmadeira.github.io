@@ -13,7 +13,7 @@ const event2018 = {
   logo: 'https://i.imgur.com/sDqnWmE.png',
   date: new Date('2018-12-29'),
   description: 'WebMadeira is a non-profit event built by-the-community and for-the-community and you can be part of it. It was born in 2016 and it is back this year with several talks about web development in December 29, 2018. The event will last about 5 to 6 hours comprised of 20min talks +5min Q&A. Join us!',
-  thankYouText: 'This event could not happen without the support of our sponsors and volunteers. Thank you all for your amazing help organizing this year\'s event and for being part of WebMadeira’s family. <br><br>Thank you <b><a href="https://www.linkedin.com/in/alice-costa-619872a5/" target="_blank" rel="noopener noreferrer">Alice Costa</a></b> and <b><a href="https://www.linkedin.com/in/sofia-sousa/" target="_blank" rel="noopener noreferrer">Sofia Sousa</a></b> for the merchandising, it looks great! <b>Alice</b> again for our website\'s design. <b><a href="https://www.linkedin.com/in/rodolfo-goncalves/" target="_blank" rel="noopener noreferrer">Rodolfo Gonçalves</a></b>, <b><a href="https://www.linkedin.com/in/crisgoncalves84/" target="_blank" rel="noopener noreferrer">Cristian Gonçalves</a></b>, <b><a href="https://www.linkedin.com/in/miguel-ribeiro-7bb32a110/" target="_blank" rel="noopener noreferrer">Miguel Ribeiro</a></b> and <b><a href="https://github.com/JoaoChacha" target="_blank" rel="noopener noreferrer">João Chacha</a></b> for the development of the event page. <br>Thank you <b><a href="https://www.linkedin.com/in/ana-sofia-nunes-05413558/" target="_blank" rel="noopener noreferrer">Sofia Nunes</a></b> for your "eagle eye" on the QA process! <b>All our speakers</b> for bringing awesome talks! <br>And finally,<b>C. de Lobos</b> for the support to make this event possible and free for everyone. <br><br><center>THANK YOU ALL!</center>',
+  thankYouText: 'This event could not happen without the support of our sponsors and volunteers. Thank you all for your amazing help organizing this year\'s event and for being part of WebMadeira’s family. <br><br>Thank you <b><a href="https://www.linkedin.com/in/alice-costa-619872a5/" target="_blank" rel="noopener noreferrer">Alice Costa</a></b> and <b><a href="https://www.linkedin.com/in/sofia-sousa/" target="_blank" rel="noopener noreferrer">Sofia Sousa</a></b> for the merchandising, it looks great! <b>Alice</b> again for our website\'s design. <b><a href="https://www.linkedin.com/in/rodolfo-goncalves/" target="_blank" rel="noopener noreferrer">Rodolfo Gonçalves</a></b>, <b><a href="https://www.linkedin.com/in/crisgoncalves84/" target="_blank" rel="noopener noreferrer">Cristian Gonçalves</a></b>, <b><a href="https://www.linkedin.com/in/miguel-ribeiro-7bb32a110/" target="_blank" rel="noopener noreferrer">Miguel Ribeiro</a></b> and <b><a href="https://github.com/JoaoChacha" target="_blank" rel="noopener noreferrer">João Chacha</a></b> for the development of the event page. <br>Thank you <b><a href="https://www.linkedin.com/in/ana-sofia-nunes-05413558/" target="_blank" rel="noopener noreferrer">Sofia Nunes</a></b> for your "eagle eye" on the QA process! <b>All our speakers</b> for bringing awesome talks! <br>And finally,<b>C.M. Câmara de Lobos</b>, <b>Asseco PST</b> and <b>Blip</b> for the support to make this event possible and free for everyone. <br><br><center>THANK YOU ALL!</center>',
   registrationLink: 'https://www.eventbrite.pt/e/bilhetes-web-madeira-2018-49671284148?aff=eac2',
   schedule: [
     {
@@ -170,8 +170,20 @@ const event2018 = {
     {
       id: 0,
       name: 'C. M. Câmara de Lobos',
-      logo: 'https://i.imgur.com/fgcD5fV.png',
+      logo: 'https://i.imgur.com/olalEnd.png',
       link: 'http://www.cm-camaradelobos.pt',
+    },
+    {
+      id: 1,
+      name: 'Asseco PST',
+      logo: 'https://i.imgur.com/9XcU0MB.png',
+      link: 'https://pst.asseco.com/',
+    },
+    {
+      id: 2,
+      name: 'Blip',
+      logo: 'https://i.imgur.com/P66AjBD.png',
+      link: 'https://blip.pt/',
     },
   ],
   location: {

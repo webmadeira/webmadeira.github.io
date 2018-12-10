@@ -28,7 +28,7 @@ const getSpeakers = year => ({ // eslint-disable-line
         name: 'Cristian Gonçalves',
         company: 'Asseco PST',
         jobTitle: 'Software engineer',
-        jobWebsite: 'https://www.exictos.com/',
+        jobWebsite: 'https://pst.asseco.com/',
         personalWebsite: 'https://github.com/crisgoncalves',
         bwPhoto: 'https://i.imgur.com/IQpX7mf.png',
         photo: 'https://i.imgur.com/ENkOe1l.png',

@@ -12,6 +12,7 @@ const INITIAL_STATE = {
   title: '',
   logo: '',
   description: '',
+  registrationLink: '',
   thankYouText: '',
   schedule: [],
   sponsors: [],
