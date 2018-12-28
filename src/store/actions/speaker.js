@@ -34,16 +34,6 @@ const getSpeakers = year => ({ // eslint-disable-line
         photo: 'https://i.imgur.com/ENkOe1l.png',
       },
       {
-        id: 3,
-        name: 'Diogo Santos',
-        company: 'Nearsoft Solutions',
-        jobTitle: 'FullStack Developer',
-        jobWebsite: 'https://nearsoftsolutions.com/',
-        personalWebsite: 'https://github.com/daspinola',
-        bwPhoto: 'https://i.imgur.com/v3nebrt.jpg',
-        photo: 'https://i.imgur.com/Q35v0gu.jpg',
-      },
-      {
         id: 4,
         name: 'Paulo Caldeira',
         company: 'Curve Ltd',

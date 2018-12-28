@@ -91,10 +91,10 @@ const event2018 = {
     },
     {
       id: ++id,
-      title: 'Unsupervised learning',
-      description: 'Why learn it yourself when you can have a machine do it for you?',
-      speakersIds: [3],
+      title: 'High performance web apps',
+      description: 'You can’t optimize what you can’t measure',
       type: 'talk',
+      speakersIds: [6],
       time: new Date('2018/12/29 16:30:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
@@ -133,22 +133,8 @@ const event2018 = {
     },
     {
       id: ++id,
-      title: 'High performance web apps',
-      description: 'You can’t optimize what you can’t measure',
-      type: 'talk',
-      speakersIds: [6],
-      time: new Date('2018/12/29 18:00:00').toLocaleTimeString('us-US', {
-        hour12: false,
-        hour: 'numeric',
-        minute: 'numeric',
-      }),
-      length: 20,
-      qaLength: 5,
-    },
-    {
-      id: ++id,
       title: 'Closing session',
-      time: new Date('2018/12/29 18:30:00').toLocaleTimeString('us-US', {
+      time: new Date('2018/12/29 18:00:00').toLocaleTimeString('us-US', {
         hour12: false,
         hour: 'numeric',
         minute: 'numeric',
