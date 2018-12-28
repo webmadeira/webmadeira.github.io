@@ -1,0 +1,42 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.6035d6c2e6ea881c22d800c8455ea278.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_384x384.daadac52ea8ffded6c230657e3994521.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_256x256.1121fe3987b6082a1b96cca71990c5e3.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.e12e4d491fb98f5d4e8ca04d845bb952.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.138a1a8033736dbdf8e3d7e0160393e3.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_96x96.962be768d77104d9fc87729f133450f3.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "WebMadeira",
+  "short_name": "WebMadeira",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "A non-profit event built by-the-community, for-the-community.",
+  "theme_color": "#14455a",
+  "background_color": "#14455a"
+}
